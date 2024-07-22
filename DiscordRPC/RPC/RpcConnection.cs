@@ -1,14 +1,14 @@
-﻿using DiscordRPC.Helper;
-using DiscordRPC.Message;
+using DiscordRPC.Events;
+using DiscordRPC.Helper;
 using DiscordRPC.IO;
+using DiscordRPC.Logging;
+using DiscordRPC.Message;
 using DiscordRPC.RPC.Commands;
 using DiscordRPC.RPC.Payload;
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Threading;
-using Newtonsoft.Json;
-using DiscordRPC.Logging;
-using DiscordRPC.Events;
 
 namespace DiscordRPC.RPC
 {
@@ -274,7 +274,7 @@ namespace DiscordRPC.RPC
             if (Logger.Level <= LogLevel.Trace)
             {
                 Logger.Trace("============================");
-                Logger.Trace("Assembly:             " + System.Reflection.Assembly.GetAssembly(typeof(RichPresence)).FullName);
+                Logger.Trace("Assembly:             " + Assembly.GetAssembly(typeof(RichPresence))?.FullName);
                 Logger.Trace("Pipe:                 " + namedPipe.GetType().FullName);
                 Logger.Trace("Platform:             " + Environment.OSVersion.ToString());
                 Logger.Trace("applicationID:        " + applicationID);
@@ -376,7 +376,6 @@ namespace DiscordRPC.RPC
 											Logger.Error("Data: {0}", frame.Message);
 										}
 
-
 										try { if (response != null) ProcessFrame(response); } catch(Exception e)
                                         {
 											Logger.Error("Failed to process event! {0}", e.Message);
@@ -384,7 +383,6 @@ namespace DiscordRPC.RPC
 										}
 
 										break;
-										
 
 									default:
 									case Opcode.Handshake:
@@ -471,7 +469,7 @@ namespace DiscordRPC.RPC
 			Logger.Info("Handling Response. Cmd: {0}, Event: {1}", response.Command, response.Event);
 
 			//Check if it is an error
-			if (response.Event.HasValue && response.Event.Value == ServerEvent.Error)
+            if (response.Event.HasValue && response.Event.Value == ServerEvent.ERROR)
 			{
 				//We have an error
 				Logger.Error("Error received from the RPC");
@@ -488,7 +486,7 @@ namespace DiscordRPC.RPC
 			//Check if its a handshake
 			if (State == RpcState.Connecting)
 			{
-				if (response.Command == Command.Dispatch && response.Event.HasValue && response.Event.Value == ServerEvent.Ready)
+                if (response.Command == Command.DISPATCH && response.Event.HasValue && response.Event.Value == ServerEvent.READY)
 				{
 					Logger.Info("Connection established with the RPC");
 					SetConnectionState(RpcState.Connected);
@@ -513,12 +511,12 @@ namespace DiscordRPC.RPC
 				switch(response.Command)
 				{
 					//We were sent a dispatch, better process it
-					case Command.Dispatch:
+                    case Command.DISPATCH:
 						ProcessDispatch(response);
 						break;
 
 					//We were sent a Activity Update, better enqueue it
-					case Command.SetActivity:
+                    case Command.SET_ACTIVITY:
 						if (response.Data == null)
 						{
 							EnqueueMessage(new PresenceMessage());
@@ -530,30 +528,25 @@ namespace DiscordRPC.RPC
 						}
 						break;
 
-					case Command.Unsubscribe:
-					case Command.Subscribe:
+                    case Command.UNSUBSCRIBE:
+                    case Command.SUBSCRIBE:
 
-						//Prepare a serializer that can account for snake_case enums.
-						JsonSerializer serializer = new JsonSerializer();
-						serializer.Converters.Add(new Converters.EnumSnakeCaseConverter());
-
-                        //Go through the data, looking for the evt property, casting it to a server event
+                        // Go through the data, looking for the evt property, casting it to a server event
                         var evt = response.GetObject<EventPayload>().Event.Value;
 
 						//Enqueue the appropriate message.
-						if (response.Command == Command.Subscribe)
+                        if (response.Command == Command.SUBSCRIBE)
 							EnqueueMessage(new SubscribeMessage(evt));
 						else
 							EnqueueMessage(new UnsubscribeMessage(evt));
 
 						break;
 						
-					
-					case Command.SendActivityJoinInvite:
+                    case Command.SEND_ACTIVITY_JOIN_INVITE:
 						Logger.Trace("Got invite response ack.");
 						break;
 
-					case Command.CloseActivityJoinRequest:
+                    case Command.CLOSE_ACTIVITY_JOIN_REQUEST:
 						Logger.Trace("Got invite response reject ack.");
 						break;
 						
@@ -570,23 +563,23 @@ namespace DiscordRPC.RPC
 
 		private void ProcessDispatch(EventPayload response)
 		{
-			if (response.Command != Command.Dispatch) return;
+            if (response.Command != Command.DISPATCH) return;
 			if (!response.Event.HasValue) return;
 
 			switch(response.Event.Value)
 			{
 				//We are to join the server
-				case ServerEvent.ActivitySpectate:
+                case ServerEvent.ACTIVITY_SPECTATE:
 					var spectate = response.GetObject<SpectateMessage>();
 					EnqueueMessage(spectate);
 					break;
 
-				case ServerEvent.ActivityJoin:
+                case ServerEvent.ACTIVITY_JOIN:
 					var join = response.GetObject<JoinMessage>();
 					EnqueueMessage(join);
 					break;
 
-				case ServerEvent.ActivityJoinRequest:
+                case ServerEvent.ACTIVITY_JOIN_REQUEST:
 					var request = response.GetObject<JoinRequestMessage>();
 					EnqueueMessage(request);
 					break;
@@ -742,7 +735,6 @@ namespace DiscordRPC.RPC
 				return;
 			}
 		}
-		
 
 		/// <summary>
 		/// Attempts to connect to the pipe. Returns true on success
@@ -845,7 +837,6 @@ namespace DiscordRPC.RPC
 			aborting = true;
 			queueUpdatedEvent.Set();
 		}
-
 
 		/// <summary>
 		/// Closes the connection and disposes resources. Identical to <see cref="Close"/> but ignores the "ShutdownOnly" value.

@@ -41,7 +41,6 @@ namespace DiscordRPC.Helper
 		{
 			return encoding.GetByteCount(str) <= bytes;
 		}
-
 		
 		/// <summary>
 		/// Converts the string into UpperCamelCase (Pascal Case).

@@ -1,8 +1,5 @@
-﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Text.Json.Serialization;
 
 namespace DiscordRPC
 {
@@ -67,40 +64,40 @@ namespace DiscordRPC
 		/// <summary>
 		/// The snowflake ID of the user. 
 		/// </summary>
-		[JsonProperty("id")]
-		public ulong ID { get; private set; }
+        [JsonPropertyName("id"), JsonNumberHandling(JsonNumberHandling.AllowReadingFromString)]
+        public ulong ID { get; set; }
 
 		/// <summary>
 		/// The username of the player.
 		/// </summary>
-		[JsonProperty("username")]
-		public string Username { get; private set; }
+        [JsonPropertyName("username")]
+        public string Username { get; set; }
 
 		/// <summary>
 		/// The discriminator of the user.
 		/// </summary>
 		/// <remarks>If the user has migrated to unique a <see cref="Username"/>, the discriminator will always be 0.</remarks>
-		[JsonProperty("discriminator"), Obsolete("Discord no longer uses discriminators.")]
-		public int Discriminator { get; private set; }
+        [JsonPropertyName("discriminator"), JsonNumberHandling(JsonNumberHandling.AllowReadingFromString), Obsolete("Discord no longer uses discriminators.")]
+        public int Discriminator { get; set; }
 
 		/// <summary>
 		/// The display name of the user
 		/// </summary>
 		/// <remarks>This will be empty if the user has not set a global display name.</remarks>
-		[JsonProperty("global_name")]
-		public string DisplayName { get; private set; }
+        [JsonPropertyName("global_name")]
+        public string DisplayName { get; set; }
 
 		/// <summary>
 		/// The avatar hash of the user. Too get a URL for the avatar, use the <see cref="GetAvatarURL(AvatarFormat, AvatarSize)"/>. This can be null if the user has no avatar. The <see cref="GetAvatarURL(AvatarFormat, AvatarSize)"/> will account for this and return the discord default.
 		/// </summary>
-		[JsonProperty("avatar")]
-		public string Avatar { get; private set; }
+        [JsonPropertyName("avatar")]
+        public string Avatar { get; set; }
 
         /// <summary>
         /// The flags on a users account, often represented as a badge.
         /// </summary>
-        [JsonProperty("flags", NullValueHandling = NullValueHandling.Ignore)]
-        public Flag Flags { get; private set; }
+        [JsonPropertyName("flags")]
+        public Flag Flags { get; set; }
 
         /// <summary>
         /// A flag on the user account
@@ -148,8 +145,8 @@ namespace DiscordRPC
         /// <summary>
         /// The premium type of the user.
         /// </summary>
-        [JsonProperty("premium_type", NullValueHandling = NullValueHandling.Ignore)]
-        public PremiumType Premium { get; private set; }
+        [JsonPropertyName("premium_type")]
+        public PremiumType Premium { get; set; }
 
         /// <summary>
         /// Type of premium
@@ -169,11 +166,12 @@ namespace DiscordRPC
 		/// <summary>
 		/// The endpoint for the CDN. Normally cdn.discordapp.com.
 		/// </summary>
-		public string CdnEndpoint { get; private set; }
+        public string CdnEndpoint { get; set; }
 
         /// <summary>
         /// Creates a new User instance.
         /// </summary>
+        [JsonConstructor]
         internal User()
         {
             CdnEndpoint = "cdn.discordapp.com";

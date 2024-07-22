@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace DiscordRPC.Helper
 {
-
 	internal class BackoffDelay
 	{
 		/// <summary>
@@ -63,7 +59,6 @@ namespace DiscordRPC.Helper
 
 			double diff = (Maximum - Minimum) / 100f;
 			_current = (int)Math.Floor(diff * _fails) + Minimum;
-
 
 			return Math.Min(Math.Max(_current, Minimum), Maximum);
 		}

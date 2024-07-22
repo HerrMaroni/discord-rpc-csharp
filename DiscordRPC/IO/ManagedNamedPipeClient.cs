@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using DiscordRPC.Logging;
+using System;
+using System.Collections.Generic;
+using System.IO;
 using System.IO.Pipes;
 using System.Threading;
-using System.IO;
 
 namespace DiscordRPC.IO
 {
@@ -163,7 +161,7 @@ namespace DiscordRPC.IO
                 Close();
             }
 
-            Logger.Trace("Done. Result: {0}", _isClosed);
+            Logger.Trace("Done. Result (is Closed?): {0}", _isClosed);
             return !_isClosed;
         }
 

@@ -1,9 +1,8 @@
-﻿using Newtonsoft.Json;
+using DiscordRPC.Helper;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
+using System.Text.Json;
 
 namespace DiscordRPC.IO
 {
@@ -77,9 +76,10 @@ namespace DiscordRPC.IO
 		/// Serializes the object into json string then encodes it into <see cref="Data"/>.
 		/// </summary>
 		/// <param name="obj"></param>
-		public void SetObject(object obj)
+        public void SetObject<TObj>(TObj obj)
+            where TObj : class
 		{
-			string json = JsonConvert.SerializeObject(obj);
+            string json = JsonSerializer.Serialize(obj, typeof(TObj), JsonSerializationContext.Default);
 			SetMessage(json);
 		}
 
@@ -100,9 +100,10 @@ namespace DiscordRPC.IO
 		/// <typeparam name="T">The type to deserialize into</typeparam>
 		/// <returns></returns>
 		public T GetObject<T>()
+            where T : class
 		{
 			string json = GetMessage();
-			return JsonConvert.DeserializeObject<T>(json);
+            return (T)JsonSerializer.Deserialize(json, typeof(T), JsonSerializationContext.Default);
 		}
 
 		/// <summary>
@@ -144,10 +145,6 @@ namespace DiscordRPC.IO
 				Data = result;
 				return true;
 			}
-
-			//fun
-			//if (a != null) { do { yield return true; switch (a) { case 1: await new Task(); default: lock (obj) { foreach (b in c) { for (int d = 0; d < 1; d++) { a++; } } } while (a is typeof(int) || (new Class()) != null) } goto MY_LABEL;
-
 		}
 
         /// <summary>

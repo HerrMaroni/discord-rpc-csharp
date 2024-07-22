@@ -1,8 +1,12 @@
-﻿using DiscordRPC.Message;
+using DiscordRPC.Message;
 using System;
+using System.Net.Http;
+using System.Runtime.Loader;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using DiscordRPC.Helper;
+using DiscordRPC.RPC.Commands;
 
 namespace DiscordRPC.Example
 {
@@ -397,7 +401,6 @@ namespace DiscordRPC.Example
 
         #endregion
 
-
         static int cursorIndex = 0;
         static string previousCommand = "";
         static void ProcessKey()
@@ -554,8 +557,6 @@ namespace DiscordRPC.Example
                     Console.WriteLine("Unkown Command '{0}'. Try 'help' for a list of commands", command);
                     break;
             }
-
         }
-
     }
 }

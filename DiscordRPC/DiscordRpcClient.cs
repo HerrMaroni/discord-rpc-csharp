@@ -1,4 +1,4 @@
-﻿using DiscordRPC.Events;
+using DiscordRPC.Events;
 using DiscordRPC.Exceptions;
 using DiscordRPC.IO;
 using DiscordRPC.Logging;
@@ -6,7 +6,9 @@ using DiscordRPC.Message;
 using DiscordRPC.Registry;
 using DiscordRPC.RPC;
 using DiscordRPC.RPC.Commands;
+using DiscordRPC.RPC.Payload;
 using System;
+using System.Diagnostics;
 
 namespace DiscordRPC
 {
@@ -17,7 +19,6 @@ namespace DiscordRPC
     public sealed class DiscordRpcClient : IDisposable
     {
         #region Properties
-
 
         /// <summary>
         /// Gets a value indicating if the client has registered a URI Scheme. If this is false, Join / Spectate events will fail.
@@ -223,7 +224,7 @@ namespace DiscordRPC
             //Store the properties
             ApplicationID = applicationID.Trim();
             TargetPipe = pipe;
-            ProcessID = System.Diagnostics.Process.GetCurrentProcess().Id;
+            ProcessID = Process.GetCurrentProcess().Id;
             HasRegisteredUriScheme = false;
             AutoEvents = autoEvents;
             SkipIdenticalPresence = true;
@@ -412,6 +413,8 @@ namespace DiscordRPC
             }
         }
         #endregion
+        
+        #region Commands
 
         /// <summary>
         /// Respond to a Join Request. All requests will timeout after 30 seconds.
@@ -479,6 +482,7 @@ namespace DiscordRPC
                 CurrentPresence = presence?.Clone();
             }
         }
+        #endregion
 
         #region Updates
 
@@ -881,13 +885,6 @@ namespace DiscordRPC
         public void Subscribe(EventType type) { SetSubscription(Subscription | type); }
 
         /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="type"></param>
-        [System.Obsolete("Replaced with Unsubscribe", true)]
-        public void Unubscribe(EventType type) { SetSubscription(Subscription & ~type); }
-
-        /// <summary>
         /// Unsubscribe from the event sent by discord. Used for Join / Spectate feature.
         /// <para>Requires the UriScheme to be registered.</para>
         /// </summary>
@@ -945,13 +942,13 @@ namespace DiscordRPC
 
             //Add the subscribe command to be sent when the connection is able too
             if ((type & EventType.Spectate) == EventType.Spectate)
-                connection.EnqueueCommand(new SubscribeCommand() { Event = RPC.Payload.ServerEvent.ActivitySpectate, IsUnsubscribe = isUnsubscribe });
+                connection.EnqueueCommand(new SubscribeCommand() { Event = ServerEvent.ACTIVITY_SPECTATE, IsUnsubscribe = isUnsubscribe });
 
             if ((type & EventType.Join) == EventType.Join)
-                connection.EnqueueCommand(new SubscribeCommand() { Event = RPC.Payload.ServerEvent.ActivityJoin, IsUnsubscribe = isUnsubscribe });
+                connection.EnqueueCommand(new SubscribeCommand() { Event = ServerEvent.ACTIVITY_JOIN, IsUnsubscribe = isUnsubscribe });
 
             if ((type & EventType.JoinRequest) == EventType.JoinRequest)
-                connection.EnqueueCommand(new SubscribeCommand() { Event = RPC.Payload.ServerEvent.ActivityJoinRequest, IsUnsubscribe = isUnsubscribe });
+                connection.EnqueueCommand(new SubscribeCommand() { Event = ServerEvent.ACTIVITY_JOIN_REQUEST, IsUnsubscribe = isUnsubscribe });
         }
 
         #endregion

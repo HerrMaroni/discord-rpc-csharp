@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace DiscordRPC.Message
 {
@@ -15,13 +15,13 @@ namespace DiscordRPC.Message
 		/// <summary>
 		/// The Discord error code.
 		/// </summary>
-		[JsonProperty("code")]
+        [JsonPropertyName("code")]
 		public ErrorCode Code { get; internal set; }
 
 		/// <summary>
 		/// The message associated with the error code.
 		/// </summary>
-		[JsonProperty("message")]
+        [JsonPropertyName("message")]
 		public string Message { get; internal set; }
 
 	}
@@ -47,7 +47,7 @@ namespace DiscordRPC.Message
 
 		//Discord RPC error codes
 		///<summary>Unkown Discord error</summary>
-		UnkownError = 1000,
+        UnknownError = 1000,
 
 		///<summary>Invalid Payload received</summary>
 		InvalidPayload = 4000,

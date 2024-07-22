@@ -26,8 +26,7 @@ All the documentation can be found [lachee.github.io/discord-rpc-csharp/docs/](h
 # Installation
 
 **Dependencies:**
- - Newtonsoft.Json 
- - .NET Standard 2.0
+ - .NET 8.0
  
 ### **.NET Project**
 
