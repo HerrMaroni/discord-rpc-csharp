@@ -1,92 +1,92 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿namespace DiscordRPC.Logging;
 
-namespace DiscordRPC.Logging
+/// <summary>
+///     Logs the outputs to a file
+/// </summary>
+public class FileLogger : ILogger
 {
-	/// <summary>
-	/// Logs the outputs to a file
-	/// </summary>
-	public class FileLogger : ILogger
-	{
-		/// <summary>
-		/// The level of logging to apply to this logger.
-		/// </summary>
-		public LogLevel Level { get; set; }
+    private readonly object _fileLock;
 
-		/// <summary>
-		/// Should the output be coloured?
-		/// </summary>
-		public string File { get; set; }
+    /// <summary>
+    ///     Creates a new instance of the file logger
+    /// </summary>
+    /// <param name="path">The path of the log file.</param>
+    /// <param name="level">The level to assign to the logger.</param>
+    public FileLogger(string path, LogLevel level = LogLevel.Info)
+    {
+        Level = level;
+        File = path;
+        _fileLock = new object();
+    }
 
-		private object filelock;
+    /// <summary>
+    ///     Should the output be coloured?
+    /// </summary>
+    private string File { get; }
 
-        /// <summary>
-        /// Creates a new instance of the file logger
-        /// </summary>
-        /// <param name="path">The path of the log file.</param>
-        public FileLogger(string path)
-            : this(path, LogLevel.Info) { }
+    /// <summary>
+    ///     The level of logging to apply to this logger.
+    /// </summary>
+    public LogLevel Level { get; set; }
 
-        /// <summary>
-        /// Creates a new instance of the file logger
-        /// </summary>
-        /// <param name="path">The path of the log file.</param>
-        /// <param name="level">The level to assign to the logger.</param>
-        public FileLogger(string path, LogLevel level)
+
+    /// <summary>
+    ///     Informative log messages
+    /// </summary>
+    /// <param name="message"></param>
+    /// <param name="args"></param>
+    public void Trace(string message, params object[] args)
+    {
+        if (Level > LogLevel.Trace) return;
+        lock (_fileLock)
         {
-            Level = level;
-            File = path;
-            filelock = new object();
+            System.IO.File.AppendAllText(File,
+                "\r\nTRCE: " + (args.Length > 0 ? string.Format(message, args) : message));
         }
+    }
 
-
-        /// <summary>
-        /// Informative log messages
-        /// </summary>
-        /// <param name="message"></param>
-        /// <param name="args"></param>
-        public void Trace(string message, params object[] args)
+    /// <summary>
+    ///     Informative log messages
+    /// </summary>
+    /// <param name="message"></param>
+    /// <param name="args"></param>
+    public void Info(string message, params object[] args)
+    {
+        if (Level > LogLevel.Info) return;
+        lock (_fileLock)
         {
-            if (Level > LogLevel.Trace) return;
-            lock (filelock) System.IO.File.AppendAllText(File, "\r\nTRCE: " + (args.Length > 0 ? string.Format(message, args) : message));
+            System.IO.File.AppendAllText(File,
+                "\r\nINFO: " + (args.Length > 0 ? string.Format(message, args) : message));
         }
+    }
 
-        /// <summary>
-        /// Informative log messages
-        /// </summary>
-        /// <param name="message"></param>
-        /// <param name="args"></param>
-        public void Info(string message, params object[] args)
-		{
-			if (Level > LogLevel.Info) return;
-			lock(filelock) System.IO.File.AppendAllText(File, "\r\nINFO: " + (args.Length > 0 ? string.Format(message, args) : message));
-		}
+    /// <summary>
+    ///     Warning log messages
+    /// </summary>
+    /// <param name="message"></param>
+    /// <param name="args"></param>
+    public void Warning(string message, params object[] args)
+    {
+        if (Level > LogLevel.Warning) return;
+        lock (_fileLock)
+        {
+            System.IO.File.AppendAllText(File,
+                "\r\nWARN: " + (args.Length > 0 ? string.Format(message, args) : message));
+        }
+    }
 
-		/// <summary>
-		/// Warning log messages
-		/// </summary>
-		/// <param name="message"></param>
-		/// <param name="args"></param>
-		public void Warning(string message, params object[] args)
-		{
-			if (Level > LogLevel.Warning) return;
-			lock (filelock)
-				System.IO.File.AppendAllText(File, "\r\nWARN: " + (args.Length > 0 ? string.Format(message, args) : message));
-		}
-
-		/// <summary>
-		/// Error log messsages
-		/// </summary>
-		/// <param name="message"></param>
-		/// <param name="args"></param>
-		public void Error(string message, params object[] args)
-		{
-			if (Level > LogLevel.Error) return;
-			lock (filelock)
-				System.IO.File.AppendAllText(File, "\r\nERR : " + (args.Length > 0 ? string.Format(message, args) : message));
-		}
-
-	}
+    /// <summary>
+    ///     Error log messages
+    /// </summary>
+    /// <param name="message"></param>
+    /// <param name="args"></param>
+    public void Error(string message, params object[] args)
+    {
+        if (Level > LogLevel.Error) return;
+        lock (_fileLock)
+        {
+            System.IO.File.AppendAllText(File,
+                "\r\nERR : " + (args.Length > 0 ? string.Format(message, args) : message));
+        }
+    }
 }

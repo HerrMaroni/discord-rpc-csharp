@@ -1,118 +1,116 @@
 ﻿using System;
 
-namespace DiscordRPC.RPC.Payload
+// ReSharper disable InconsistentNaming
+
+namespace DiscordRPC.RPC.Payload;
+
+/// <summary>
+///     The possible commands that can be sent and received by the server.
+/// </summary>
+internal enum Command
 {
 	/// <summary>
-	/// The possible commands that can be sent and received by the server.
+	///     event dispatch
 	/// </summary>
-	internal enum Command
-	{
-		/// <summary>
-        /// event dispatch
-        /// </summary>
-        DISPATCH,
+	DISPATCH,
 
-        /// <summary>
-        /// Called to set the activity
-        /// </summary>
-        SET_ACTIVITY,
+	/// <summary>
+	///     Called to set the activity
+	/// </summary>
+	SET_ACTIVITY,
 
-        /// <summary>
-        /// used to subscribe to an RPC event
-        /// </summary>
-        SUBSCRIBE,
+	/// <summary>
+	///     used to subscribe to an RPC event
+	/// </summary>
+	SUBSCRIBE,
 
-        /// <summary>
-        /// used to unsubscribe from an RPC event
-        /// </summary>
-        UNSUBSCRIBE,
+	/// <summary>
+	///     used to unsubscribe from an RPC event
+	/// </summary>
+	UNSUBSCRIBE,
 
-        /// <summary>
-        /// Used to accept join requests.
-        /// </summary>
-        SEND_ACTIVITY_JOIN_INVITE,
+	/// <summary>
+	///     Used to accept join requests.
+	/// </summary>
+	SEND_ACTIVITY_JOIN_INVITE,
 
-        /// <summary>
-        /// Used to reject join requests.
-        /// </summary>
-        CLOSE_ACTIVITY_JOIN_REQUEST,
+	/// <summary>
+	///     Used to reject join requests.
+	/// </summary>
+	CLOSE_ACTIVITY_JOIN_REQUEST,
 
-        /// <summary>
-        /// used to authorize a new client with your app
-        /// </summary>
-        [Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
-        AUTHORIZE,
+	/// <summary>
+	///     used to authorize a new client with your app
+	/// </summary>
+	AUTHORIZE,
 
-        /// <summary>
-        /// used to authenticate an existing client with your app
-        /// </summary>
-        [Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
-        AUTHENTICATE,
+	/// <summary>
+	///     used to authenticate an existing client with your app
+	/// </summary>
+	AUTHENTICATE,
 
-        /// <summary>
-        /// used to retrieve guild information from the client
-        /// </summary>
-        [Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
-        GET_GUILD,
+	/// <summary>
+	///     used to retrieve guild information from the client
+	/// </summary>
+	[Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
+    GET_GUILD,
 
-        /// <summary>
-        /// used to retrieve a list of guilds from the client
-        /// </summary>
-        [Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
-        GET_GUILDS,
+	/// <summary>
+	///     used to retrieve a list of guilds from the client
+	/// </summary>
+	[Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
+    GET_GUILDS,
 
-        /// <summary>
-        /// used to retrieve channel information from the client
-        /// </summary>
-        [Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
-        GET_CHANNEL,
+	/// <summary>
+	///     used to retrieve channel information from the client
+	/// </summary>
+	[Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
+    GET_CHANNEL,
 
-        /// <summary>
-        /// used to retrieve a list of channels for a guild from the client
-        /// </summary>
-        [Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
-        GET_CHANNELS,
+	/// <summary>
+	///     used to retrieve a list of channels for a guild from the client
+	/// </summary>
+	[Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
+    GET_CHANNELS,
 
-        /// <summary>
-        /// used to change voice settings of users in voice channels
-        /// </summary>
-        [Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
-        SET_USER_VOICE_SETTINGS,
+	/// <summary>
+	///     used to change voice settings of users in voice channels
+	/// </summary>
+	[Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
+    SET_USER_VOICE_SETTINGS,
 
-        /// <summary>
-        /// used to join or leave a voice channel, group dm, or dm
-        /// </summary>
-        [Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
-        SELECT_VOICE_CHANNEL,
+	/// <summary>
+	///     used to join or leave a voice channel, group dm, or dm
+	/// </summary>
+	[Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
+    SELECT_VOICE_CHANNEL,
 
-        /// <summary>
-        /// used to get the current voice channel the client is in
-        /// </summary>
-        [Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
-        GET_SELECTED_VOICE_CHANNEL,
+	/// <summary>
+	///     used to get the current voice channel the client is in
+	/// </summary>
+	[Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
+    GET_SELECTED_VOICE_CHANNEL,
 
-        /// <summary>
-        /// used to join or leave a text channel, group dm, or dm
-        /// </summary>
-        [Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
-        SELECT_TEXT_CHANNEL,
+	/// <summary>
+	///     used to join or leave a text channel, group dm, or dm
+	/// </summary>
+	[Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
+    SELECT_TEXT_CHANNEL,
 
-        /// <summary>
-        /// used to retrieve the client's voice settings
-        /// </summary>
-        [Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
-        GET_VOICE_SETTINGS,
+	/// <summary>
+	///     used to retrieve the client's voice settings
+	/// </summary>
+	[Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
+    GET_VOICE_SETTINGS,
 
-        /// <summary>
-        /// used to set the client's voice settings
-        /// </summary>
-        [Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
-        SET_VOICE_SETTINGS,
+	/// <summary>
+	///     used to set the client's voice settings
+	/// </summary>
+	SET_VOICE_SETTINGS,
 
-        /// <summary>
-        /// used to capture a keyboard shortcut entered by the user RPC Events
-        /// </summary>
-        [Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
-        CaptureShortcut
-	}
+	/// <summary>
+	///     used to capture a keyboard shortcut entered by the user RPC Events
+	/// </summary>
+	[Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
+    CaptureShortcut
 }

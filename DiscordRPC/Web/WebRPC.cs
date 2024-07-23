@@ -40,7 +40,8 @@ namespace DiscordRPC.Web
         /// <param name="port">The port the discord client is currently on. Specify this for testing. Will start scanning from supplied port.</param>
         /// <returns>True if the response was valid from the server, otherwise false.</returns>
         [System.Obsolete("Setting Rich Presence over HTTP is no longer supported by Discord. See official Rich Presence github for more information.")]
-        public static bool TrySetRichPresence(RichPresence presence, out RichPresence response, string applicationID, int port = 6463)
+        public static bool TrySetRichPresence(RichPresence presence, out RichPresence response, string applicationID, int port
+ = 6463)
         {
             // Validate the presence
             if (presence != null)

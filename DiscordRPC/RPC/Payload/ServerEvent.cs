@@ -1,38 +1,40 @@
-﻿﻿#if INCLUDE_FULL_RPC
+﻿// ReSharper disable InconsistentNaming
+
+#if INCLUDE_FULL_RPC
 using System;
 #endif
 
-namespace DiscordRPC.RPC.Payload
+namespace DiscordRPC.RPC.Payload;
+
+/// <summary>
+///     See https://discordapp.com/developers/docs/topics/rpc#rpc-server-payloads-rpc-events for documentation
+/// </summary>
+internal enum ServerEvent
 {
     /// <summary>
-    /// See https://discordapp.com/developers/docs/topics/rpc#rpc-server-payloads-rpc-events for documentation
+    ///     Sent when the server is ready to accept messages
     /// </summary>
-    internal enum ServerEvent
-    {
-        /// <summary>
-        /// Sent when the server is ready to accept messages
-        /// </summary>
-        READY,
+    READY,
 
-        /// <summary>
-        /// Sent when something bad has happened
-        /// </summary>
-        ERROR,
+    /// <summary>
+    ///     Sent when something bad has happened
+    /// </summary>
+    ERROR,
 
-        /// <summary>
-        /// Join Event
-        /// </summary>
-        ACTIVITY_JOIN,
+    /// <summary>
+    ///     Join Event
+    /// </summary>
+    ACTIVITY_JOIN,
 
-        /// <summary>
-        /// Spectate Event
-        /// </summary>
-        ACTIVITY_SPECTATE,
+    /// <summary>
+    ///     Spectate Event
+    /// </summary>
+    ACTIVITY_SPECTATE,
 
-        /// <summary>
-        /// Request Event
-        /// </summary>
-        ACTIVITY_JOIN_REQUEST,
+    /// <summary>
+    ///     Request Event
+    /// </summary>
+    ACTIVITY_JOIN_REQUEST,
 
 #if INCLUDE_FULL_RPC
         // Old things that are obsolete
@@ -69,5 +71,4 @@ namespace DiscordRPC.RPC.Payload
         [Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
         CAPTURE_SHORTCUT_CHANGE
 #endif
-    }
 }

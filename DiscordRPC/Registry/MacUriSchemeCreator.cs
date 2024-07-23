@@ -1,55 +1,42 @@
-﻿using DiscordRPC.Logging;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Text;
+﻿using System.IO;
+using DiscordRPC.Logging;
 
-namespace DiscordRPC.Registry
+namespace DiscordRPC.Registry;
+
+internal class MacUriSchemeCreator(ILogger logger) : IUriSchemeCreator
 {
-    internal class MacUriSchemeCreator : IUriSchemeCreator
+    public bool RegisterUriScheme(UriSchemeRegister register)
     {
-        private ILogger logger;
-        public MacUriSchemeCreator(ILogger logger)
+        //var home = Environment.GetEnvironmentVariable("HOME");
+        //if (string.IsNullOrEmpty(home)) return;     //TODO: Log Error
+
+        var exe = register.ExecutablePath;
+        if (string.IsNullOrEmpty(exe))
         {
-            this.logger = logger;
+            logger.Error("Failed to register because the application could not be located.");
+            return false;
         }
 
-        public bool RegisterUriScheme(UriSchemeRegister register)
+        logger.Trace("Registering Steam Command");
+
+        //Prepare the command
+        var command = exe;
+        if (register.UsingSteamApp) command = $"steam://rungameid/{register.SteamAppID}";
+        else logger.Warning("This library does not fully support MacOS URI Scheme Registration.");
+
+        //get the folder ready
+        const string filepath = "~/Library/Application Support/discord/games";
+        var directory = Directory.CreateDirectory(filepath);
+        if (!directory.Exists)
         {
-            //var home = Environment.GetEnvironmentVariable("HOME");
-            //if (string.IsNullOrEmpty(home)) return;     //TODO: Log Error
-
-            string exe = register.ExecutablePath;
-            if (string.IsNullOrEmpty(exe))
-            {
-                logger.Error("Failed to register because the application could not be located.");
-                return false;
-            }
-            
-            logger.Trace("Registering Steam Command");
-
-            //Prepare the command
-            string command = exe;
-            if (register.UsingSteamApp) command = $"steam://rungameid/{register.SteamAppID}";
-            else logger.Warning("This library does not fully support MacOS URI Scheme Registration.");
-
-            //get the folder ready
-            string filepath = "~/Library/Application Support/discord/games";
-            var directory = Directory.CreateDirectory(filepath);
-            if (!directory.Exists)
-            {
-                logger.Error("Failed to register because {0} does not exist", filepath);
-                return false;
-            }
-
-            //Write the contents to file
-            string applicationSchemeFilePath = $"{filepath}/{register.ApplicationID}.json";
-            File.WriteAllText(applicationSchemeFilePath, "{ \"command\": \""+ command + "\" }");
-            logger.Trace("Registered {0}, {1}", applicationSchemeFilePath, command);
-            return true;
+            logger.Error("Failed to register because {0} does not exist", filepath);
+            return false;
         }
-        
+
+        //Write the contents to file
+        var applicationSchemeFilePath = $"{filepath}/{register.ApplicationID}.json";
+        File.WriteAllText(applicationSchemeFilePath, "{ \"command\": \"" + command + "\" }");
+        logger.Trace("Registered {0}, {1}", applicationSchemeFilePath, command);
+        return true;
     }
 }
