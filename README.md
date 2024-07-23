@@ -172,3 +172,59 @@ Here is an example of how to add `runFullTrust` to your WIN UI 3 application:
 ```
 
 If you use .NET MAUI or WIN UI 3 template for C#, it automatically puts `runFullTrust` capability.
+
+## Development
+
+**To add a new command you have to edit/create some files. Here is a list of the files you need to edit:**
+
+- `Command.cs` - Check if the enum value exists. Remove `[Obsolete("...", true)]` if necessary or add a new enum value to the `Command` enum.
+- `Events.cs` - Add a new event of following form:
+```csharp
+public delegate void CommandNameEvent(object sender, VoiceSettingsMessage args);
+```
+- `MessageType.cs` - Add a new message type to the enum. Normally as `CommandName`.
+- create `CommandNameCommand.cs` - Create a new class that inherits from `ICommand` and implements the `PreparePayload` method. This method should contain all Command arguments. Also create an internal class `CommandNameResponse` that contains all fields from the response. Make it serializable.
+- create `CommandNameMessage.cs` - Create a new class that inherits from `Message` and implements the `MessageType` property. This class should contain all Command response arguments.
+
+**Following changes are necessary in `DiscordRpcClient.cs`:**
+- Add a new event to the `DiscordRpcClient` class of the form:
+```csharp
+public event CommandNameEvent OnCommandName;
+```
+- Add the Command logic of following form:
+```csharp
+public void CommandName(...)
+{
+    if (IsDisposed)
+        throw new ObjectDisposedException("Discord IPC Client");
+
+    if (connection == null)
+        throw new ObjectDisposedException("Connection", "Cannot initialize as the connection has been deinitialized");
+
+    if (!IsInitialized)
+        throw new UninitializedException();
+
+    connection.EnqueueCommand(new CommandNameCommand());
+}
+```
+- Add in the `ProcessMessage` method the new MessageType case, so it triggers the event:
+```csharp
+case MessageType.CommandName:
+    OnAuthorize?.Invoke(this, message as AuthorizeMessage);
+    break;
+```
+
+**Following changes are necessary in `RpcConnection.cs`:**
+- In the `ProcessFrame` method add a new case for the new MessageType:
+```csharp
+case Command.CommandEnum:
+    var commandResponse = response.GetObject<CommandNameResponse>();
+    EnqueueMessage(new CommandNameMessage(commandResponse));
+    break;
+```
+
+**Following changes are necessary in `JsonSerializationContext.cs`:**
+- Add `JsonSerializable(typeof(CommandNameCommand)),`
+- Add `JsonSerializable(typeof(ArgumentPayload<CommandNameCommand>)),`
+- Add `JsonSerializable(typeof(CommandNameResponse)),`
+- Add `JsonSerializable(typeof(CommandNameMessage)),`
