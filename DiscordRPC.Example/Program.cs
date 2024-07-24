@@ -1,4 +1,4 @@
-using DiscordRPC.Message;
+﻿using DiscordRPC.Message;
 using System;
 using System.Net.Http;
 using System.Text;
@@ -142,7 +142,10 @@ namespace DiscordRPC.Example
             
             Console.ReadKey();
             
+            _client.GetVoiceSettings();
+            
             _client.SetVoiceSettings(new VoiceSettings {Mute = true});
+            
             
             // == Set the presence
             // client.SetPresence(new RichPresence()

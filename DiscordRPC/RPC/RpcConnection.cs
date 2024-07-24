@@ -653,6 +653,11 @@ internal class RpcConnection : IDisposable
                     voiceSettings = response.GetObject<VoiceSettings>();
                     EnqueueMessage(new VoiceSettingsMessage(voiceSettings));
                     break;
+                
+                case Command.GET_VOICE_SETTINGS:
+                    voiceSettings = response.GetObject<VoiceSettings>();
+                    EnqueueMessage(new VoiceSettingsMessage(voiceSettings));
+                    break;
 
                 // We were sent an Activity Update, better enqueue it
                 case Command.SET_ACTIVITY:

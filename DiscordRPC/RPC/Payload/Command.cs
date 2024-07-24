@@ -100,7 +100,6 @@ internal enum Command
 	/// <summary>
 	///     used to retrieve the client's voice settings
 	/// </summary>
-	[Obsolete("This value is a part of the RPC API and is not supported by this library.", true)]
     GET_VOICE_SETTINGS,
 
 	/// <summary>

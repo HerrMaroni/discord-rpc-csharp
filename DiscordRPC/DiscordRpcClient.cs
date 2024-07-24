@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Diagnostics;
 using DiscordRPC.Exceptions;
 using DiscordRPC.IO;
@@ -622,6 +622,27 @@ public sealed class DiscordRpcClient : IDisposable
             throw new UninitializedException();
 
         _connection.EnqueueCommand(new SetVoiceSettingsCommand(voiceSettings));
+    }
+    
+    /// <summary>
+    ///     Gets the voice settings for the Discord RPC client.
+    /// </summary>
+    /// <exception cref="ObjectDisposedException">Thrown if the Discord RPC client has been disposed.</exception>
+    /// <exception cref="ObjectDisposedException">Thrown if the connection to Discord has been deinitialized.</exception>
+    /// <exception cref="UninitializedException">Thrown if the Discord RPC client has not been initialized.</exception>
+    public void GetVoiceSettings()
+    {
+        if (IsDisposed)
+            throw new ObjectDisposedException("Discord IPC Client");
+
+        if (_connection == null)
+            throw new ObjectDisposedException("Connection",
+                "Cannot initialize as the connection has been deinitialized");
+
+        if (!IsInitialized)
+            throw new UninitializedException();
+
+        _connection.EnqueueCommand(new GetVoiceSettingsCommand());
     }
 
     /// <summary>

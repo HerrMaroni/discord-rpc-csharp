@@ -1,4 +1,4 @@
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 using DiscordRPC.IO;
 using DiscordRPC.Message;
 using DiscordRPC.RPC.Commands;
@@ -12,6 +12,7 @@ namespace DiscordRPC.Helper;
 [JsonSerializable(typeof(CloseCommand))]
 [JsonSerializable(typeof(PresenceCommand))]
 [JsonSerializable(typeof(RespondCommand))]
+[JsonSerializable(typeof(GetVoiceSettingsCommand))]
 [JsonSerializable(typeof(SetVoiceSettingsCommand))]
 [JsonSerializable(typeof(SubscribeCommand))]
 #endregion
@@ -25,6 +26,7 @@ namespace DiscordRPC.Helper;
 [JsonSerializable(typeof(ArgumentPayload<CloseCommand>))]
 [JsonSerializable(typeof(ArgumentPayload<PresenceCommand>))]
 [JsonSerializable(typeof(ArgumentPayload<RespondCommand>))]
+[JsonSerializable(typeof(ArgumentPayload<GetVoiceSettingsCommand>))]
 [JsonSerializable(typeof(ArgumentPayload<SetVoiceSettingsCommand>))]
 #endregion
 
