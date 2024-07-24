@@ -87,33 +87,93 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Party</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DiscordRPC.html">DiscordRPC</a></h6>
   <h6><strong>Assembly</strong>: DiscordRPC.dll</h6>
   <h5 id="DiscordRPC_Party_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Party : object</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class Party</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Party_ID.md&amp;value=---%0Auid%3A%20DiscordRPC.Party.ID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Party_CurrentSize.md&amp;value=---%0Auid%3A%20DiscordRPC.Party.CurrentSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L699">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L745">View Source</a>
+  </span>
+  <a id="DiscordRPC_Party_CurrentSize_" data-uid="DiscordRPC.Party.CurrentSize*"></a>
+  <h4 id="DiscordRPC_Party_CurrentSize" data-uid="DiscordRPC.Party.CurrentSize">CurrentSize</h4>
+  <div class="markdown level1 summary"><p>The current size of the players party / lobby / group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public int CurrentSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Party_ID.md&amp;value=---%0Auid%3A%20DiscordRPC.Party.ID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L734">View Source</a>
   </span>
   <a id="DiscordRPC_Party_ID_" data-uid="DiscordRPC.Party.ID*"></a>
   <h4 id="DiscordRPC_Party_ID" data-uid="DiscordRPC.Party.ID">ID</h4>
-  <div class="markdown level1 summary"><p>A unique ID for the player&apos;s current party / lobby / group. If this is not supplied, they player will not be in a party and the rest of the information will not be sent. 
+  <div class="markdown level1 summary"><p>A unique ID for the player&apos;s current party / lobby / group. If this is not supplied, they player will not be in a
+<code>party</code> and the rest of the information will not be sent.
 <p>Max 128 Bytes</p></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ID { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;id&quot;)]
+[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+public string ID { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -125,26 +185,29 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Party_Max.md&amp;value=---%0Auid%3A%20DiscordRPC.Party.Max%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Party_Max.md&amp;value=---%0Auid%3A%20DiscordRPC.Party.Max%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L712">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L753">View Source</a>
   </span>
   <a id="DiscordRPC_Party_Max_" data-uid="DiscordRPC.Party.Max*"></a>
   <h4 id="DiscordRPC_Party_Max" data-uid="DiscordRPC.Party.Max">Max</h4>
-  <div class="markdown level1 summary"><p>The maxium size of the party / lobby / group. This is required to be larger than <a class="xref" href="DiscordRPC.Party.html#DiscordRPC_Party_Size">Size</a>. If it is smaller than the current party size, it will automatically be set too <a class="xref" href="DiscordRPC.Party.html#DiscordRPC_Party_Size">Size</a> when the presence is sent.</p>
+  <div class="markdown level1 summary"><p>The maximum size of the party / lobby / group. This is required to be larger than <a class="xref" href="DiscordRPC.Party.html#DiscordRPC_Party_CurrentSize">CurrentSize</a>. If it
+is smaller than the current party size, it will automatically be set too <a class="xref" href="DiscordRPC.Party.html#DiscordRPC_Party_CurrentSize">CurrentSize</a> when the
+presence is sent.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Max { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public int Max { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -156,17 +219,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Party_Privacy.md&amp;value=---%0Auid%3A%20DiscordRPC.Party.Privacy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Party_Privacy.md&amp;value=---%0Auid%3A%20DiscordRPC.Party.Privacy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L718">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L759">View Source</a>
   </span>
   <a id="DiscordRPC_Party_Privacy_" data-uid="DiscordRPC.Party.Privacy*"></a>
   <h4 id="DiscordRPC_Party_Privacy" data-uid="DiscordRPC.Party.Privacy">Privacy</h4>
@@ -175,7 +238,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Party.PrivacySetting Privacy { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;privacy&quot;)]
+public Party.PrivacySetting Privacy { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -192,37 +256,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Party_Size.md&amp;value=---%0Auid%3A%20DiscordRPC.Party.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L706">View Source</a>
-  </span>
-  <a id="DiscordRPC_Party_Size_" data-uid="DiscordRPC.Party.Size*"></a>
-  <h4 id="DiscordRPC_Party_Size" data-uid="DiscordRPC.Party.Size">Size</h4>
-  <div class="markdown level1 summary"><p>The current size of the players party / lobby / group.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Size { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           
@@ -231,10 +264,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Party.md&amp;value=---%0Auid%3A%20DiscordRPC.Party%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Party.md&amp;value=---%0Auid%3A%20DiscordRPC.Party%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L676" class="contribution-link">View Source</a>
+                    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L708" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

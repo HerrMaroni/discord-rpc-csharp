@@ -89,7 +89,7 @@
   <h6><strong>Assembly</strong>: DiscordRPC.dll</h6>
   <h5 id="DiscordRPC_Message_MessageType_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum MessageType : int</code></pre>
+    <pre><code class="lang-csharp hljs">public enum MessageType</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -102,13 +102,24 @@
     <thead>
     <tbody>
       <tr>
+        <td id="DiscordRPC_Message_MessageType_Authenticate">Authenticate</td>
+        <td><p>The Discord Client received an authorize response.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DiscordRPC_Message_MessageType_Authorize">Authorize</td>
+        <td><p>The Discord Client received an authorize response.</p>
+</td>
+      </tr>
+      <tr>
         <td id="DiscordRPC_Message_MessageType_Close">Close</td>
-        <td><p>The connection to the Discord Client is lost. The connection will remain close and unready to accept messages until the Ready event is called again.</p>
+        <td><p>The connection to the Discord Client is lost. The connection will remain close and unready to accept messages until
+the Ready event is called again.</p>
 </td>
       </tr>
       <tr>
         <td id="DiscordRPC_Message_MessageType_ConnectionEstablished">ConnectionEstablished</td>
-        <td><p>The connection to the discord client was succesfull. This is called before <a class="xref" href="DiscordRPC.Message.MessageType.html#DiscordRPC_Message_MessageType_Ready">Ready</a>.</p>
+        <td><p>The connection to the discord client was successful. This is called before <a class="xref" href="DiscordRPC.Message.MessageType.html#DiscordRPC_Message_MessageType_Ready">Ready</a>.</p>
 </td>
       </tr>
       <tr>
@@ -118,7 +129,8 @@
       </tr>
       <tr>
         <td id="DiscordRPC_Message_MessageType_Error">Error</td>
-        <td><p>A error has occured during the transmission of a message. For example, if a bad Rich Presence payload is sent, this event will be called explaining what went wrong.</p>
+        <td><p>A error has occured during the transmission of a message. For example, if a bad Rich Presence payload is sent, this
+event will be called explaining what went wrong.</p>
 </td>
       </tr>
       <tr>
@@ -143,7 +155,7 @@
       </tr>
       <tr>
         <td id="DiscordRPC_Message_MessageType_Spectate">Spectate</td>
-        <td><p>The Discord Client wishes for this process to spectate a game. </p>
+        <td><p>The Discord Client wishes for this process to spectate a game.</p>
 </td>
       </tr>
       <tr>
@@ -156,6 +168,11 @@
         <td><p>The Discord Client has unsubscribed from an event.</p>
 </td>
       </tr>
+      <tr>
+        <td id="DiscordRPC_Message_MessageType_VoiceSettings">VoiceSettings</td>
+        <td><p>The Discord Client received an VoiceSettings response. (GetVoiceSettings/SetVoiceSettings)</p>
+</td>
+      </tr>
     </tbody>
   </thead></thead></table>
 </article>
@@ -166,10 +183,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Message_MessageType.md&amp;value=---%0Auid%3A%20DiscordRPC.Message.MessageType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Message_MessageType.md&amp;value=---%0Auid%3A%20DiscordRPC.Message.MessageType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/Message/MessageType.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/Message/MessageType.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

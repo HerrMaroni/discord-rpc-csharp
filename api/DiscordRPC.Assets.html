@@ -87,23 +87,48 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Assets</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DiscordRPC.html">DiscordRPC</a></h6>
   <h6><strong>Assembly</strong>: DiscordRPC.dll</h6>
   <h5 id="DiscordRPC_Assets_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Assets : object</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class Assets</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_IsLargeImageKeyExternal.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.IsLargeImageKeyExternal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_IsLargeImageKeyExternal.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.IsLargeImageKeyExternal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L418">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L468">View Source</a>
   </span>
   <a id="DiscordRPC_Assets_IsLargeImageKeyExternal_" data-uid="DiscordRPC.Assets.IsLargeImageKeyExternal*"></a>
   <h4 id="DiscordRPC_Assets_IsLargeImageKeyExternal" data-uid="DiscordRPC.Assets.IsLargeImageKeyExternal">IsLargeImageKeyExternal</h4>
@@ -112,7 +137,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsLargeImageKeyExternal { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public bool IsLargeImageKeyExternal { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -124,17 +150,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_IsSmallImageKeyExternal.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.IsSmallImageKeyExternal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_IsSmallImageKeyExternal.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.IsSmallImageKeyExternal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L468">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L513">View Source</a>
   </span>
   <a id="DiscordRPC_Assets_IsSmallImageKeyExternal_" data-uid="DiscordRPC.Assets.IsSmallImageKeyExternal*"></a>
   <h4 id="DiscordRPC_Assets_IsSmallImageKeyExternal" data-uid="DiscordRPC.Assets.IsSmallImageKeyExternal">IsSmallImageKeyExternal</h4>
@@ -143,7 +169,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsSmallImageKeyExternal { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public bool IsSmallImageKeyExternal { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -155,26 +182,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_LargeImageID.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.LargeImageID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_LargeImageID.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.LargeImageID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L494">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L536">View Source</a>
   </span>
   <a id="DiscordRPC_Assets_LargeImageID_" data-uid="DiscordRPC.Assets.LargeImageID*"></a>
   <h4 id="DiscordRPC_Assets_LargeImageID" data-uid="DiscordRPC.Assets.LargeImageID">LargeImageID</h4>
-  <div class="markdown level1 summary"><p>The ID of the large image. This is only set after Update Presence and will automatically become null when <a class="xref" href="DiscordRPC.Assets.html#DiscordRPC_Assets_LargeImageKey">LargeImageKey</a> is changed.</p>
+  <div class="markdown level1 summary"><p>The ID of the large image. This is only set after Update Presence and will automatically become null when
+<a class="xref" href="DiscordRPC.Assets.html#DiscordRPC_Assets_LargeImageKey">LargeImageKey</a> is changed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ulong? LargeImageID { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public ulong? LargeImageID { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -186,17 +215,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">UInt64</a>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_LargeImageKey.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.LargeImageKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_LargeImageKey.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.LargeImageKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L397">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L447">View Source</a>
   </span>
   <a id="DiscordRPC_Assets_LargeImageKey_" data-uid="DiscordRPC.Assets.LargeImageKey*"></a>
   <h4 id="DiscordRPC_Assets_LargeImageKey" data-uid="DiscordRPC.Assets.LargeImageKey">LargeImageKey</h4>
@@ -206,7 +235,9 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string LargeImageKey { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;large_image&quot;)]
+[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+public string LargeImageKey { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -218,7 +249,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -228,10 +259,10 @@
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_LargeImageText.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.LargeImageText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_LargeImageText.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.LargeImageText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L429">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L475">View Source</a>
   </span>
   <a id="DiscordRPC_Assets_LargeImageText_" data-uid="DiscordRPC.Assets.LargeImageText*"></a>
   <h4 id="DiscordRPC_Assets_LargeImageText" data-uid="DiscordRPC.Assets.LargeImageText">LargeImageText</h4>
@@ -241,7 +272,9 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string LargeImageText { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;large_text&quot;)]
+[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+public string LargeImageText { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -253,26 +286,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_SmallImageID.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.SmallImageID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_SmallImageID.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.SmallImageID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L501">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L543">View Source</a>
   </span>
   <a id="DiscordRPC_Assets_SmallImageID_" data-uid="DiscordRPC.Assets.SmallImageID*"></a>
   <h4 id="DiscordRPC_Assets_SmallImageID" data-uid="DiscordRPC.Assets.SmallImageID">SmallImageID</h4>
-  <div class="markdown level1 summary"><p>The ID of the small image. This is only set after Update Presence and will automatically become null when <a class="xref" href="DiscordRPC.Assets.html#DiscordRPC_Assets_SmallImageKey">SmallImageKey</a> is changed.</p>
+  <div class="markdown level1 summary"><p>The ID of the small image. This is only set after Update Presence and will automatically become null when
+<a class="xref" href="DiscordRPC.Assets.html#DiscordRPC_Assets_SmallImageKey">SmallImageKey</a> is changed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ulong? SmallImageID { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public ulong? SmallImageID { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -284,17 +319,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">UInt64</a>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_SmallImageKey.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.SmallImageKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_SmallImageKey.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.SmallImageKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L447">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L492">View Source</a>
   </span>
   <a id="DiscordRPC_Assets_SmallImageKey_" data-uid="DiscordRPC.Assets.SmallImageKey*"></a>
   <h4 id="DiscordRPC_Assets_SmallImageKey" data-uid="DiscordRPC.Assets.SmallImageKey">SmallImageKey</h4>
@@ -304,7 +339,9 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SmallImageKey { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;small_image&quot;)]
+[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+public string SmallImageKey { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -316,7 +353,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -326,10 +363,10 @@
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_SmallImageText.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.SmallImageText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets_SmallImageText.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets.SmallImageText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L479">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L520">View Source</a>
   </span>
   <a id="DiscordRPC_Assets_SmallImageText_" data-uid="DiscordRPC.Assets.SmallImageText*"></a>
   <h4 id="DiscordRPC_Assets_SmallImageText" data-uid="DiscordRPC.Assets.SmallImageText">SmallImageText</h4>
@@ -339,7 +376,9 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SmallImageText { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;small_text&quot;)]
+[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+public string SmallImageText { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -351,7 +390,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -364,10 +403,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Assets.md&amp;value=---%0Auid%3A%20DiscordRPC.Assets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L389" class="contribution-link">View Source</a>
+                    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/RichPresence.cs/#L433" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

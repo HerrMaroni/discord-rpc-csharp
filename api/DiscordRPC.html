@@ -86,6 +86,9 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="DiscordRPC.Application.html">Application</a></h4>
+      <section><p>Object representing a Discord application</p>
+</section>
       <h4><a class="xref" href="DiscordRPC.Assets.html">Assets</a></h4>
       <section><p>Information about the pictures used in the Rich Presence.</p>
 </section>
@@ -98,6 +101,9 @@
       <h4><a class="xref" href="DiscordRPC.Configuration.html">Configuration</a></h4>
       <section><p>Configuration of the current RPC connection</p>
 </section>
+      <h4><a class="xref" href="DiscordRPC.DeviceObject.html">DeviceObject</a></h4>
+      <section><p>Represents a device object, containing information about an audio input or output device.</p>
+</section>
       <h4><a class="xref" href="DiscordRPC.DiscordRpcClient.html">DiscordRpcClient</a></h4>
       <section><p>A Discord RPC Client which is used to send Rich Presence updates and receive Join / Spectate events.</p>
 </section>
@@ -105,24 +111,51 @@
       <section><p>Structure representing the part the player is in.</p>
 </section>
       <h4><a class="xref" href="DiscordRPC.RichPresence.html">RichPresence</a></h4>
-      <section><p>The Rich Presence structure that will be sent and received by Discord. Use this class to build your presence and update it appropriately.</p>
+      <section><p>The Rich Presence structure that will be sent and received by Discord. Use this class to build your presence and
+update it appropriately.</p>
 </section>
       <h4><a class="xref" href="DiscordRPC.Secrets.html">Secrets</a></h4>
-      <section><p>The secrets used for Join / Spectate. Secrets are obfuscated data of your choosing. They could be match ids, player ids, lobby ids, etc.
-<p>To keep security on the up and up, Discord requires that you properly hash/encode/encrypt/put-a-padlock-on-and-swallow-the-key-but-wait-then-how-would-you-open-it your secrets.</p>
-<p>You should send discord data that someone else&apos;s game client would need to join or spectate their friend. If you can&apos;t or don&apos;t want to support those actions, you don&apos;t need to send secrets.</p>
-<p>Visit the <a href="https://discordapp.com/developers/docs/rich-presence/how-to#secrets">Rich Presence How-To</a> for more information.</p></p>
+      <section><p>The secrets used for Join / Spectate. Secrets are obfuscated data of your choosing. They could be match ids, player
+ids, lobby ids, etc.
+<p>
+    To keep security on the up and up, Discord requires that you properly
+    hash/encode/encrypt/put-a-padlock-on-and-swallow-the-key-but-wait-then-how-would-you-open-it your secrets.
+</p>
+<p>
+    You should send discord data that someone else&apos;s game client would need to join or spectate their friend. If
+    you can&apos;t or don&apos;t want to support those actions, you don&apos;t need to send secrets.
+</p>
+<p>
+    Visit the
+<a href="https://discordapp.com/developers/docs/rich-presence/how-to#secrets">Rich Presence How-To</a> for
+more information.
+</p></p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.ShortcutKeyCombo.html">ShortcutKeyCombo</a></h4>
+      <section><p>Represents a shortcut key combination for triggering actions like push-to-talk.</p>
 </section>
       <h4><a class="xref" href="DiscordRPC.Timestamps.html">Timestamps</a></h4>
-      <section><p>Structure representing the start and endtimes of a match.</p>
+      <section><p>Structure representing the start and end times of a match.</p>
 </section>
       <h4><a class="xref" href="DiscordRPC.User.html">User</a></h4>
       <section><p>Object representing a Discord user. This is used for join requests.</p>
 </section>
+      <h4><a class="xref" href="DiscordRPC.VoiceSettings.html">VoiceSettings</a></h4>
+      <section><p>Represents the structure for the Get Voice Settings response.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.VoiceSettingsInput.html">VoiceSettingsInput</a></h4>
+      <section><p>Represents the input settings for voice.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.VoiceSettingsMode.html">VoiceSettingsMode</a></h4>
+      <section><p>Represents the voice settings mode object for the Get Voice Settings response.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.VoiceSettingsOutput.html">VoiceSettingsOutput</a></h4>
+      <section><p>Represents the output settings for voice.</p>
+</section>
     <h3 id="enums">Enums
   </h3>
       <h4><a class="xref" href="DiscordRPC.EventType.html">EventType</a></h4>
-      <section><p>The type of event receieved by the RPC. A flag type that can be combined.</p>
+      <section><p>The type of event received by the RPC. A flag type that can be combined.</p>
 </section>
       <h4><a class="xref" href="DiscordRPC.Party.PrivacySetting.html">Party.PrivacySetting</a></h4>
       <section><p>Privacy of the party</p>
@@ -138,6 +171,55 @@
 </section>
       <h4><a class="xref" href="DiscordRPC.User.PremiumType.html">User.PremiumType</a></h4>
       <section><p>Type of premium</p>
+</section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="DiscordRPC.AuthenticateEvent.html">AuthenticateEvent</a></h4>
+      <section><p>Called when the Discord Client has received an Authenticate Response.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.AuthorizeEvent.html">AuthorizeEvent</a></h4>
+      <section><p>Called when the Discord Client has received an Authorize Response.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.CloseEvent.html">CloseEvent</a></h4>
+      <section><p>Called when connection to the Discord Client is lost. The connection will remain close and unready to accept
+messages until the Ready event is called again.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.ConnectionEstablishedEvent.html">ConnectionEstablishedEvent</a></h4>
+      <section><p>The connection to the discord client was successful. This is called before <a class="xref" href="DiscordRPC.ReadyEvent.html">ReadyEvent</a>.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.ConnectionFailedEvent.html">ConnectionFailedEvent</a></h4>
+      <section><p>Failed to establish any connection with discord. Discord is potentially not running?</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.ErrorEvent.html">ErrorEvent</a></h4>
+      <section><p>Called when a error has occured during the transmission of a message. For example, if a bad Rich Presence payload
+is sent, this event will be called explaining what went wrong.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.JoinEvent.html">JoinEvent</a></h4>
+      <section><p>Called when the Discord Client wishes for this process to join a game.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.JoinRequestedEvent.html">JoinRequestedEvent</a></h4>
+      <section><p>Called when another discord user requests permission to join this game.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.PresenceUpdateEvent.html">PresenceUpdateEvent</a></h4>
+      <section><p>Called when the Discord Client has updated the presence.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.ReadyEvent.html">ReadyEvent</a></h4>
+      <section><p>Called when the Discord Client is ready to send and receive messages.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.RpcMessageEvent.html">RpcMessageEvent</a></h4>
+      <section><p>A RPC Message is received.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.SpectateEvent.html">SpectateEvent</a></h4>
+      <section><p>Called when the Discord Client wishes for this process to spectate a game.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.SubscribeEvent.html">SubscribeEvent</a></h4>
+      <section><p>Called when the Discord Client has subscribed to an event.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.UnsubscribeEvent.html">UnsubscribeEvent</a></h4>
+      <section><p>Called when the Discord Client has unsubscribed from an event.</p>
+</section>
+      <h4><a class="xref" href="DiscordRPC.VoiceSettingsEvent.html">VoiceSettingsEvent</a></h4>
+      <section><p>Called when the Discord Client has sent an SetVoiceSettings Response.</p>
 </section>
 </article>
           </div>

@@ -94,8 +94,7 @@
 <h1 id="installation">Installation</h1>
 <p><strong>Dependencies:</strong></p>
 <ul>
-<li>Newtonsoft.Json </li>
-<li>.NET Standard 2.0</li>
+<li>.NET 8.0</li>
 </ul>
 <h3 id="net-project"><strong>.NET Project</strong></h3>
 <p>For projects that target either .NET Core or .NETFX, you can get the package on <a href="https://www.nuget.org/packages/DiscordRichPresence/">nuget</a>:</p>
@@ -198,6 +197,59 @@ void Deinitialize()
     &lt;/Capabilities&gt;
 &lt;/Package&gt;
 </code></pre><p>If you use .NET MAUI or WIN UI 3 template for C#, it automatically puts <code>runFullTrust</code> capability.</p>
+<h2 id="development">Development</h2>
+<p><strong>To add a new command you have to edit/create some files. Here is a list of the files you need to edit:</strong></p>
+<ul>
+<li><code>Command.cs</code> - Check if the enum value exists. Remove <code>[Obsolete(&quot;...&quot;, true)]</code> if necessary or add a new enum value to the <code>Command</code> enum.</li>
+<li><code>Events.cs</code> - Add a new event of following form:
+<code>csharp
+public delegate void CommandNameEvent(object sender, VoiceSettingsMessage args);</code></li>
+<li><code>MessageType.cs</code> - Add a new message type to the enum. Normally as <code>CommandName</code>.</li>
+<li>create <code>CommandNameCommand.cs</code> - Create a new class that inherits from <code>ICommand</code> and implements the <code>PreparePayload</code> method. This method should contain all Command arguments. Also create an internal class <code>CommandNameResponse</code> that contains all fields from the response. Make it serializable.</li>
+<li>create <code>CommandNameMessage.cs</code> - Create a new class that inherits from <code>Message</code> and implements the <code>MessageType</code> property. This class should contain all Command response arguments.</li>
+</ul>
+<p><strong>Following changes are necessary in <code>DiscordRpcClient.cs</code>:</strong></p>
+<ul>
+<li>Add a new event to the <code>DiscordRpcClient</code> class of the form:
+<code>csharp
+public event CommandNameEvent OnCommandName;</code></li>
+<li><p>Add the Command logic of following form:</p>
+<pre><code class="lang-csharp">public void CommandName(...)
+{
+  if (IsDisposed)
+      throw new ObjectDisposedException(&quot;Discord IPC Client&quot;);
+
+  if (connection == null)
+      throw new ObjectDisposedException(&quot;Connection&quot;, &quot;Cannot initialize as the connection has been deinitialized&quot;);
+
+  if (!IsInitialized)
+      throw new UninitializedException();
+
+  connection.EnqueueCommand(new CommandNameCommand());
+}
+</code></pre></li>
+<li>Add in the <code>ProcessMessage</code> method the new MessageType case, so it triggers the event:
+<code>csharp
+case MessageType.CommandName:
+  OnAuthorize?.Invoke(this, message as AuthorizeMessage);
+  break;</code></li>
+</ul>
+<p><strong>Following changes are necessary in <code>RpcConnection.cs</code>:</strong></p>
+<ul>
+<li>In the <code>ProcessFrame</code> method add a new case for the new MessageType:
+<code>csharp
+case Command.CommandEnum:
+  var commandResponse = response.GetObject&lt;CommandNameResponse&gt;();
+  EnqueueMessage(new CommandNameMessage(commandResponse));
+  break;</code></li>
+</ul>
+<p><strong>Following changes are necessary in <code>JsonSerializationContext.cs</code>:</strong></p>
+<ul>
+<li>Add <code>JsonSerializable(typeof(CommandNameCommand)),</code></li>
+<li>Add <code>JsonSerializable(typeof(ArgumentPayload&lt;CommandNameCommand&gt;)),</code></li>
+<li>Add <code>JsonSerializable(typeof(CommandNameResponse)),</code></li>
+<li>Add <code>JsonSerializable(typeof(CommandNameMessage)),</code></li>
+</ul>
 </article>
           </div>
           
@@ -206,7 +258,7 @@ void Deinitialize()
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/Docfx/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/Docfx/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

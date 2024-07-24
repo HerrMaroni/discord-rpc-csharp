@@ -87,32 +87,56 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">User</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DiscordRPC.html">DiscordRPC</a></h6>
   <h6><strong>Assembly</strong>: DiscordRPC.dll</h6>
   <h5 id="DiscordRPC_User_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class User : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class User</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_Avatar.md&amp;value=---%0Auid%3A%20DiscordRPC.User.Avatar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_Avatar.md&amp;value=---%0Auid%3A%20DiscordRPC.User.Avatar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L96">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L179">View Source</a>
   </span>
   <a id="DiscordRPC_User_Avatar_" data-uid="DiscordRPC.User.Avatar*"></a>
   <h4 id="DiscordRPC_User_Avatar" data-uid="DiscordRPC.User.Avatar">Avatar</h4>
-  <div class="markdown level1 summary"><p>The avatar hash of the user. Too get a URL for the avatar, use the <a class="xref" href="DiscordRPC.User.html#DiscordRPC_User_GetAvatarURL_DiscordRPC_User_AvatarFormat_DiscordRPC_User_AvatarSize_">GetAvatarURL(User.AvatarFormat, User.AvatarSize)</a>. This can be null if the user has no avatar. The <a class="xref" href="DiscordRPC.User.html#DiscordRPC_User_GetAvatarURL_DiscordRPC_User_AvatarFormat_DiscordRPC_User_AvatarSize_">GetAvatarURL(User.AvatarFormat, User.AvatarSize)</a> will account for this and return the discord default.</p>
+  <div class="markdown level1 summary"><p>The avatar hash of the user. To get a URL for the avatar, use the
+<a class="xref" href="DiscordRPC.User.html#DiscordRPC_User_GetAvatarURL_DiscordRPC_User_AvatarFormat_DiscordRPC_User_AvatarSize_">GetAvatarURL(User.AvatarFormat, User.AvatarSize)</a>. This can be null if the user has no avatar. The
+<a class="xref" href="DiscordRPC.User.html#DiscordRPC_User_GetAvatarURL_DiscordRPC_User_AvatarFormat_DiscordRPC_User_AvatarSize_">GetAvatarURL(User.AvatarFormat, User.AvatarSize)</a> will account for this and return the discord default.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Avatar { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;avatar&quot;)]
+public string Avatar { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -124,17 +148,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_CdnEndpoint.md&amp;value=---%0Auid%3A%20DiscordRPC.User.CdnEndpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_CdnEndpoint.md&amp;value=---%0Auid%3A%20DiscordRPC.User.CdnEndpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L172">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L197">View Source</a>
   </span>
   <a id="DiscordRPC_User_CdnEndpoint_" data-uid="DiscordRPC.User.CdnEndpoint*"></a>
   <h4 id="DiscordRPC_User_CdnEndpoint" data-uid="DiscordRPC.User.CdnEndpoint">CdnEndpoint</h4>
@@ -143,7 +167,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CdnEndpoint { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string CdnEndpoint { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -155,17 +179,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_Discriminator.md&amp;value=---%0Auid%3A%20DiscordRPC.User.Discriminator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_Discriminator.md&amp;value=---%0Auid%3A%20DiscordRPC.User.Discriminator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L83">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L162">View Source</a>
   </span>
   <a id="DiscordRPC_User_Discriminator_" data-uid="DiscordRPC.User.Discriminator*"></a>
   <h4 id="DiscordRPC_User_Discriminator" data-uid="DiscordRPC.User.Discriminator">Discriminator</h4>
@@ -174,7 +198,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Discriminator { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;discriminator&quot;)]
+[JsonNumberHandling(JsonNumberHandling.AllowReadingFromString)]
+[Obsolete(&quot;Discord no longer uses discriminators.&quot;)]
+public int Discriminator { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -186,7 +213,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -196,10 +223,10 @@
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_DisplayName.md&amp;value=---%0Auid%3A%20DiscordRPC.User.DisplayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_DisplayName.md&amp;value=---%0Auid%3A%20DiscordRPC.User.DisplayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L90">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L171">View Source</a>
   </span>
   <a id="DiscordRPC_User_DisplayName_" data-uid="DiscordRPC.User.DisplayName*"></a>
   <h4 id="DiscordRPC_User_DisplayName" data-uid="DiscordRPC.User.DisplayName">DisplayName</h4>
@@ -208,7 +235,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string DisplayName { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;global_name&quot;)]
+public string DisplayName { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -220,7 +248,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -230,10 +258,10 @@
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_Flags.md&amp;value=---%0Auid%3A%20DiscordRPC.User.Flags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_Flags.md&amp;value=---%0Auid%3A%20DiscordRPC.User.Flags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L102">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L185">View Source</a>
   </span>
   <a id="DiscordRPC_User_Flags_" data-uid="DiscordRPC.User.Flags*"></a>
   <h4 id="DiscordRPC_User_Flags" data-uid="DiscordRPC.User.Flags">Flags</h4>
@@ -242,7 +270,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public User.Flag Flags { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;flags&quot;)]
+public User.Flag Flags { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -261,19 +290,21 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_ID.md&amp;value=---%0Auid%3A%20DiscordRPC.User.ID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_ID.md&amp;value=---%0Auid%3A%20DiscordRPC.User.ID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L70">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L148">View Source</a>
   </span>
   <a id="DiscordRPC_User_ID_" data-uid="DiscordRPC.User.ID*"></a>
   <h4 id="DiscordRPC_User_ID" data-uid="DiscordRPC.User.ID">ID</h4>
-  <div class="markdown level1 summary"><p>The snowflake ID of the user. </p>
+  <div class="markdown level1 summary"><p>The snowflake ID of the user.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ulong ID { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;id&quot;)]
+[JsonNumberHandling(JsonNumberHandling.AllowReadingFromString)]
+public ulong ID { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -285,17 +316,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="xref">System.UInt64</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_Premium.md&amp;value=---%0Auid%3A%20DiscordRPC.User.Premium%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_Premium.md&amp;value=---%0Auid%3A%20DiscordRPC.User.Premium%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L151">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L191">View Source</a>
   </span>
   <a id="DiscordRPC_User_Premium_" data-uid="DiscordRPC.User.Premium*"></a>
   <h4 id="DiscordRPC_User_Premium" data-uid="DiscordRPC.User.Premium">Premium</h4>
@@ -304,7 +335,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public User.PremiumType Premium { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;premium_type&quot;)]
+public User.PremiumType Premium { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -323,10 +355,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_Username.md&amp;value=---%0Auid%3A%20DiscordRPC.User.Username%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_Username.md&amp;value=---%0Auid%3A%20DiscordRPC.User.Username%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L76">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L155">View Source</a>
   </span>
   <a id="DiscordRPC_User_Username_" data-uid="DiscordRPC.User.Username*"></a>
   <h4 id="DiscordRPC_User_Username" data-uid="DiscordRPC.User.Username">Username</h4>
@@ -335,7 +367,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Username { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;username&quot;)]
+public string Username { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -347,7 +380,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -356,64 +389,15 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_GetAvatarExtension_DiscordRPC_User_AvatarFormat_.md&amp;value=---%0Auid%3A%20DiscordRPC.User.GetAvatarExtension(DiscordRPC.User.AvatarFormat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_GetAvatarURL_DiscordRPC_User_AvatarFormat_.md&amp;value=---%0Auid%3A%20DiscordRPC.User.GetAvatarURL(DiscordRPC.User.AvatarFormat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L239">View Source</a>
-  </span>
-  <a id="DiscordRPC_User_GetAvatarExtension_" data-uid="DiscordRPC.User.GetAvatarExtension*"></a>
-  <h4 id="DiscordRPC_User_GetAvatarExtension_DiscordRPC_User_AvatarFormat_" data-uid="DiscordRPC.User.GetAvatarExtension(DiscordRPC.User.AvatarFormat)">GetAvatarExtension(User.AvatarFormat)</h4>
-  <div class="markdown level1 summary"><p>Returns the file extension of the specified format.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetAvatarExtension(User.AvatarFormat format)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DiscordRPC.User.AvatarFormat.html">User.AvatarFormat</a></td>
-        <td><span class="parametername">format</span></td>
-        <td><p>The format to get the extention off</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>Returns a period prefixed file extension.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_GetAvatarURL_DiscordRPC_User_AvatarFormat_.md&amp;value=---%0Auid%3A%20DiscordRPC.User.GetAvatarURL(DiscordRPC.User.AvatarFormat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L198">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L215">View Source</a>
   </span>
   <a id="DiscordRPC_User_GetAvatarURL_" data-uid="DiscordRPC.User.GetAvatarURL*"></a>
   <h4 id="DiscordRPC_User_GetAvatarURL_DiscordRPC_User_AvatarFormat_" data-uid="DiscordRPC.User.GetAvatarURL(DiscordRPC.User.AvatarFormat)">GetAvatarURL(User.AvatarFormat)</h4>
-  <div class="markdown level1 summary"><p>Gets a URL that can be used to download the user&apos;s avatar. If the user has not yet set their avatar, it will return the default one that discord is using. The default avatar only supports the <a class="xref" href="DiscordRPC.User.AvatarFormat.html#DiscordRPC_User_AvatarFormat_PNG">PNG</a> format.</p>
+  <div class="markdown level1 summary"><p>Gets a URL that can be used to download the user&apos;s avatar. If the user has not yet set their avatar, it will return
+the default one that discord is using. The default avatar only supports the <a class="xref" href="DiscordRPC.User.AvatarFormat.html#DiscordRPC_User_AvatarFormat_PNG">PNG</a> format.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -448,7 +432,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><p>URL to the discord CDN for the particular avatar</p>
 </td>
       </tr>
@@ -459,14 +443,15 @@
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_GetAvatarURL_DiscordRPC_User_AvatarFormat_DiscordRPC_User_AvatarSize_.md&amp;value=---%0Auid%3A%20DiscordRPC.User.GetAvatarURL(DiscordRPC.User.AvatarFormat%2CDiscordRPC.User.AvatarSize)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_GetAvatarURL_DiscordRPC_User_AvatarFormat_DiscordRPC_User_AvatarSize_.md&amp;value=---%0Auid%3A%20DiscordRPC.User.GetAvatarURL(DiscordRPC.User.AvatarFormat%2CDiscordRPC.User.AvatarSize)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L207">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L227">View Source</a>
   </span>
   <a id="DiscordRPC_User_GetAvatarURL_" data-uid="DiscordRPC.User.GetAvatarURL*"></a>
   <h4 id="DiscordRPC_User_GetAvatarURL_DiscordRPC_User_AvatarFormat_DiscordRPC_User_AvatarSize_" data-uid="DiscordRPC.User.GetAvatarURL(DiscordRPC.User.AvatarFormat,DiscordRPC.User.AvatarSize)">GetAvatarURL(User.AvatarFormat, User.AvatarSize)</h4>
-  <div class="markdown level1 summary"><p>Gets a URL that can be used to download the user&apos;s avatar. If the user has not yet set their avatar, it will return the default one that discord is using. The default avatar only supports the <a class="xref" href="DiscordRPC.User.AvatarFormat.html#DiscordRPC_User_AvatarFormat_PNG">PNG</a> format.</p>
+  <div class="markdown level1 summary"><p>Gets a URL that can be used to download the user&apos;s avatar. If the user has not yet set their avatar, it will return
+the default one that discord is using. The default avatar only supports the <a class="xref" href="DiscordRPC.User.AvatarFormat.html#DiscordRPC_User_AvatarFormat_PNG">PNG</a> format.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -507,7 +492,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><p>URL to the discord CDN for the particular avatar</p>
 </td>
       </tr>
@@ -515,10 +500,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_ToString.md&amp;value=---%0Auid%3A%20DiscordRPC.User.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User_ToString.md&amp;value=---%0Auid%3A%20DiscordRPC.User.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L249">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L270">View Source</a>
   </span>
   <a id="DiscordRPC_User_ToString_" data-uid="DiscordRPC.User.ToString*"></a>
   <h4 id="DiscordRPC_User_ToString" data-uid="DiscordRPC.User.ToString">ToString()</h4>
@@ -540,12 +525,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><p>String of the user that can be used for display.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
           
@@ -554,10 +541,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User.md&amp;value=---%0Auid%3A%20DiscordRPC.User%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_User.md&amp;value=---%0Auid%3A%20DiscordRPC.User%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/User.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

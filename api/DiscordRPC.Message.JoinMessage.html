@@ -87,40 +87,62 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><a class="xref" href="DiscordRPC.Message.IMessage.html">IMessage</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DiscordRPC.Message.Message.html">Message</a></div>
     <div class="level2"><span class="xref">JoinMessage</span></div>
       <div class="level3"><a class="xref" href="DiscordRPC.Message.SpectateMessage.html">SpectateMessage</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="DiscordRPC.Message.IMessage.html#DiscordRPC_Message_IMessage_TimeCreated">IMessage.TimeCreated</a>
+      <a class="xref" href="DiscordRPC.Message.Message.html#DiscordRPC_Message_Message_TimeCreated">Message.TimeCreated</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DiscordRPC.Message.html">DiscordRPC.Message</a></h6>
   <h6><strong>Assembly</strong>: DiscordRPC.dll</h6>
   <h5 id="DiscordRPC_Message_JoinMessage_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class JoinMessage : IMessage</code></pre>
+    <pre><code class="lang-csharp hljs">public class JoinMessage : Message</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Message_JoinMessage_Secret.md&amp;value=---%0Auid%3A%20DiscordRPC.Message.JoinMessage.Secret%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Message_JoinMessage_Secret.md&amp;value=---%0Auid%3A%20DiscordRPC.Message.JoinMessage.Secret%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/Message/JoinMessage.cs/#L22">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/Message/JoinMessage.cs/#L18">View Source</a>
   </span>
   <a id="DiscordRPC_Message_JoinMessage_Secret_" data-uid="DiscordRPC.Message.JoinMessage.Secret*"></a>
   <h4 id="DiscordRPC_Message_JoinMessage_Secret" data-uid="DiscordRPC.Message.JoinMessage.Secret">Secret</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="DiscordRPC.Secrets.html#DiscordRPC_Secrets_JoinSecret">JoinSecret</a> to connect with. </p>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="DiscordRPC.Secrets.html#DiscordRPC_Secrets_JoinSecret">JoinSecret</a> to connect with.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Secret { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;secret&quot;)]
+public string Secret { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -132,17 +154,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Message_JoinMessage_Type.md&amp;value=---%0Auid%3A%20DiscordRPC.Message.JoinMessage.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Message_JoinMessage_Type.md&amp;value=---%0Auid%3A%20DiscordRPC.Message.JoinMessage.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/Message/JoinMessage.cs/#L17">View Source</a>
+    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/Message/JoinMessage.cs/#L13">View Source</a>
   </span>
   <a id="DiscordRPC_Message_JoinMessage_Type_" data-uid="DiscordRPC.Message.JoinMessage.Type*"></a>
   <h4 id="DiscordRPC_Message_JoinMessage_Type" data-uid="DiscordRPC.Message.JoinMessage.Type">Type</h4>
@@ -169,7 +191,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DiscordRPC.Message.IMessage.html#DiscordRPC_Message_IMessage_Type">IMessage.Type</a></div>
+  <div><a class="xref" href="DiscordRPC.Message.Message.html#DiscordRPC_Message_Message_Type">Message.Type</a></div>
 </article>
           </div>
           
@@ -178,10 +200,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Lachee/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Message_JoinMessage.md&amp;value=---%0Auid%3A%20DiscordRPC.Message.JoinMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/new/master/apiSpec/new?filename=DiscordRPC_Message_JoinMessage.md&amp;value=---%0Auid%3A%20DiscordRPC.Message.JoinMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Lachee/discord-rpc-csharp/blob/master/DiscordRPC/Message/JoinMessage.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/HerrMaroni/discord-rpc-csharp/blob/master/DiscordRPC/Message/JoinMessage.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

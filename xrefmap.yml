@@ -10,6 +10,77 @@ references:
   commentId: N:DiscordRPC
   fullName: DiscordRPC
   nameWithType: DiscordRPC
+- uid: DiscordRPC.Application
+  name: Application
+  href: api/DiscordRPC.Application.html
+  commentId: T:DiscordRPC.Application
+  fullName: DiscordRPC.Application
+  nameWithType: Application
+- uid: DiscordRPC.Application.Description
+  name: Description
+  href: api/DiscordRPC.Application.html#DiscordRPC_Application_Description
+  commentId: P:DiscordRPC.Application.Description
+  fullName: DiscordRPC.Application.Description
+  nameWithType: Application.Description
+- uid: DiscordRPC.Application.Description*
+  name: Description
+  href: api/DiscordRPC.Application.html#DiscordRPC_Application_Description_
+  commentId: Overload:DiscordRPC.Application.Description
+  isSpec: "True"
+  fullName: DiscordRPC.Application.Description
+  nameWithType: Application.Description
+- uid: DiscordRPC.Application.Icon
+  name: Icon
+  href: api/DiscordRPC.Application.html#DiscordRPC_Application_Icon
+  commentId: P:DiscordRPC.Application.Icon
+  fullName: DiscordRPC.Application.Icon
+  nameWithType: Application.Icon
+- uid: DiscordRPC.Application.Icon*
+  name: Icon
+  href: api/DiscordRPC.Application.html#DiscordRPC_Application_Icon_
+  commentId: Overload:DiscordRPC.Application.Icon
+  isSpec: "True"
+  fullName: DiscordRPC.Application.Icon
+  nameWithType: Application.Icon
+- uid: DiscordRPC.Application.ID
+  name: ID
+  href: api/DiscordRPC.Application.html#DiscordRPC_Application_ID
+  commentId: P:DiscordRPC.Application.ID
+  fullName: DiscordRPC.Application.ID
+  nameWithType: Application.ID
+- uid: DiscordRPC.Application.ID*
+  name: ID
+  href: api/DiscordRPC.Application.html#DiscordRPC_Application_ID_
+  commentId: Overload:DiscordRPC.Application.ID
+  isSpec: "True"
+  fullName: DiscordRPC.Application.ID
+  nameWithType: Application.ID
+- uid: DiscordRPC.Application.Name
+  name: Name
+  href: api/DiscordRPC.Application.html#DiscordRPC_Application_Name
+  commentId: P:DiscordRPC.Application.Name
+  fullName: DiscordRPC.Application.Name
+  nameWithType: Application.Name
+- uid: DiscordRPC.Application.Name*
+  name: Name
+  href: api/DiscordRPC.Application.html#DiscordRPC_Application_Name_
+  commentId: Overload:DiscordRPC.Application.Name
+  isSpec: "True"
+  fullName: DiscordRPC.Application.Name
+  nameWithType: Application.Name
+- uid: DiscordRPC.Application.RpcOrigins
+  name: RpcOrigins
+  href: api/DiscordRPC.Application.html#DiscordRPC_Application_RpcOrigins
+  commentId: P:DiscordRPC.Application.RpcOrigins
+  fullName: DiscordRPC.Application.RpcOrigins
+  nameWithType: Application.RpcOrigins
+- uid: DiscordRPC.Application.RpcOrigins*
+  name: RpcOrigins
+  href: api/DiscordRPC.Application.html#DiscordRPC_Application_RpcOrigins_
+  commentId: Overload:DiscordRPC.Application.RpcOrigins
+  isSpec: "True"
+  fullName: DiscordRPC.Application.RpcOrigins
+  nameWithType: Application.RpcOrigins
 - uid: DiscordRPC.Assets
   name: Assets
   href: api/DiscordRPC.Assets.html
@@ -120,24 +191,24 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.Assets.SmallImageText
   nameWithType: Assets.SmallImageText
+- uid: DiscordRPC.AuthenticateEvent
+  name: AuthenticateEvent
+  href: api/DiscordRPC.AuthenticateEvent.html
+  commentId: T:DiscordRPC.AuthenticateEvent
+  fullName: DiscordRPC.AuthenticateEvent
+  nameWithType: AuthenticateEvent
+- uid: DiscordRPC.AuthorizeEvent
+  name: AuthorizeEvent
+  href: api/DiscordRPC.AuthorizeEvent.html
+  commentId: T:DiscordRPC.AuthorizeEvent
+  fullName: DiscordRPC.AuthorizeEvent
+  nameWithType: AuthorizeEvent
 - uid: DiscordRPC.BaseRichPresence
   name: BaseRichPresence
   href: api/DiscordRPC.BaseRichPresence.html
   commentId: T:DiscordRPC.BaseRichPresence
   fullName: DiscordRPC.BaseRichPresence
   nameWithType: BaseRichPresence
-- uid: DiscordRPC.BaseRichPresence._details
-  name: _details
-  href: api/DiscordRPC.BaseRichPresence.html#DiscordRPC_BaseRichPresence__details
-  commentId: F:DiscordRPC.BaseRichPresence._details
-  fullName: DiscordRPC.BaseRichPresence._details
-  nameWithType: BaseRichPresence._details
-- uid: DiscordRPC.BaseRichPresence._state
-  name: _state
-  href: api/DiscordRPC.BaseRichPresence.html#DiscordRPC_BaseRichPresence__state
-  commentId: F:DiscordRPC.BaseRichPresence._state
-  fullName: DiscordRPC.BaseRichPresence._state
-  nameWithType: BaseRichPresence._state
 - uid: DiscordRPC.BaseRichPresence.Assets
   name: Assets
   href: api/DiscordRPC.BaseRichPresence.html#DiscordRPC_BaseRichPresence_Assets
@@ -216,6 +287,18 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.BaseRichPresence.HasTimestamps
   nameWithType: BaseRichPresence.HasTimestamps
+- uid: DiscordRPC.BaseRichPresence.InternalDetails
+  name: InternalDetails
+  href: api/DiscordRPC.BaseRichPresence.html#DiscordRPC_BaseRichPresence_InternalDetails
+  commentId: F:DiscordRPC.BaseRichPresence.InternalDetails
+  fullName: DiscordRPC.BaseRichPresence.InternalDetails
+  nameWithType: BaseRichPresence.InternalDetails
+- uid: DiscordRPC.BaseRichPresence.InternalState
+  name: InternalState
+  href: api/DiscordRPC.BaseRichPresence.html#DiscordRPC_BaseRichPresence_InternalState
+  commentId: F:DiscordRPC.BaseRichPresence.InternalState
+  fullName: DiscordRPC.BaseRichPresence.InternalState
+  nameWithType: BaseRichPresence.InternalState
 - uid: DiscordRPC.BaseRichPresence.op_Implicit(DiscordRPC.BaseRichPresence)~System.Boolean
   name: Implicit(BaseRichPresence to Boolean)
   href: api/DiscordRPC.BaseRichPresence.html#DiscordRPC_BaseRichPresence_op_Implicit_DiscordRPC_BaseRichPresence__System_Boolean
@@ -332,6 +415,12 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.Button.Url
   nameWithType: Button.Url
+- uid: DiscordRPC.CloseEvent
+  name: CloseEvent
+  href: api/DiscordRPC.CloseEvent.html
+  commentId: T:DiscordRPC.CloseEvent
+  fullName: DiscordRPC.CloseEvent
+  nameWithType: CloseEvent
 - uid: DiscordRPC.Configuration
   name: Configuration
   href: api/DiscordRPC.Configuration.html
@@ -377,18 +466,56 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.Configuration.Environment
   nameWithType: Configuration.Environment
+- uid: DiscordRPC.ConnectionEstablishedEvent
+  name: ConnectionEstablishedEvent
+  href: api/DiscordRPC.ConnectionEstablishedEvent.html
+  commentId: T:DiscordRPC.ConnectionEstablishedEvent
+  fullName: DiscordRPC.ConnectionEstablishedEvent
+  nameWithType: ConnectionEstablishedEvent
+- uid: DiscordRPC.ConnectionFailedEvent
+  name: ConnectionFailedEvent
+  href: api/DiscordRPC.ConnectionFailedEvent.html
+  commentId: T:DiscordRPC.ConnectionFailedEvent
+  fullName: DiscordRPC.ConnectionFailedEvent
+  nameWithType: ConnectionFailedEvent
+- uid: DiscordRPC.DeviceObject
+  name: DeviceObject
+  href: api/DiscordRPC.DeviceObject.html
+  commentId: T:DiscordRPC.DeviceObject
+  fullName: DiscordRPC.DeviceObject
+  nameWithType: DeviceObject
+- uid: DiscordRPC.DeviceObject.Id
+  name: Id
+  href: api/DiscordRPC.DeviceObject.html#DiscordRPC_DeviceObject_Id
+  commentId: P:DiscordRPC.DeviceObject.Id
+  fullName: DiscordRPC.DeviceObject.Id
+  nameWithType: DeviceObject.Id
+- uid: DiscordRPC.DeviceObject.Id*
+  name: Id
+  href: api/DiscordRPC.DeviceObject.html#DiscordRPC_DeviceObject_Id_
+  commentId: Overload:DiscordRPC.DeviceObject.Id
+  isSpec: "True"
+  fullName: DiscordRPC.DeviceObject.Id
+  nameWithType: DeviceObject.Id
+- uid: DiscordRPC.DeviceObject.Name
+  name: Name
+  href: api/DiscordRPC.DeviceObject.html#DiscordRPC_DeviceObject_Name
+  commentId: P:DiscordRPC.DeviceObject.Name
+  fullName: DiscordRPC.DeviceObject.Name
+  nameWithType: DeviceObject.Name
+- uid: DiscordRPC.DeviceObject.Name*
+  name: Name
+  href: api/DiscordRPC.DeviceObject.html#DiscordRPC_DeviceObject_Name_
+  commentId: Overload:DiscordRPC.DeviceObject.Name
+  isSpec: "True"
+  fullName: DiscordRPC.DeviceObject.Name
+  nameWithType: DeviceObject.Name
 - uid: DiscordRPC.DiscordRpcClient
   name: DiscordRpcClient
   href: api/DiscordRPC.DiscordRpcClient.html
   commentId: T:DiscordRPC.DiscordRpcClient
   fullName: DiscordRPC.DiscordRpcClient
   nameWithType: DiscordRpcClient
-- uid: DiscordRPC.DiscordRpcClient.#ctor(System.String)
-  name: DiscordRpcClient(String)
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient__ctor_System_String_
-  commentId: M:DiscordRPC.DiscordRpcClient.#ctor(System.String)
-  fullName: DiscordRPC.DiscordRpcClient.DiscordRpcClient(System.String)
-  nameWithType: DiscordRpcClient.DiscordRpcClient(String)
 - uid: DiscordRPC.DiscordRpcClient.#ctor(System.String,System.Int32,DiscordRPC.Logging.ILogger,System.Boolean,DiscordRPC.IO.INamedPipeClient)
   name: DiscordRpcClient(String, Int32, ILogger, Boolean, INamedPipeClient)
   href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient__ctor_System_String_System_Int32_DiscordRPC_Logging_ILogger_System_Boolean_DiscordRPC_IO_INamedPipeClient_
@@ -402,32 +529,35 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.DiscordRpcClient.DiscordRpcClient
   nameWithType: DiscordRpcClient.DiscordRpcClient
-- uid: DiscordRPC.DiscordRpcClient.ApplicationID
-  name: ApplicationID
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_ApplicationID
-  commentId: P:DiscordRPC.DiscordRpcClient.ApplicationID
-  fullName: DiscordRPC.DiscordRpcClient.ApplicationID
-  nameWithType: DiscordRpcClient.ApplicationID
-- uid: DiscordRPC.DiscordRpcClient.ApplicationID*
-  name: ApplicationID
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_ApplicationID_
-  commentId: Overload:DiscordRPC.DiscordRpcClient.ApplicationID
+- uid: DiscordRPC.DiscordRpcClient.Authenticate(System.String)
+  name: Authenticate(String)
+  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Authenticate_System_String_
+  commentId: M:DiscordRPC.DiscordRpcClient.Authenticate(System.String)
+  fullName: DiscordRPC.DiscordRpcClient.Authenticate(System.String)
+  nameWithType: DiscordRpcClient.Authenticate(String)
+- uid: DiscordRPC.DiscordRpcClient.Authenticate*
+  name: Authenticate
+  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Authenticate_
+  commentId: Overload:DiscordRPC.DiscordRpcClient.Authenticate
   isSpec: "True"
-  fullName: DiscordRPC.DiscordRpcClient.ApplicationID
-  nameWithType: DiscordRpcClient.ApplicationID
-- uid: DiscordRPC.DiscordRpcClient.AutoEvents
-  name: AutoEvents
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_AutoEvents
-  commentId: P:DiscordRPC.DiscordRpcClient.AutoEvents
-  fullName: DiscordRPC.DiscordRpcClient.AutoEvents
-  nameWithType: DiscordRpcClient.AutoEvents
-- uid: DiscordRPC.DiscordRpcClient.AutoEvents*
-  name: AutoEvents
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_AutoEvents_
-  commentId: Overload:DiscordRPC.DiscordRpcClient.AutoEvents
+  fullName: DiscordRPC.DiscordRpcClient.Authenticate
+  nameWithType: DiscordRpcClient.Authenticate
+- uid: DiscordRPC.DiscordRpcClient.Authorize(System.String,System.String[])
+  name: Authorize(String, String[])
+  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Authorize_System_String_System_String___
+  commentId: M:DiscordRPC.DiscordRpcClient.Authorize(System.String,System.String[])
+  name.vb: Authorize(String, String())
+  fullName: DiscordRPC.DiscordRpcClient.Authorize(System.String, System.String[])
+  fullName.vb: DiscordRPC.DiscordRpcClient.Authorize(System.String, System.String())
+  nameWithType: DiscordRpcClient.Authorize(String, String[])
+  nameWithType.vb: DiscordRpcClient.Authorize(String, String())
+- uid: DiscordRPC.DiscordRpcClient.Authorize*
+  name: Authorize
+  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Authorize_
+  commentId: Overload:DiscordRPC.DiscordRpcClient.Authorize
   isSpec: "True"
-  fullName: DiscordRPC.DiscordRpcClient.AutoEvents
-  nameWithType: DiscordRpcClient.AutoEvents
+  fullName: DiscordRPC.DiscordRpcClient.Authorize
+  nameWithType: DiscordRpcClient.Authorize
 - uid: DiscordRPC.DiscordRpcClient.ClearPresence
   name: ClearPresence()
   href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_ClearPresence
@@ -441,32 +571,6 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.DiscordRpcClient.ClearPresence
   nameWithType: DiscordRpcClient.ClearPresence
-- uid: DiscordRPC.DiscordRpcClient.Configuration
-  name: Configuration
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Configuration
-  commentId: P:DiscordRPC.DiscordRpcClient.Configuration
-  fullName: DiscordRPC.DiscordRpcClient.Configuration
-  nameWithType: DiscordRpcClient.Configuration
-- uid: DiscordRPC.DiscordRpcClient.Configuration*
-  name: Configuration
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Configuration_
-  commentId: Overload:DiscordRPC.DiscordRpcClient.Configuration
-  isSpec: "True"
-  fullName: DiscordRPC.DiscordRpcClient.Configuration
-  nameWithType: DiscordRpcClient.Configuration
-- uid: DiscordRPC.DiscordRpcClient.CurrentPresence
-  name: CurrentPresence
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_CurrentPresence
-  commentId: P:DiscordRPC.DiscordRpcClient.CurrentPresence
-  fullName: DiscordRPC.DiscordRpcClient.CurrentPresence
-  nameWithType: DiscordRpcClient.CurrentPresence
-- uid: DiscordRPC.DiscordRpcClient.CurrentPresence*
-  name: CurrentPresence
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_CurrentPresence_
-  commentId: Overload:DiscordRPC.DiscordRpcClient.CurrentPresence
-  isSpec: "True"
-  fullName: DiscordRPC.DiscordRpcClient.CurrentPresence
-  nameWithType: DiscordRpcClient.CurrentPresence
 - uid: DiscordRPC.DiscordRpcClient.CurrentUser
   name: CurrentUser
   href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_CurrentUser
@@ -480,19 +584,6 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.DiscordRpcClient.CurrentUser
   nameWithType: DiscordRpcClient.CurrentUser
-- uid: DiscordRPC.DiscordRpcClient.Deinitialize
-  name: Deinitialize()
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Deinitialize
-  commentId: M:DiscordRPC.DiscordRpcClient.Deinitialize
-  fullName: DiscordRPC.DiscordRpcClient.Deinitialize()
-  nameWithType: DiscordRpcClient.Deinitialize()
-- uid: DiscordRPC.DiscordRpcClient.Deinitialize*
-  name: Deinitialize
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Deinitialize_
-  commentId: Overload:DiscordRPC.DiscordRpcClient.Deinitialize
-  isSpec: "True"
-  fullName: DiscordRPC.DiscordRpcClient.Deinitialize
-  nameWithType: DiscordRpcClient.Deinitialize
 - uid: DiscordRPC.DiscordRpcClient.Dispose
   name: Dispose()
   href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Dispose
@@ -506,19 +597,19 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.DiscordRpcClient.Dispose
   nameWithType: DiscordRpcClient.Dispose
-- uid: DiscordRPC.DiscordRpcClient.HasRegisteredUriScheme
-  name: HasRegisteredUriScheme
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_HasRegisteredUriScheme
-  commentId: P:DiscordRPC.DiscordRpcClient.HasRegisteredUriScheme
-  fullName: DiscordRPC.DiscordRpcClient.HasRegisteredUriScheme
-  nameWithType: DiscordRpcClient.HasRegisteredUriScheme
-- uid: DiscordRPC.DiscordRpcClient.HasRegisteredUriScheme*
-  name: HasRegisteredUriScheme
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_HasRegisteredUriScheme_
-  commentId: Overload:DiscordRPC.DiscordRpcClient.HasRegisteredUriScheme
+- uid: DiscordRPC.DiscordRpcClient.GetVoiceSettings
+  name: GetVoiceSettings()
+  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_GetVoiceSettings
+  commentId: M:DiscordRPC.DiscordRpcClient.GetVoiceSettings
+  fullName: DiscordRPC.DiscordRpcClient.GetVoiceSettings()
+  nameWithType: DiscordRpcClient.GetVoiceSettings()
+- uid: DiscordRPC.DiscordRpcClient.GetVoiceSettings*
+  name: GetVoiceSettings
+  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_GetVoiceSettings_
+  commentId: Overload:DiscordRPC.DiscordRpcClient.GetVoiceSettings
   isSpec: "True"
-  fullName: DiscordRPC.DiscordRpcClient.HasRegisteredUriScheme
-  nameWithType: DiscordRpcClient.HasRegisteredUriScheme
+  fullName: DiscordRPC.DiscordRpcClient.GetVoiceSettings
+  nameWithType: DiscordRpcClient.GetVoiceSettings
 - uid: DiscordRPC.DiscordRpcClient.Initialize
   name: Initialize()
   href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Initialize
@@ -545,32 +636,6 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.DiscordRpcClient.Invoke
   nameWithType: DiscordRpcClient.Invoke
-- uid: DiscordRPC.DiscordRpcClient.IsDisposed
-  name: IsDisposed
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_IsDisposed
-  commentId: P:DiscordRPC.DiscordRpcClient.IsDisposed
-  fullName: DiscordRPC.DiscordRpcClient.IsDisposed
-  nameWithType: DiscordRpcClient.IsDisposed
-- uid: DiscordRPC.DiscordRpcClient.IsDisposed*
-  name: IsDisposed
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_IsDisposed_
-  commentId: Overload:DiscordRPC.DiscordRpcClient.IsDisposed
-  isSpec: "True"
-  fullName: DiscordRPC.DiscordRpcClient.IsDisposed
-  nameWithType: DiscordRpcClient.IsDisposed
-- uid: DiscordRPC.DiscordRpcClient.IsInitialized
-  name: IsInitialized
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_IsInitialized
-  commentId: P:DiscordRPC.DiscordRpcClient.IsInitialized
-  fullName: DiscordRPC.DiscordRpcClient.IsInitialized
-  nameWithType: DiscordRpcClient.IsInitialized
-- uid: DiscordRPC.DiscordRpcClient.IsInitialized*
-  name: IsInitialized
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_IsInitialized_
-  commentId: Overload:DiscordRPC.DiscordRpcClient.IsInitialized
-  isSpec: "True"
-  fullName: DiscordRPC.DiscordRpcClient.IsInitialized
-  nameWithType: DiscordRpcClient.IsInitialized
 - uid: DiscordRPC.DiscordRpcClient.Logger
   name: Logger
   href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Logger
@@ -597,6 +662,18 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.DiscordRpcClient.MaxQueueSize
   nameWithType: DiscordRpcClient.MaxQueueSize
+- uid: DiscordRPC.DiscordRpcClient.OnAuthenticate
+  name: OnAuthenticate
+  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_OnAuthenticate
+  commentId: E:DiscordRPC.DiscordRpcClient.OnAuthenticate
+  fullName: DiscordRPC.DiscordRpcClient.OnAuthenticate
+  nameWithType: DiscordRpcClient.OnAuthenticate
+- uid: DiscordRPC.DiscordRpcClient.OnAuthorize
+  name: OnAuthorize
+  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_OnAuthorize
+  commentId: E:DiscordRPC.DiscordRpcClient.OnAuthorize
+  fullName: DiscordRPC.DiscordRpcClient.OnAuthorize
+  nameWithType: DiscordRpcClient.OnAuthorize
 - uid: DiscordRPC.DiscordRpcClient.OnClose
   name: OnClose
   href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_OnClose
@@ -669,19 +746,12 @@ references:
   commentId: E:DiscordRPC.DiscordRpcClient.OnUnsubscribe
   fullName: DiscordRPC.DiscordRpcClient.OnUnsubscribe
   nameWithType: DiscordRpcClient.OnUnsubscribe
-- uid: DiscordRPC.DiscordRpcClient.ProcessID
-  name: ProcessID
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_ProcessID
-  commentId: P:DiscordRPC.DiscordRpcClient.ProcessID
-  fullName: DiscordRPC.DiscordRpcClient.ProcessID
-  nameWithType: DiscordRpcClient.ProcessID
-- uid: DiscordRPC.DiscordRpcClient.ProcessID*
-  name: ProcessID
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_ProcessID_
-  commentId: Overload:DiscordRPC.DiscordRpcClient.ProcessID
-  isSpec: "True"
-  fullName: DiscordRPC.DiscordRpcClient.ProcessID
-  nameWithType: DiscordRpcClient.ProcessID
+- uid: DiscordRPC.DiscordRpcClient.OnVoiceSettings
+  name: OnVoiceSettings
+  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_OnVoiceSettings
+  commentId: E:DiscordRPC.DiscordRpcClient.OnVoiceSettings
+  fullName: DiscordRPC.DiscordRpcClient.OnVoiceSettings
+  nameWithType: DiscordRpcClient.OnVoiceSettings
 - uid: DiscordRPC.DiscordRpcClient.RegisterUriScheme(System.String,System.String)
   name: RegisterUriScheme(String, String)
   href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_RegisterUriScheme_System_String_System_String_
@@ -747,6 +817,19 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.DiscordRpcClient.SetSubscription
   nameWithType: DiscordRpcClient.SetSubscription
+- uid: DiscordRPC.DiscordRpcClient.SetVoiceSettings(DiscordRPC.VoiceSettings)
+  name: SetVoiceSettings(VoiceSettings)
+  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_SetVoiceSettings_DiscordRPC_VoiceSettings_
+  commentId: M:DiscordRPC.DiscordRpcClient.SetVoiceSettings(DiscordRPC.VoiceSettings)
+  fullName: DiscordRPC.DiscordRpcClient.SetVoiceSettings(DiscordRPC.VoiceSettings)
+  nameWithType: DiscordRpcClient.SetVoiceSettings(VoiceSettings)
+- uid: DiscordRPC.DiscordRpcClient.SetVoiceSettings*
+  name: SetVoiceSettings
+  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_SetVoiceSettings_
+  commentId: Overload:DiscordRPC.DiscordRpcClient.SetVoiceSettings
+  isSpec: "True"
+  fullName: DiscordRPC.DiscordRpcClient.SetVoiceSettings
+  nameWithType: DiscordRpcClient.SetVoiceSettings
 - uid: DiscordRPC.DiscordRpcClient.ShutdownOnly
   name: ShutdownOnly
   href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_ShutdownOnly
@@ -760,19 +843,6 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.DiscordRpcClient.ShutdownOnly
   nameWithType: DiscordRpcClient.ShutdownOnly
-- uid: DiscordRPC.DiscordRpcClient.SkipIdenticalPresence
-  name: SkipIdenticalPresence
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_SkipIdenticalPresence
-  commentId: P:DiscordRPC.DiscordRpcClient.SkipIdenticalPresence
-  fullName: DiscordRPC.DiscordRpcClient.SkipIdenticalPresence
-  nameWithType: DiscordRpcClient.SkipIdenticalPresence
-- uid: DiscordRPC.DiscordRpcClient.SkipIdenticalPresence*
-  name: SkipIdenticalPresence
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_SkipIdenticalPresence_
-  commentId: Overload:DiscordRPC.DiscordRpcClient.SkipIdenticalPresence
-  isSpec: "True"
-  fullName: DiscordRPC.DiscordRpcClient.SkipIdenticalPresence
-  nameWithType: DiscordRpcClient.SkipIdenticalPresence
 - uid: DiscordRPC.DiscordRpcClient.SteamID
   name: SteamID
   href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_SteamID
@@ -799,45 +869,6 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.DiscordRpcClient.Subscribe
   nameWithType: DiscordRpcClient.Subscribe
-- uid: DiscordRPC.DiscordRpcClient.Subscription
-  name: Subscription
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Subscription
-  commentId: P:DiscordRPC.DiscordRpcClient.Subscription
-  fullName: DiscordRPC.DiscordRpcClient.Subscription
-  nameWithType: DiscordRpcClient.Subscription
-- uid: DiscordRPC.DiscordRpcClient.Subscription*
-  name: Subscription
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Subscription_
-  commentId: Overload:DiscordRPC.DiscordRpcClient.Subscription
-  isSpec: "True"
-  fullName: DiscordRPC.DiscordRpcClient.Subscription
-  nameWithType: DiscordRpcClient.Subscription
-- uid: DiscordRPC.DiscordRpcClient.SynchronizeState
-  name: SynchronizeState()
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_SynchronizeState
-  commentId: M:DiscordRPC.DiscordRpcClient.SynchronizeState
-  fullName: DiscordRPC.DiscordRpcClient.SynchronizeState()
-  nameWithType: DiscordRpcClient.SynchronizeState()
-- uid: DiscordRPC.DiscordRpcClient.SynchronizeState*
-  name: SynchronizeState
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_SynchronizeState_
-  commentId: Overload:DiscordRPC.DiscordRpcClient.SynchronizeState
-  isSpec: "True"
-  fullName: DiscordRPC.DiscordRpcClient.SynchronizeState
-  nameWithType: DiscordRpcClient.SynchronizeState
-- uid: DiscordRPC.DiscordRpcClient.TargetPipe
-  name: TargetPipe
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_TargetPipe
-  commentId: P:DiscordRPC.DiscordRpcClient.TargetPipe
-  fullName: DiscordRPC.DiscordRpcClient.TargetPipe
-  nameWithType: DiscordRpcClient.TargetPipe
-- uid: DiscordRPC.DiscordRpcClient.TargetPipe*
-  name: TargetPipe
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_TargetPipe_
-  commentId: Overload:DiscordRPC.DiscordRpcClient.TargetPipe
-  isSpec: "True"
-  fullName: DiscordRPC.DiscordRpcClient.TargetPipe
-  nameWithType: DiscordRpcClient.TargetPipe
 - uid: DiscordRPC.DiscordRpcClient.Unsubscribe(DiscordRPC.EventType)
   name: Unsubscribe(EventType)
   href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Unsubscribe_DiscordRPC_EventType_
@@ -851,19 +882,6 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.DiscordRpcClient.Unsubscribe
   nameWithType: DiscordRpcClient.Unsubscribe
-- uid: DiscordRPC.DiscordRpcClient.Unubscribe(DiscordRPC.EventType)
-  name: Unubscribe(EventType)
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Unubscribe_DiscordRPC_EventType_
-  commentId: M:DiscordRPC.DiscordRpcClient.Unubscribe(DiscordRPC.EventType)
-  fullName: DiscordRPC.DiscordRpcClient.Unubscribe(DiscordRPC.EventType)
-  nameWithType: DiscordRpcClient.Unubscribe(EventType)
-- uid: DiscordRPC.DiscordRpcClient.Unubscribe*
-  name: Unubscribe
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_Unubscribe_
-  commentId: Overload:DiscordRPC.DiscordRpcClient.Unubscribe
-  isSpec: "True"
-  fullName: DiscordRPC.DiscordRpcClient.Unubscribe
-  nameWithType: DiscordRpcClient.Unubscribe
 - uid: DiscordRPC.DiscordRpcClient.UpdateButtons(DiscordRPC.Button[])
   name: UpdateButtons(Button[])
   href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_UpdateButtons_DiscordRPC_Button___
@@ -912,12 +930,6 @@ references:
   commentId: M:DiscordRPC.DiscordRpcClient.UpdateEndTime
   fullName: DiscordRPC.DiscordRpcClient.UpdateEndTime()
   nameWithType: DiscordRpcClient.UpdateEndTime()
-- uid: DiscordRPC.DiscordRpcClient.UpdateEndTime(DateTime)
-  name: UpdateEndTime(DateTime)
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_UpdateEndTime_DateTime_
-  commentId: M:DiscordRPC.DiscordRpcClient.UpdateEndTime(DateTime)
-  fullName: DiscordRPC.DiscordRpcClient.UpdateEndTime(DateTime)
-  nameWithType: DiscordRpcClient.UpdateEndTime(DateTime)
 - uid: DiscordRPC.DiscordRpcClient.UpdateEndTime*
   name: UpdateEndTime
   href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_UpdateEndTime_
@@ -1002,12 +1014,6 @@ references:
   commentId: M:DiscordRPC.DiscordRpcClient.UpdateStartTime
   fullName: DiscordRPC.DiscordRpcClient.UpdateStartTime()
   nameWithType: DiscordRpcClient.UpdateStartTime()
-- uid: DiscordRPC.DiscordRpcClient.UpdateStartTime(DateTime)
-  name: UpdateStartTime(DateTime)
-  href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_UpdateStartTime_DateTime_
-  commentId: M:DiscordRPC.DiscordRpcClient.UpdateStartTime(DateTime)
-  fullName: DiscordRPC.DiscordRpcClient.UpdateStartTime(DateTime)
-  nameWithType: DiscordRpcClient.UpdateStartTime(DateTime)
 - uid: DiscordRPC.DiscordRpcClient.UpdateStartTime*
   name: UpdateStartTime
   href: api/DiscordRPC.DiscordRpcClient.html#DiscordRPC_DiscordRpcClient_UpdateStartTime_
@@ -1028,84 +1034,12 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.DiscordRpcClient.UpdateState
   nameWithType: DiscordRpcClient.UpdateState
-- uid: DiscordRPC.Events
-  name: DiscordRPC.Events
-  href: api/DiscordRPC.Events.html
-  commentId: N:DiscordRPC.Events
-  fullName: DiscordRPC.Events
-  nameWithType: DiscordRPC.Events
-- uid: DiscordRPC.Events.OnCloseEvent
-  name: OnCloseEvent
-  href: api/DiscordRPC.Events.OnCloseEvent.html
-  commentId: T:DiscordRPC.Events.OnCloseEvent
-  fullName: DiscordRPC.Events.OnCloseEvent
-  nameWithType: OnCloseEvent
-- uid: DiscordRPC.Events.OnConnectionEstablishedEvent
-  name: OnConnectionEstablishedEvent
-  href: api/DiscordRPC.Events.OnConnectionEstablishedEvent.html
-  commentId: T:DiscordRPC.Events.OnConnectionEstablishedEvent
-  fullName: DiscordRPC.Events.OnConnectionEstablishedEvent
-  nameWithType: OnConnectionEstablishedEvent
-- uid: DiscordRPC.Events.OnConnectionFailedEvent
-  name: OnConnectionFailedEvent
-  href: api/DiscordRPC.Events.OnConnectionFailedEvent.html
-  commentId: T:DiscordRPC.Events.OnConnectionFailedEvent
-  fullName: DiscordRPC.Events.OnConnectionFailedEvent
-  nameWithType: OnConnectionFailedEvent
-- uid: DiscordRPC.Events.OnErrorEvent
-  name: OnErrorEvent
-  href: api/DiscordRPC.Events.OnErrorEvent.html
-  commentId: T:DiscordRPC.Events.OnErrorEvent
-  fullName: DiscordRPC.Events.OnErrorEvent
-  nameWithType: OnErrorEvent
-- uid: DiscordRPC.Events.OnJoinEvent
-  name: OnJoinEvent
-  href: api/DiscordRPC.Events.OnJoinEvent.html
-  commentId: T:DiscordRPC.Events.OnJoinEvent
-  fullName: DiscordRPC.Events.OnJoinEvent
-  nameWithType: OnJoinEvent
-- uid: DiscordRPC.Events.OnJoinRequestedEvent
-  name: OnJoinRequestedEvent
-  href: api/DiscordRPC.Events.OnJoinRequestedEvent.html
-  commentId: T:DiscordRPC.Events.OnJoinRequestedEvent
-  fullName: DiscordRPC.Events.OnJoinRequestedEvent
-  nameWithType: OnJoinRequestedEvent
-- uid: DiscordRPC.Events.OnPresenceUpdateEvent
-  name: OnPresenceUpdateEvent
-  href: api/DiscordRPC.Events.OnPresenceUpdateEvent.html
-  commentId: T:DiscordRPC.Events.OnPresenceUpdateEvent
-  fullName: DiscordRPC.Events.OnPresenceUpdateEvent
-  nameWithType: OnPresenceUpdateEvent
-- uid: DiscordRPC.Events.OnReadyEvent
-  name: OnReadyEvent
-  href: api/DiscordRPC.Events.OnReadyEvent.html
-  commentId: T:DiscordRPC.Events.OnReadyEvent
-  fullName: DiscordRPC.Events.OnReadyEvent
-  nameWithType: OnReadyEvent
-- uid: DiscordRPC.Events.OnRpcMessageEvent
-  name: OnRpcMessageEvent
-  href: api/DiscordRPC.Events.OnRpcMessageEvent.html
-  commentId: T:DiscordRPC.Events.OnRpcMessageEvent
-  fullName: DiscordRPC.Events.OnRpcMessageEvent
-  nameWithType: OnRpcMessageEvent
-- uid: DiscordRPC.Events.OnSpectateEvent
-  name: OnSpectateEvent
-  href: api/DiscordRPC.Events.OnSpectateEvent.html
-  commentId: T:DiscordRPC.Events.OnSpectateEvent
-  fullName: DiscordRPC.Events.OnSpectateEvent
-  nameWithType: OnSpectateEvent
-- uid: DiscordRPC.Events.OnSubscribeEvent
-  name: OnSubscribeEvent
-  href: api/DiscordRPC.Events.OnSubscribeEvent.html
-  commentId: T:DiscordRPC.Events.OnSubscribeEvent
-  fullName: DiscordRPC.Events.OnSubscribeEvent
-  nameWithType: OnSubscribeEvent
-- uid: DiscordRPC.Events.OnUnsubscribeEvent
-  name: OnUnsubscribeEvent
-  href: api/DiscordRPC.Events.OnUnsubscribeEvent.html
-  commentId: T:DiscordRPC.Events.OnUnsubscribeEvent
-  fullName: DiscordRPC.Events.OnUnsubscribeEvent
-  nameWithType: OnUnsubscribeEvent
+- uid: DiscordRPC.ErrorEvent
+  name: ErrorEvent
+  href: api/DiscordRPC.ErrorEvent.html
+  commentId: T:DiscordRPC.ErrorEvent
+  fullName: DiscordRPC.ErrorEvent
+  nameWithType: ErrorEvent
 - uid: DiscordRPC.EventType
   name: EventType
   href: api/DiscordRPC.EventType.html
@@ -1204,6 +1138,295 @@ references:
   commentId: N:DiscordRPC.Helper
   fullName: DiscordRPC.Helper
   nameWithType: DiscordRPC.Helper
+- uid: DiscordRPC.Helper.DiscordOAuth
+  name: DiscordOAuth
+  href: api/DiscordRPC.Helper.DiscordOAuth.html
+  commentId: T:DiscordRPC.Helper.DiscordOAuth
+  fullName: DiscordRPC.Helper.DiscordOAuth
+  nameWithType: DiscordOAuth
+- uid: DiscordRPC.Helper.DiscordOAuth.ExchangeCodeAsync(System.String)
+  name: ExchangeCodeAsync(String)
+  href: api/DiscordRPC.Helper.DiscordOAuth.html#DiscordRPC_Helper_DiscordOAuth_ExchangeCodeAsync_System_String_
+  commentId: M:DiscordRPC.Helper.DiscordOAuth.ExchangeCodeAsync(System.String)
+  fullName: DiscordRPC.Helper.DiscordOAuth.ExchangeCodeAsync(System.String)
+  nameWithType: DiscordOAuth.ExchangeCodeAsync(String)
+- uid: DiscordRPC.Helper.DiscordOAuth.ExchangeCodeAsync*
+  name: ExchangeCodeAsync
+  href: api/DiscordRPC.Helper.DiscordOAuth.html#DiscordRPC_Helper_DiscordOAuth_ExchangeCodeAsync_
+  commentId: Overload:DiscordRPC.Helper.DiscordOAuth.ExchangeCodeAsync
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.DiscordOAuth.ExchangeCodeAsync
+  nameWithType: DiscordOAuth.ExchangeCodeAsync
+- uid: DiscordRPC.Helper.DiscordOAuth.LoadOAuthData(System.String)
+  name: LoadOAuthData(String)
+  href: api/DiscordRPC.Helper.DiscordOAuth.html#DiscordRPC_Helper_DiscordOAuth_LoadOAuthData_System_String_
+  commentId: M:DiscordRPC.Helper.DiscordOAuth.LoadOAuthData(System.String)
+  fullName: DiscordRPC.Helper.DiscordOAuth.LoadOAuthData(System.String)
+  nameWithType: DiscordOAuth.LoadOAuthData(String)
+- uid: DiscordRPC.Helper.DiscordOAuth.LoadOAuthData*
+  name: LoadOAuthData
+  href: api/DiscordRPC.Helper.DiscordOAuth.html#DiscordRPC_Helper_DiscordOAuth_LoadOAuthData_
+  commentId: Overload:DiscordRPC.Helper.DiscordOAuth.LoadOAuthData
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.DiscordOAuth.LoadOAuthData
+  nameWithType: DiscordOAuth.LoadOAuthData
+- uid: DiscordRPC.Helper.DiscordOAuth.SetClientData(System.String,System.String)
+  name: SetClientData(String, String)
+  href: api/DiscordRPC.Helper.DiscordOAuth.html#DiscordRPC_Helper_DiscordOAuth_SetClientData_System_String_System_String_
+  commentId: M:DiscordRPC.Helper.DiscordOAuth.SetClientData(System.String,System.String)
+  fullName: DiscordRPC.Helper.DiscordOAuth.SetClientData(System.String, System.String)
+  nameWithType: DiscordOAuth.SetClientData(String, String)
+- uid: DiscordRPC.Helper.DiscordOAuth.SetClientData*
+  name: SetClientData
+  href: api/DiscordRPC.Helper.DiscordOAuth.html#DiscordRPC_Helper_DiscordOAuth_SetClientData_
+  commentId: Overload:DiscordRPC.Helper.DiscordOAuth.SetClientData
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.DiscordOAuth.SetClientData
+  nameWithType: DiscordOAuth.SetClientData
+- uid: DiscordRPC.Helper.DiscordOAuth.TryRefreshToken
+  name: TryRefreshToken()
+  href: api/DiscordRPC.Helper.DiscordOAuth.html#DiscordRPC_Helper_DiscordOAuth_TryRefreshToken
+  commentId: M:DiscordRPC.Helper.DiscordOAuth.TryRefreshToken
+  fullName: DiscordRPC.Helper.DiscordOAuth.TryRefreshToken()
+  nameWithType: DiscordOAuth.TryRefreshToken()
+- uid: DiscordRPC.Helper.DiscordOAuth.TryRefreshToken*
+  name: TryRefreshToken
+  href: api/DiscordRPC.Helper.DiscordOAuth.html#DiscordRPC_Helper_DiscordOAuth_TryRefreshToken_
+  commentId: Overload:DiscordRPC.Helper.DiscordOAuth.TryRefreshToken
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.DiscordOAuth.TryRefreshToken
+  nameWithType: DiscordOAuth.TryRefreshToken
+- uid: DiscordRPC.Helper.None`1
+  name: None<T>
+  href: api/DiscordRPC.Helper.None-1.html
+  commentId: T:DiscordRPC.Helper.None`1
+  name.vb: None(Of T)
+  fullName: DiscordRPC.Helper.None<T>
+  fullName.vb: DiscordRPC.Helper.None(Of T)
+  nameWithType: None<T>
+  nameWithType.vb: None(Of T)
+- uid: DiscordRPC.Helper.None`1.IsNone
+  name: IsNone
+  href: api/DiscordRPC.Helper.None-1.html#DiscordRPC_Helper_None_1_IsNone
+  commentId: P:DiscordRPC.Helper.None`1.IsNone
+  fullName: DiscordRPC.Helper.None<T>.IsNone
+  fullName.vb: DiscordRPC.Helper.None(Of T).IsNone
+  nameWithType: None<T>.IsNone
+  nameWithType.vb: None(Of T).IsNone
+- uid: DiscordRPC.Helper.None`1.IsNone*
+  name: IsNone
+  href: api/DiscordRPC.Helper.None-1.html#DiscordRPC_Helper_None_1_IsNone_
+  commentId: Overload:DiscordRPC.Helper.None`1.IsNone
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.None<T>.IsNone
+  fullName.vb: DiscordRPC.Helper.None(Of T).IsNone
+  nameWithType: None<T>.IsNone
+  nameWithType.vb: None(Of T).IsNone
+- uid: DiscordRPC.Helper.None`1.IsSome
+  name: IsSome
+  href: api/DiscordRPC.Helper.None-1.html#DiscordRPC_Helper_None_1_IsSome
+  commentId: P:DiscordRPC.Helper.None`1.IsSome
+  fullName: DiscordRPC.Helper.None<T>.IsSome
+  fullName.vb: DiscordRPC.Helper.None(Of T).IsSome
+  nameWithType: None<T>.IsSome
+  nameWithType.vb: None(Of T).IsSome
+- uid: DiscordRPC.Helper.None`1.IsSome*
+  name: IsSome
+  href: api/DiscordRPC.Helper.None-1.html#DiscordRPC_Helper_None_1_IsSome_
+  commentId: Overload:DiscordRPC.Helper.None`1.IsSome
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.None<T>.IsSome
+  fullName.vb: DiscordRPC.Helper.None(Of T).IsSome
+  nameWithType: None<T>.IsSome
+  nameWithType.vb: None(Of T).IsSome
+- uid: DiscordRPC.Helper.None`1.Value
+  name: Value
+  href: api/DiscordRPC.Helper.None-1.html#DiscordRPC_Helper_None_1_Value
+  commentId: P:DiscordRPC.Helper.None`1.Value
+  fullName: DiscordRPC.Helper.None<T>.Value
+  fullName.vb: DiscordRPC.Helper.None(Of T).Value
+  nameWithType: None<T>.Value
+  nameWithType.vb: None(Of T).Value
+- uid: DiscordRPC.Helper.None`1.Value*
+  name: Value
+  href: api/DiscordRPC.Helper.None-1.html#DiscordRPC_Helper_None_1_Value_
+  commentId: Overload:DiscordRPC.Helper.None`1.Value
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.None<T>.Value
+  fullName.vb: DiscordRPC.Helper.None(Of T).Value
+  nameWithType: None<T>.Value
+  nameWithType.vb: None(Of T).Value
+- uid: DiscordRPC.Helper.Option`1
+  name: Option<T>
+  href: api/DiscordRPC.Helper.Option-1.html
+  commentId: T:DiscordRPC.Helper.Option`1
+  name.vb: Option(Of T)
+  fullName: DiscordRPC.Helper.Option<T>
+  fullName.vb: DiscordRPC.Helper.Option(Of T)
+  nameWithType: Option<T>
+  nameWithType.vb: Option(Of T)
+- uid: DiscordRPC.Helper.Option`1.IsNone
+  name: IsNone
+  href: api/DiscordRPC.Helper.Option-1.html#DiscordRPC_Helper_Option_1_IsNone
+  commentId: P:DiscordRPC.Helper.Option`1.IsNone
+  fullName: DiscordRPC.Helper.Option<T>.IsNone
+  fullName.vb: DiscordRPC.Helper.Option(Of T).IsNone
+  nameWithType: Option<T>.IsNone
+  nameWithType.vb: Option(Of T).IsNone
+- uid: DiscordRPC.Helper.Option`1.IsNone*
+  name: IsNone
+  href: api/DiscordRPC.Helper.Option-1.html#DiscordRPC_Helper_Option_1_IsNone_
+  commentId: Overload:DiscordRPC.Helper.Option`1.IsNone
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.Option<T>.IsNone
+  fullName.vb: DiscordRPC.Helper.Option(Of T).IsNone
+  nameWithType: Option<T>.IsNone
+  nameWithType.vb: Option(Of T).IsNone
+- uid: DiscordRPC.Helper.Option`1.IsSome
+  name: IsSome
+  href: api/DiscordRPC.Helper.Option-1.html#DiscordRPC_Helper_Option_1_IsSome
+  commentId: P:DiscordRPC.Helper.Option`1.IsSome
+  fullName: DiscordRPC.Helper.Option<T>.IsSome
+  fullName.vb: DiscordRPC.Helper.Option(Of T).IsSome
+  nameWithType: Option<T>.IsSome
+  nameWithType.vb: Option(Of T).IsSome
+- uid: DiscordRPC.Helper.Option`1.IsSome*
+  name: IsSome
+  href: api/DiscordRPC.Helper.Option-1.html#DiscordRPC_Helper_Option_1_IsSome_
+  commentId: Overload:DiscordRPC.Helper.Option`1.IsSome
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.Option<T>.IsSome
+  fullName.vb: DiscordRPC.Helper.Option(Of T).IsSome
+  nameWithType: Option<T>.IsSome
+  nameWithType.vb: Option(Of T).IsSome
+- uid: DiscordRPC.Helper.Option`1.None
+  name: None()
+  href: api/DiscordRPC.Helper.Option-1.html#DiscordRPC_Helper_Option_1_None
+  commentId: M:DiscordRPC.Helper.Option`1.None
+  fullName: DiscordRPC.Helper.Option<T>.None()
+  fullName.vb: DiscordRPC.Helper.Option(Of T).None()
+  nameWithType: Option<T>.None()
+  nameWithType.vb: Option(Of T).None()
+- uid: DiscordRPC.Helper.Option`1.None*
+  name: None
+  href: api/DiscordRPC.Helper.Option-1.html#DiscordRPC_Helper_Option_1_None_
+  commentId: Overload:DiscordRPC.Helper.Option`1.None
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.Option<T>.None
+  fullName.vb: DiscordRPC.Helper.Option(Of T).None
+  nameWithType: Option<T>.None
+  nameWithType.vb: Option(Of T).None
+- uid: DiscordRPC.Helper.Option`1.Some(`0)
+  name: Some(T)
+  href: api/DiscordRPC.Helper.Option-1.html#DiscordRPC_Helper_Option_1_Some__0_
+  commentId: M:DiscordRPC.Helper.Option`1.Some(`0)
+  fullName: DiscordRPC.Helper.Option<T>.Some(T)
+  fullName.vb: DiscordRPC.Helper.Option(Of T).Some(T)
+  nameWithType: Option<T>.Some(T)
+  nameWithType.vb: Option(Of T).Some(T)
+- uid: DiscordRPC.Helper.Option`1.Some*
+  name: Some
+  href: api/DiscordRPC.Helper.Option-1.html#DiscordRPC_Helper_Option_1_Some_
+  commentId: Overload:DiscordRPC.Helper.Option`1.Some
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.Option<T>.Some
+  fullName.vb: DiscordRPC.Helper.Option(Of T).Some
+  nameWithType: Option<T>.Some
+  nameWithType.vb: Option(Of T).Some
+- uid: DiscordRPC.Helper.Option`1.Value
+  name: Value
+  href: api/DiscordRPC.Helper.Option-1.html#DiscordRPC_Helper_Option_1_Value
+  commentId: P:DiscordRPC.Helper.Option`1.Value
+  fullName: DiscordRPC.Helper.Option<T>.Value
+  fullName.vb: DiscordRPC.Helper.Option(Of T).Value
+  nameWithType: Option<T>.Value
+  nameWithType.vb: Option(Of T).Value
+- uid: DiscordRPC.Helper.Option`1.Value*
+  name: Value
+  href: api/DiscordRPC.Helper.Option-1.html#DiscordRPC_Helper_Option_1_Value_
+  commentId: Overload:DiscordRPC.Helper.Option`1.Value
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.Option<T>.Value
+  fullName.vb: DiscordRPC.Helper.Option(Of T).Value
+  nameWithType: Option<T>.Value
+  nameWithType.vb: Option(Of T).Value
+- uid: DiscordRPC.Helper.Some`1
+  name: Some<T>
+  href: api/DiscordRPC.Helper.Some-1.html
+  commentId: T:DiscordRPC.Helper.Some`1
+  name.vb: Some(Of T)
+  fullName: DiscordRPC.Helper.Some<T>
+  fullName.vb: DiscordRPC.Helper.Some(Of T)
+  nameWithType: Some<T>
+  nameWithType.vb: Some(Of T)
+- uid: DiscordRPC.Helper.Some`1.#ctor(`0)
+  name: Some(T)
+  href: api/DiscordRPC.Helper.Some-1.html#DiscordRPC_Helper_Some_1__ctor__0_
+  commentId: M:DiscordRPC.Helper.Some`1.#ctor(`0)
+  fullName: DiscordRPC.Helper.Some<T>.Some(T)
+  fullName.vb: DiscordRPC.Helper.Some(Of T).Some(T)
+  nameWithType: Some<T>.Some(T)
+  nameWithType.vb: Some(Of T).Some(T)
+- uid: DiscordRPC.Helper.Some`1.#ctor*
+  name: Some
+  href: api/DiscordRPC.Helper.Some-1.html#DiscordRPC_Helper_Some_1__ctor_
+  commentId: Overload:DiscordRPC.Helper.Some`1.#ctor
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.Some<T>.Some
+  fullName.vb: DiscordRPC.Helper.Some(Of T).Some
+  nameWithType: Some<T>.Some
+  nameWithType.vb: Some(Of T).Some
+- uid: DiscordRPC.Helper.Some`1.IsNone
+  name: IsNone
+  href: api/DiscordRPC.Helper.Some-1.html#DiscordRPC_Helper_Some_1_IsNone
+  commentId: P:DiscordRPC.Helper.Some`1.IsNone
+  fullName: DiscordRPC.Helper.Some<T>.IsNone
+  fullName.vb: DiscordRPC.Helper.Some(Of T).IsNone
+  nameWithType: Some<T>.IsNone
+  nameWithType.vb: Some(Of T).IsNone
+- uid: DiscordRPC.Helper.Some`1.IsNone*
+  name: IsNone
+  href: api/DiscordRPC.Helper.Some-1.html#DiscordRPC_Helper_Some_1_IsNone_
+  commentId: Overload:DiscordRPC.Helper.Some`1.IsNone
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.Some<T>.IsNone
+  fullName.vb: DiscordRPC.Helper.Some(Of T).IsNone
+  nameWithType: Some<T>.IsNone
+  nameWithType.vb: Some(Of T).IsNone
+- uid: DiscordRPC.Helper.Some`1.IsSome
+  name: IsSome
+  href: api/DiscordRPC.Helper.Some-1.html#DiscordRPC_Helper_Some_1_IsSome
+  commentId: P:DiscordRPC.Helper.Some`1.IsSome
+  fullName: DiscordRPC.Helper.Some<T>.IsSome
+  fullName.vb: DiscordRPC.Helper.Some(Of T).IsSome
+  nameWithType: Some<T>.IsSome
+  nameWithType.vb: Some(Of T).IsSome
+- uid: DiscordRPC.Helper.Some`1.IsSome*
+  name: IsSome
+  href: api/DiscordRPC.Helper.Some-1.html#DiscordRPC_Helper_Some_1_IsSome_
+  commentId: Overload:DiscordRPC.Helper.Some`1.IsSome
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.Some<T>.IsSome
+  fullName.vb: DiscordRPC.Helper.Some(Of T).IsSome
+  nameWithType: Some<T>.IsSome
+  nameWithType.vb: Some(Of T).IsSome
+- uid: DiscordRPC.Helper.Some`1.Value
+  name: Value
+  href: api/DiscordRPC.Helper.Some-1.html#DiscordRPC_Helper_Some_1_Value
+  commentId: P:DiscordRPC.Helper.Some`1.Value
+  fullName: DiscordRPC.Helper.Some<T>.Value
+  fullName.vb: DiscordRPC.Helper.Some(Of T).Value
+  nameWithType: Some<T>.Value
+  nameWithType.vb: Some(Of T).Value
+- uid: DiscordRPC.Helper.Some`1.Value*
+  name: Value
+  href: api/DiscordRPC.Helper.Some-1.html#DiscordRPC_Helper_Some_1_Value_
+  commentId: Overload:DiscordRPC.Helper.Some`1.Value
+  isSpec: "True"
+  fullName: DiscordRPC.Helper.Some<T>.Value
+  fullName.vb: DiscordRPC.Helper.Some(Of T).Value
+  nameWithType: Some<T>.Value
+  nameWithType.vb: Some(Of T).Value
 - uid: DiscordRPC.Helper.StringTools
   name: StringTools
   href: api/DiscordRPC.Helper.StringTools.html
@@ -1255,11 +1478,11 @@ references:
   commentId: M:DiscordRPC.Helper.StringTools.WithinLength(System.String,System.Int32)
   fullName: DiscordRPC.Helper.StringTools.WithinLength(System.String, System.Int32)
   nameWithType: StringTools.WithinLength(String, Int32)
-- uid: DiscordRPC.Helper.StringTools.WithinLength(System.String,System.Int32,Encoding)
+- uid: DiscordRPC.Helper.StringTools.WithinLength(System.String,System.Int32,System.Text.Encoding)
   name: WithinLength(String, Int32, Encoding)
-  href: api/DiscordRPC.Helper.StringTools.html#DiscordRPC_Helper_StringTools_WithinLength_System_String_System_Int32_Encoding_
-  commentId: M:DiscordRPC.Helper.StringTools.WithinLength(System.String,System.Int32,Encoding)
-  fullName: DiscordRPC.Helper.StringTools.WithinLength(System.String, System.Int32, Encoding)
+  href: api/DiscordRPC.Helper.StringTools.html#DiscordRPC_Helper_StringTools_WithinLength_System_String_System_Int32_System_Text_Encoding_
+  commentId: M:DiscordRPC.Helper.StringTools.WithinLength(System.String,System.Int32,System.Text.Encoding)
+  fullName: DiscordRPC.Helper.StringTools.WithinLength(System.String, System.Int32, System.Text.Encoding)
   nameWithType: StringTools.WithinLength(String, Int32, Encoding)
 - uid: DiscordRPC.Helper.StringTools.WithinLength*
   name: WithinLength
@@ -1451,12 +1674,6 @@ references:
   commentId: M:DiscordRPC.IO.ManagedNamedPipeClient.GetPipeName(System.Int32)
   fullName: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeName(System.Int32)
   nameWithType: ManagedNamedPipeClient.GetPipeName(Int32)
-- uid: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeName(System.Int32,System.String)
-  name: GetPipeName(Int32, String)
-  href: api/DiscordRPC.IO.ManagedNamedPipeClient.html#DiscordRPC_IO_ManagedNamedPipeClient_GetPipeName_System_Int32_System_String_
-  commentId: M:DiscordRPC.IO.ManagedNamedPipeClient.GetPipeName(System.Int32,System.String)
-  fullName: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeName(System.Int32, System.String)
-  nameWithType: ManagedNamedPipeClient.GetPipeName(Int32, String)
 - uid: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeName*
   name: GetPipeName
   href: api/DiscordRPC.IO.ManagedNamedPipeClient.html#DiscordRPC_IO_ManagedNamedPipeClient_GetPipeName_
@@ -1464,19 +1681,6 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeName
   nameWithType: ManagedNamedPipeClient.GetPipeName
-- uid: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeSandbox
-  name: GetPipeSandbox()
-  href: api/DiscordRPC.IO.ManagedNamedPipeClient.html#DiscordRPC_IO_ManagedNamedPipeClient_GetPipeSandbox
-  commentId: M:DiscordRPC.IO.ManagedNamedPipeClient.GetPipeSandbox
-  fullName: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeSandbox()
-  nameWithType: ManagedNamedPipeClient.GetPipeSandbox()
-- uid: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeSandbox*
-  name: GetPipeSandbox
-  href: api/DiscordRPC.IO.ManagedNamedPipeClient.html#DiscordRPC_IO_ManagedNamedPipeClient_GetPipeSandbox_
-  commentId: Overload:DiscordRPC.IO.ManagedNamedPipeClient.GetPipeSandbox
-  isSpec: "True"
-  fullName: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeSandbox
-  nameWithType: ManagedNamedPipeClient.GetPipeSandbox
 - uid: DiscordRPC.IO.ManagedNamedPipeClient.IsConnected
   name: IsConnected
   href: api/DiscordRPC.IO.ManagedNamedPipeClient.html#DiscordRPC_IO_ManagedNamedPipeClient_IsConnected
@@ -1490,19 +1694,6 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.IO.ManagedNamedPipeClient.IsConnected
   nameWithType: ManagedNamedPipeClient.IsConnected
-- uid: DiscordRPC.IO.ManagedNamedPipeClient.IsUnix
-  name: IsUnix()
-  href: api/DiscordRPC.IO.ManagedNamedPipeClient.html#DiscordRPC_IO_ManagedNamedPipeClient_IsUnix
-  commentId: M:DiscordRPC.IO.ManagedNamedPipeClient.IsUnix
-  fullName: DiscordRPC.IO.ManagedNamedPipeClient.IsUnix()
-  nameWithType: ManagedNamedPipeClient.IsUnix()
-- uid: DiscordRPC.IO.ManagedNamedPipeClient.IsUnix*
-  name: IsUnix
-  href: api/DiscordRPC.IO.ManagedNamedPipeClient.html#DiscordRPC_IO_ManagedNamedPipeClient_IsUnix_
-  commentId: Overload:DiscordRPC.IO.ManagedNamedPipeClient.IsUnix
-  isSpec: "True"
-  fullName: DiscordRPC.IO.ManagedNamedPipeClient.IsUnix
-  nameWithType: ManagedNamedPipeClient.IsUnix
 - uid: DiscordRPC.IO.ManagedNamedPipeClient.Logger
   name: Logger
   href: api/DiscordRPC.IO.ManagedNamedPipeClient.html#DiscordRPC_IO_ManagedNamedPipeClient_Logger
@@ -1619,6 +1810,12 @@ references:
   commentId: M:DiscordRPC.IO.PipeFrame.Equals(DiscordRPC.IO.PipeFrame)
   fullName: DiscordRPC.IO.PipeFrame.Equals(DiscordRPC.IO.PipeFrame)
   nameWithType: PipeFrame.Equals(PipeFrame)
+- uid: DiscordRPC.IO.PipeFrame.Equals(System.Object)
+  name: Equals(Object)
+  href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_Equals_System_Object_
+  commentId: M:DiscordRPC.IO.PipeFrame.Equals(System.Object)
+  fullName: DiscordRPC.IO.PipeFrame.Equals(System.Object)
+  nameWithType: PipeFrame.Equals(Object)
 - uid: DiscordRPC.IO.PipeFrame.Equals*
   name: Equals
   href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_Equals_
@@ -1626,6 +1823,19 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.IO.PipeFrame.Equals
   nameWithType: PipeFrame.Equals
+- uid: DiscordRPC.IO.PipeFrame.GetHashCode
+  name: GetHashCode()
+  href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_GetHashCode
+  commentId: M:DiscordRPC.IO.PipeFrame.GetHashCode
+  fullName: DiscordRPC.IO.PipeFrame.GetHashCode()
+  nameWithType: PipeFrame.GetHashCode()
+- uid: DiscordRPC.IO.PipeFrame.GetHashCode*
+  name: GetHashCode
+  href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_GetHashCode_
+  commentId: Overload:DiscordRPC.IO.PipeFrame.GetHashCode
+  isSpec: "True"
+  fullName: DiscordRPC.IO.PipeFrame.GetHashCode
+  nameWithType: PipeFrame.GetHashCode
 - uid: DiscordRPC.IO.PipeFrame.GetObject*
   name: GetObject
   href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_GetObject_
@@ -1642,25 +1852,12 @@ references:
   fullName.vb: DiscordRPC.IO.PipeFrame.GetObject(Of T)()
   nameWithType: PipeFrame.GetObject<T>()
   nameWithType.vb: PipeFrame.GetObject(Of T)()
-- uid: DiscordRPC.IO.PipeFrame.Length
-  name: Length
-  href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_Length
-  commentId: P:DiscordRPC.IO.PipeFrame.Length
-  fullName: DiscordRPC.IO.PipeFrame.Length
-  nameWithType: PipeFrame.Length
-- uid: DiscordRPC.IO.PipeFrame.Length*
-  name: Length
-  href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_Length_
-  commentId: Overload:DiscordRPC.IO.PipeFrame.Length
-  isSpec: "True"
-  fullName: DiscordRPC.IO.PipeFrame.Length
-  nameWithType: PipeFrame.Length
-- uid: DiscordRPC.IO.PipeFrame.MAX_SIZE
-  name: MAX_SIZE
-  href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_MAX_SIZE
-  commentId: F:DiscordRPC.IO.PipeFrame.MAX_SIZE
-  fullName: DiscordRPC.IO.PipeFrame.MAX_SIZE
-  nameWithType: PipeFrame.MAX_SIZE
+- uid: DiscordRPC.IO.PipeFrame.MaxSize
+  name: MaxSize
+  href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_MaxSize
+  commentId: F:DiscordRPC.IO.PipeFrame.MaxSize
+  fullName: DiscordRPC.IO.PipeFrame.MaxSize
+  nameWithType: PipeFrame.MaxSize
 - uid: DiscordRPC.IO.PipeFrame.Message
   name: Message
   href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_Message
@@ -1674,19 +1871,6 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.IO.PipeFrame.Message
   nameWithType: PipeFrame.Message
-- uid: DiscordRPC.IO.PipeFrame.MessageEncoding
-  name: MessageEncoding
-  href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_MessageEncoding
-  commentId: P:DiscordRPC.IO.PipeFrame.MessageEncoding
-  fullName: DiscordRPC.IO.PipeFrame.MessageEncoding
-  nameWithType: PipeFrame.MessageEncoding
-- uid: DiscordRPC.IO.PipeFrame.MessageEncoding*
-  name: MessageEncoding
-  href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_MessageEncoding_
-  commentId: Overload:DiscordRPC.IO.PipeFrame.MessageEncoding
-  isSpec: "True"
-  fullName: DiscordRPC.IO.PipeFrame.MessageEncoding
-  nameWithType: PipeFrame.MessageEncoding
 - uid: DiscordRPC.IO.PipeFrame.Opcode
   name: Opcode
   href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_Opcode
@@ -1700,11 +1884,11 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.IO.PipeFrame.Opcode
   nameWithType: PipeFrame.Opcode
-- uid: DiscordRPC.IO.PipeFrame.ReadStream(Stream)
+- uid: DiscordRPC.IO.PipeFrame.ReadStream(System.IO.Stream)
   name: ReadStream(Stream)
-  href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_ReadStream_Stream_
-  commentId: M:DiscordRPC.IO.PipeFrame.ReadStream(Stream)
-  fullName: DiscordRPC.IO.PipeFrame.ReadStream(Stream)
+  href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_ReadStream_System_IO_Stream_
+  commentId: M:DiscordRPC.IO.PipeFrame.ReadStream(System.IO.Stream)
+  fullName: DiscordRPC.IO.PipeFrame.ReadStream(System.IO.Stream)
   nameWithType: PipeFrame.ReadStream(Stream)
 - uid: DiscordRPC.IO.PipeFrame.ReadStream*
   name: ReadStream
@@ -1719,12 +1903,6 @@ references:
   commentId: M:DiscordRPC.IO.PipeFrame.SetObject(DiscordRPC.IO.Opcode,System.Object)
   fullName: DiscordRPC.IO.PipeFrame.SetObject(DiscordRPC.IO.Opcode, System.Object)
   nameWithType: PipeFrame.SetObject(Opcode, Object)
-- uid: DiscordRPC.IO.PipeFrame.SetObject(System.Object)
-  name: SetObject(Object)
-  href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_SetObject_System_Object_
-  commentId: M:DiscordRPC.IO.PipeFrame.SetObject(System.Object)
-  fullName: DiscordRPC.IO.PipeFrame.SetObject(System.Object)
-  nameWithType: PipeFrame.SetObject(Object)
 - uid: DiscordRPC.IO.PipeFrame.SetObject*
   name: SetObject
   href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_SetObject_
@@ -1732,11 +1910,11 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.IO.PipeFrame.SetObject
   nameWithType: PipeFrame.SetObject
-- uid: DiscordRPC.IO.PipeFrame.WriteStream(Stream)
+- uid: DiscordRPC.IO.PipeFrame.WriteStream(System.IO.Stream)
   name: WriteStream(Stream)
-  href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_WriteStream_Stream_
-  commentId: M:DiscordRPC.IO.PipeFrame.WriteStream(Stream)
-  fullName: DiscordRPC.IO.PipeFrame.WriteStream(Stream)
+  href: api/DiscordRPC.IO.PipeFrame.html#DiscordRPC_IO_PipeFrame_WriteStream_System_IO_Stream_
+  commentId: M:DiscordRPC.IO.PipeFrame.WriteStream(System.IO.Stream)
+  fullName: DiscordRPC.IO.PipeFrame.WriteStream(System.IO.Stream)
   nameWithType: PipeFrame.WriteStream(Stream)
 - uid: DiscordRPC.IO.PipeFrame.WriteStream*
   name: WriteStream
@@ -1745,6 +1923,18 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.IO.PipeFrame.WriteStream
   nameWithType: PipeFrame.WriteStream
+- uid: DiscordRPC.JoinEvent
+  name: JoinEvent
+  href: api/DiscordRPC.JoinEvent.html
+  commentId: T:DiscordRPC.JoinEvent
+  fullName: DiscordRPC.JoinEvent
+  nameWithType: JoinEvent
+- uid: DiscordRPC.JoinRequestedEvent
+  name: JoinRequestedEvent
+  href: api/DiscordRPC.JoinRequestedEvent.html
+  commentId: T:DiscordRPC.JoinRequestedEvent
+  fullName: DiscordRPC.JoinRequestedEvent
+  nameWithType: JoinRequestedEvent
 - uid: DiscordRPC.Logging
   name: DiscordRPC.Logging
   href: api/DiscordRPC.Logging.html
@@ -1795,19 +1985,6 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.Logging.ConsoleLogger.Colored
   nameWithType: ConsoleLogger.Colored
-- uid: DiscordRPC.Logging.ConsoleLogger.Coloured
-  name: Coloured
-  href: api/DiscordRPC.Logging.ConsoleLogger.html#DiscordRPC_Logging_ConsoleLogger_Coloured
-  commentId: P:DiscordRPC.Logging.ConsoleLogger.Coloured
-  fullName: DiscordRPC.Logging.ConsoleLogger.Coloured
-  nameWithType: ConsoleLogger.Coloured
-- uid: DiscordRPC.Logging.ConsoleLogger.Coloured*
-  name: Coloured
-  href: api/DiscordRPC.Logging.ConsoleLogger.html#DiscordRPC_Logging_ConsoleLogger_Coloured_
-  commentId: Overload:DiscordRPC.Logging.ConsoleLogger.Coloured
-  isSpec: "True"
-  fullName: DiscordRPC.Logging.ConsoleLogger.Coloured
-  nameWithType: ConsoleLogger.Coloured
 - uid: DiscordRPC.Logging.ConsoleLogger.Error(System.String,System.Object[])
   name: Error(String, Object[])
   href: api/DiscordRPC.Logging.ConsoleLogger.html#DiscordRPC_Logging_ConsoleLogger_Error_System_String_System_Object___
@@ -1891,12 +2068,6 @@ references:
   commentId: T:DiscordRPC.Logging.FileLogger
   fullName: DiscordRPC.Logging.FileLogger
   nameWithType: FileLogger
-- uid: DiscordRPC.Logging.FileLogger.#ctor(System.String)
-  name: FileLogger(String)
-  href: api/DiscordRPC.Logging.FileLogger.html#DiscordRPC_Logging_FileLogger__ctor_System_String_
-  commentId: M:DiscordRPC.Logging.FileLogger.#ctor(System.String)
-  fullName: DiscordRPC.Logging.FileLogger.FileLogger(System.String)
-  nameWithType: FileLogger.FileLogger(String)
 - uid: DiscordRPC.Logging.FileLogger.#ctor(System.String,DiscordRPC.Logging.LogLevel)
   name: FileLogger(String, LogLevel)
   href: api/DiscordRPC.Logging.FileLogger.html#DiscordRPC_Logging_FileLogger__ctor_System_String_DiscordRPC_Logging_LogLevel_
@@ -1926,19 +2097,6 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.Logging.FileLogger.Error
   nameWithType: FileLogger.Error
-- uid: DiscordRPC.Logging.FileLogger.File
-  name: File
-  href: api/DiscordRPC.Logging.FileLogger.html#DiscordRPC_Logging_FileLogger_File
-  commentId: P:DiscordRPC.Logging.FileLogger.File
-  fullName: DiscordRPC.Logging.FileLogger.File
-  nameWithType: FileLogger.File
-- uid: DiscordRPC.Logging.FileLogger.File*
-  name: File
-  href: api/DiscordRPC.Logging.FileLogger.html#DiscordRPC_Logging_FileLogger_File_
-  commentId: Overload:DiscordRPC.Logging.FileLogger.File
-  isSpec: "True"
-  fullName: DiscordRPC.Logging.FileLogger.File
-  nameWithType: FileLogger.File
 - uid: DiscordRPC.Logging.FileLogger.Info(System.String,System.Object[])
   name: Info(String, Object[])
   href: api/DiscordRPC.Logging.FileLogger.html#DiscordRPC_Logging_FileLogger_Info_System_String_System_Object___
@@ -2208,6 +2366,109 @@ references:
   commentId: N:DiscordRPC.Message
   fullName: DiscordRPC.Message
   nameWithType: DiscordRPC.Message
+- uid: DiscordRPC.Message.AuthenticateMessage
+  name: AuthenticateMessage
+  href: api/DiscordRPC.Message.AuthenticateMessage.html
+  commentId: T:DiscordRPC.Message.AuthenticateMessage
+  fullName: DiscordRPC.Message.AuthenticateMessage
+  nameWithType: AuthenticateMessage
+- uid: DiscordRPC.Message.AuthenticateMessage.Application
+  name: Application
+  href: api/DiscordRPC.Message.AuthenticateMessage.html#DiscordRPC_Message_AuthenticateMessage_Application
+  commentId: P:DiscordRPC.Message.AuthenticateMessage.Application
+  fullName: DiscordRPC.Message.AuthenticateMessage.Application
+  nameWithType: AuthenticateMessage.Application
+- uid: DiscordRPC.Message.AuthenticateMessage.Application*
+  name: Application
+  href: api/DiscordRPC.Message.AuthenticateMessage.html#DiscordRPC_Message_AuthenticateMessage_Application_
+  commentId: Overload:DiscordRPC.Message.AuthenticateMessage.Application
+  isSpec: "True"
+  fullName: DiscordRPC.Message.AuthenticateMessage.Application
+  nameWithType: AuthenticateMessage.Application
+- uid: DiscordRPC.Message.AuthenticateMessage.Expires
+  name: Expires
+  href: api/DiscordRPC.Message.AuthenticateMessage.html#DiscordRPC_Message_AuthenticateMessage_Expires
+  commentId: P:DiscordRPC.Message.AuthenticateMessage.Expires
+  fullName: DiscordRPC.Message.AuthenticateMessage.Expires
+  nameWithType: AuthenticateMessage.Expires
+- uid: DiscordRPC.Message.AuthenticateMessage.Expires*
+  name: Expires
+  href: api/DiscordRPC.Message.AuthenticateMessage.html#DiscordRPC_Message_AuthenticateMessage_Expires_
+  commentId: Overload:DiscordRPC.Message.AuthenticateMessage.Expires
+  isSpec: "True"
+  fullName: DiscordRPC.Message.AuthenticateMessage.Expires
+  nameWithType: AuthenticateMessage.Expires
+- uid: DiscordRPC.Message.AuthenticateMessage.Scopes
+  name: Scopes
+  href: api/DiscordRPC.Message.AuthenticateMessage.html#DiscordRPC_Message_AuthenticateMessage_Scopes
+  commentId: P:DiscordRPC.Message.AuthenticateMessage.Scopes
+  fullName: DiscordRPC.Message.AuthenticateMessage.Scopes
+  nameWithType: AuthenticateMessage.Scopes
+- uid: DiscordRPC.Message.AuthenticateMessage.Scopes*
+  name: Scopes
+  href: api/DiscordRPC.Message.AuthenticateMessage.html#DiscordRPC_Message_AuthenticateMessage_Scopes_
+  commentId: Overload:DiscordRPC.Message.AuthenticateMessage.Scopes
+  isSpec: "True"
+  fullName: DiscordRPC.Message.AuthenticateMessage.Scopes
+  nameWithType: AuthenticateMessage.Scopes
+- uid: DiscordRPC.Message.AuthenticateMessage.Type
+  name: Type
+  href: api/DiscordRPC.Message.AuthenticateMessage.html#DiscordRPC_Message_AuthenticateMessage_Type
+  commentId: P:DiscordRPC.Message.AuthenticateMessage.Type
+  fullName: DiscordRPC.Message.AuthenticateMessage.Type
+  nameWithType: AuthenticateMessage.Type
+- uid: DiscordRPC.Message.AuthenticateMessage.Type*
+  name: Type
+  href: api/DiscordRPC.Message.AuthenticateMessage.html#DiscordRPC_Message_AuthenticateMessage_Type_
+  commentId: Overload:DiscordRPC.Message.AuthenticateMessage.Type
+  isSpec: "True"
+  fullName: DiscordRPC.Message.AuthenticateMessage.Type
+  nameWithType: AuthenticateMessage.Type
+- uid: DiscordRPC.Message.AuthenticateMessage.User
+  name: User
+  href: api/DiscordRPC.Message.AuthenticateMessage.html#DiscordRPC_Message_AuthenticateMessage_User
+  commentId: P:DiscordRPC.Message.AuthenticateMessage.User
+  fullName: DiscordRPC.Message.AuthenticateMessage.User
+  nameWithType: AuthenticateMessage.User
+- uid: DiscordRPC.Message.AuthenticateMessage.User*
+  name: User
+  href: api/DiscordRPC.Message.AuthenticateMessage.html#DiscordRPC_Message_AuthenticateMessage_User_
+  commentId: Overload:DiscordRPC.Message.AuthenticateMessage.User
+  isSpec: "True"
+  fullName: DiscordRPC.Message.AuthenticateMessage.User
+  nameWithType: AuthenticateMessage.User
+- uid: DiscordRPC.Message.AuthorizeMessage
+  name: AuthorizeMessage
+  href: api/DiscordRPC.Message.AuthorizeMessage.html
+  commentId: T:DiscordRPC.Message.AuthorizeMessage
+  fullName: DiscordRPC.Message.AuthorizeMessage
+  nameWithType: AuthorizeMessage
+- uid: DiscordRPC.Message.AuthorizeMessage.Code
+  name: Code
+  href: api/DiscordRPC.Message.AuthorizeMessage.html#DiscordRPC_Message_AuthorizeMessage_Code
+  commentId: P:DiscordRPC.Message.AuthorizeMessage.Code
+  fullName: DiscordRPC.Message.AuthorizeMessage.Code
+  nameWithType: AuthorizeMessage.Code
+- uid: DiscordRPC.Message.AuthorizeMessage.Code*
+  name: Code
+  href: api/DiscordRPC.Message.AuthorizeMessage.html#DiscordRPC_Message_AuthorizeMessage_Code_
+  commentId: Overload:DiscordRPC.Message.AuthorizeMessage.Code
+  isSpec: "True"
+  fullName: DiscordRPC.Message.AuthorizeMessage.Code
+  nameWithType: AuthorizeMessage.Code
+- uid: DiscordRPC.Message.AuthorizeMessage.Type
+  name: Type
+  href: api/DiscordRPC.Message.AuthorizeMessage.html#DiscordRPC_Message_AuthorizeMessage_Type
+  commentId: P:DiscordRPC.Message.AuthorizeMessage.Type
+  fullName: DiscordRPC.Message.AuthorizeMessage.Type
+  nameWithType: AuthorizeMessage.Type
+- uid: DiscordRPC.Message.AuthorizeMessage.Type*
+  name: Type
+  href: api/DiscordRPC.Message.AuthorizeMessage.html#DiscordRPC_Message_AuthorizeMessage_Type_
+  commentId: Overload:DiscordRPC.Message.AuthorizeMessage.Type
+  isSpec: "True"
+  fullName: DiscordRPC.Message.AuthorizeMessage.Type
+  nameWithType: AuthorizeMessage.Type
 - uid: DiscordRPC.Message.CloseMessage
   name: CloseMessage
   href: api/DiscordRPC.Message.CloseMessage.html
@@ -2365,12 +2626,12 @@ references:
   commentId: F:DiscordRPC.Message.ErrorCode.Success
   fullName: DiscordRPC.Message.ErrorCode.Success
   nameWithType: ErrorCode.Success
-- uid: DiscordRPC.Message.ErrorCode.UnkownError
-  name: UnkownError
-  href: api/DiscordRPC.Message.ErrorCode.html#DiscordRPC_Message_ErrorCode_UnkownError
-  commentId: F:DiscordRPC.Message.ErrorCode.UnkownError
-  fullName: DiscordRPC.Message.ErrorCode.UnkownError
-  nameWithType: ErrorCode.UnkownError
+- uid: DiscordRPC.Message.ErrorCode.UnknownError
+  name: UnknownError
+  href: api/DiscordRPC.Message.ErrorCode.html#DiscordRPC_Message_ErrorCode_UnknownError
+  commentId: F:DiscordRPC.Message.ErrorCode.UnknownError
+  fullName: DiscordRPC.Message.ErrorCode.UnknownError
+  nameWithType: ErrorCode.UnknownError
 - uid: DiscordRPC.Message.ErrorMessage
   name: ErrorMessage
   href: api/DiscordRPC.Message.ErrorMessage.html
@@ -2416,51 +2677,6 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.Message.ErrorMessage.Type
   nameWithType: ErrorMessage.Type
-- uid: DiscordRPC.Message.IMessage
-  name: IMessage
-  href: api/DiscordRPC.Message.IMessage.html
-  commentId: T:DiscordRPC.Message.IMessage
-  fullName: DiscordRPC.Message.IMessage
-  nameWithType: IMessage
-- uid: DiscordRPC.Message.IMessage.#ctor
-  name: IMessage()
-  href: api/DiscordRPC.Message.IMessage.html#DiscordRPC_Message_IMessage__ctor
-  commentId: M:DiscordRPC.Message.IMessage.#ctor
-  fullName: DiscordRPC.Message.IMessage.IMessage()
-  nameWithType: IMessage.IMessage()
-- uid: DiscordRPC.Message.IMessage.#ctor*
-  name: IMessage
-  href: api/DiscordRPC.Message.IMessage.html#DiscordRPC_Message_IMessage__ctor_
-  commentId: Overload:DiscordRPC.Message.IMessage.#ctor
-  isSpec: "True"
-  fullName: DiscordRPC.Message.IMessage.IMessage
-  nameWithType: IMessage.IMessage
-- uid: DiscordRPC.Message.IMessage.TimeCreated
-  name: TimeCreated
-  href: api/DiscordRPC.Message.IMessage.html#DiscordRPC_Message_IMessage_TimeCreated
-  commentId: P:DiscordRPC.Message.IMessage.TimeCreated
-  fullName: DiscordRPC.Message.IMessage.TimeCreated
-  nameWithType: IMessage.TimeCreated
-- uid: DiscordRPC.Message.IMessage.TimeCreated*
-  name: TimeCreated
-  href: api/DiscordRPC.Message.IMessage.html#DiscordRPC_Message_IMessage_TimeCreated_
-  commentId: Overload:DiscordRPC.Message.IMessage.TimeCreated
-  isSpec: "True"
-  fullName: DiscordRPC.Message.IMessage.TimeCreated
-  nameWithType: IMessage.TimeCreated
-- uid: DiscordRPC.Message.IMessage.Type
-  name: Type
-  href: api/DiscordRPC.Message.IMessage.html#DiscordRPC_Message_IMessage_Type
-  commentId: P:DiscordRPC.Message.IMessage.Type
-  fullName: DiscordRPC.Message.IMessage.Type
-  nameWithType: IMessage.Type
-- uid: DiscordRPC.Message.IMessage.Type*
-  name: Type
-  href: api/DiscordRPC.Message.IMessage.html#DiscordRPC_Message_IMessage_Type_
-  commentId: Overload:DiscordRPC.Message.IMessage.Type
-  isSpec: "True"
-  fullName: DiscordRPC.Message.IMessage.Type
-  nameWithType: IMessage.Type
 - uid: DiscordRPC.Message.JoinMessage
   name: JoinMessage
   href: api/DiscordRPC.Message.JoinMessage.html
@@ -2525,12 +2741,69 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.Message.JoinRequestMessage.User
   nameWithType: JoinRequestMessage.User
+- uid: DiscordRPC.Message.Message
+  name: Message
+  href: api/DiscordRPC.Message.Message.html
+  commentId: T:DiscordRPC.Message.Message
+  fullName: DiscordRPC.Message.Message
+  nameWithType: Message
+- uid: DiscordRPC.Message.Message.#ctor
+  name: Message()
+  href: api/DiscordRPC.Message.Message.html#DiscordRPC_Message_Message__ctor
+  commentId: M:DiscordRPC.Message.Message.#ctor
+  fullName: DiscordRPC.Message.Message.Message()
+  nameWithType: Message.Message()
+- uid: DiscordRPC.Message.Message.#ctor*
+  name: Message
+  href: api/DiscordRPC.Message.Message.html#DiscordRPC_Message_Message__ctor_
+  commentId: Overload:DiscordRPC.Message.Message.#ctor
+  isSpec: "True"
+  fullName: DiscordRPC.Message.Message.Message
+  nameWithType: Message.Message
+- uid: DiscordRPC.Message.Message.TimeCreated
+  name: TimeCreated
+  href: api/DiscordRPC.Message.Message.html#DiscordRPC_Message_Message_TimeCreated
+  commentId: P:DiscordRPC.Message.Message.TimeCreated
+  fullName: DiscordRPC.Message.Message.TimeCreated
+  nameWithType: Message.TimeCreated
+- uid: DiscordRPC.Message.Message.TimeCreated*
+  name: TimeCreated
+  href: api/DiscordRPC.Message.Message.html#DiscordRPC_Message_Message_TimeCreated_
+  commentId: Overload:DiscordRPC.Message.Message.TimeCreated
+  isSpec: "True"
+  fullName: DiscordRPC.Message.Message.TimeCreated
+  nameWithType: Message.TimeCreated
+- uid: DiscordRPC.Message.Message.Type
+  name: Type
+  href: api/DiscordRPC.Message.Message.html#DiscordRPC_Message_Message_Type
+  commentId: P:DiscordRPC.Message.Message.Type
+  fullName: DiscordRPC.Message.Message.Type
+  nameWithType: Message.Type
+- uid: DiscordRPC.Message.Message.Type*
+  name: Type
+  href: api/DiscordRPC.Message.Message.html#DiscordRPC_Message_Message_Type_
+  commentId: Overload:DiscordRPC.Message.Message.Type
+  isSpec: "True"
+  fullName: DiscordRPC.Message.Message.Type
+  nameWithType: Message.Type
 - uid: DiscordRPC.Message.MessageType
   name: MessageType
   href: api/DiscordRPC.Message.MessageType.html
   commentId: T:DiscordRPC.Message.MessageType
   fullName: DiscordRPC.Message.MessageType
   nameWithType: MessageType
+- uid: DiscordRPC.Message.MessageType.Authenticate
+  name: Authenticate
+  href: api/DiscordRPC.Message.MessageType.html#DiscordRPC_Message_MessageType_Authenticate
+  commentId: F:DiscordRPC.Message.MessageType.Authenticate
+  fullName: DiscordRPC.Message.MessageType.Authenticate
+  nameWithType: MessageType.Authenticate
+- uid: DiscordRPC.Message.MessageType.Authorize
+  name: Authorize
+  href: api/DiscordRPC.Message.MessageType.html#DiscordRPC_Message_MessageType_Authorize
+  commentId: F:DiscordRPC.Message.MessageType.Authorize
+  fullName: DiscordRPC.Message.MessageType.Authorize
+  nameWithType: MessageType.Authorize
 - uid: DiscordRPC.Message.MessageType.Close
   name: Close
   href: api/DiscordRPC.Message.MessageType.html#DiscordRPC_Message_MessageType_Close
@@ -2597,6 +2870,12 @@ references:
   commentId: F:DiscordRPC.Message.MessageType.Unsubscribe
   fullName: DiscordRPC.Message.MessageType.Unsubscribe
   nameWithType: MessageType.Unsubscribe
+- uid: DiscordRPC.Message.MessageType.VoiceSettings
+  name: VoiceSettings
+  href: api/DiscordRPC.Message.MessageType.html#DiscordRPC_Message_MessageType_VoiceSettings
+  commentId: F:DiscordRPC.Message.MessageType.VoiceSettings
+  fullName: DiscordRPC.Message.MessageType.VoiceSettings
+  nameWithType: MessageType.VoiceSettings
 - uid: DiscordRPC.Message.PresenceMessage
   name: PresenceMessage
   href: api/DiscordRPC.Message.PresenceMessage.html
@@ -2796,12 +3075,57 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.Message.UnsubscribeMessage.Type
   nameWithType: UnsubscribeMessage.Type
+- uid: DiscordRPC.Message.VoiceSettingsMessage
+  name: VoiceSettingsMessage
+  href: api/DiscordRPC.Message.VoiceSettingsMessage.html
+  commentId: T:DiscordRPC.Message.VoiceSettingsMessage
+  fullName: DiscordRPC.Message.VoiceSettingsMessage
+  nameWithType: VoiceSettingsMessage
+- uid: DiscordRPC.Message.VoiceSettingsMessage.Type
+  name: Type
+  href: api/DiscordRPC.Message.VoiceSettingsMessage.html#DiscordRPC_Message_VoiceSettingsMessage_Type
+  commentId: P:DiscordRPC.Message.VoiceSettingsMessage.Type
+  fullName: DiscordRPC.Message.VoiceSettingsMessage.Type
+  nameWithType: VoiceSettingsMessage.Type
+- uid: DiscordRPC.Message.VoiceSettingsMessage.Type*
+  name: Type
+  href: api/DiscordRPC.Message.VoiceSettingsMessage.html#DiscordRPC_Message_VoiceSettingsMessage_Type_
+  commentId: Overload:DiscordRPC.Message.VoiceSettingsMessage.Type
+  isSpec: "True"
+  fullName: DiscordRPC.Message.VoiceSettingsMessage.Type
+  nameWithType: VoiceSettingsMessage.Type
+- uid: DiscordRPC.Message.VoiceSettingsMessage.VoiceSettings
+  name: VoiceSettings
+  href: api/DiscordRPC.Message.VoiceSettingsMessage.html#DiscordRPC_Message_VoiceSettingsMessage_VoiceSettings
+  commentId: P:DiscordRPC.Message.VoiceSettingsMessage.VoiceSettings
+  fullName: DiscordRPC.Message.VoiceSettingsMessage.VoiceSettings
+  nameWithType: VoiceSettingsMessage.VoiceSettings
+- uid: DiscordRPC.Message.VoiceSettingsMessage.VoiceSettings*
+  name: VoiceSettings
+  href: api/DiscordRPC.Message.VoiceSettingsMessage.html#DiscordRPC_Message_VoiceSettingsMessage_VoiceSettings_
+  commentId: Overload:DiscordRPC.Message.VoiceSettingsMessage.VoiceSettings
+  isSpec: "True"
+  fullName: DiscordRPC.Message.VoiceSettingsMessage.VoiceSettings
+  nameWithType: VoiceSettingsMessage.VoiceSettings
 - uid: DiscordRPC.Party
   name: Party
   href: api/DiscordRPC.Party.html
   commentId: T:DiscordRPC.Party
   fullName: DiscordRPC.Party
   nameWithType: Party
+- uid: DiscordRPC.Party.CurrentSize
+  name: CurrentSize
+  href: api/DiscordRPC.Party.html#DiscordRPC_Party_CurrentSize
+  commentId: P:DiscordRPC.Party.CurrentSize
+  fullName: DiscordRPC.Party.CurrentSize
+  nameWithType: Party.CurrentSize
+- uid: DiscordRPC.Party.CurrentSize*
+  name: CurrentSize
+  href: api/DiscordRPC.Party.html#DiscordRPC_Party_CurrentSize_
+  commentId: Overload:DiscordRPC.Party.CurrentSize
+  isSpec: "True"
+  fullName: DiscordRPC.Party.CurrentSize
+  nameWithType: Party.CurrentSize
 - uid: DiscordRPC.Party.ID
   name: ID
   href: api/DiscordRPC.Party.html#DiscordRPC_Party_ID
@@ -2859,19 +3183,18 @@ references:
   commentId: F:DiscordRPC.Party.PrivacySetting.Public
   fullName: DiscordRPC.Party.PrivacySetting.Public
   nameWithType: Party.PrivacySetting.Public
-- uid: DiscordRPC.Party.Size
-  name: Size
-  href: api/DiscordRPC.Party.html#DiscordRPC_Party_Size
-  commentId: P:DiscordRPC.Party.Size
-  fullName: DiscordRPC.Party.Size
-  nameWithType: Party.Size
-- uid: DiscordRPC.Party.Size*
-  name: Size
-  href: api/DiscordRPC.Party.html#DiscordRPC_Party_Size_
-  commentId: Overload:DiscordRPC.Party.Size
-  isSpec: "True"
-  fullName: DiscordRPC.Party.Size
-  nameWithType: Party.Size
+- uid: DiscordRPC.PresenceUpdateEvent
+  name: PresenceUpdateEvent
+  href: api/DiscordRPC.PresenceUpdateEvent.html
+  commentId: T:DiscordRPC.PresenceUpdateEvent
+  fullName: DiscordRPC.PresenceUpdateEvent
+  nameWithType: PresenceUpdateEvent
+- uid: DiscordRPC.ReadyEvent
+  name: ReadyEvent
+  href: api/DiscordRPC.ReadyEvent.html
+  commentId: T:DiscordRPC.ReadyEvent
+  fullName: DiscordRPC.ReadyEvent
+  nameWithType: ReadyEvent
 - uid: DiscordRPC.RichPresence
   name: RichPresence
   href: api/DiscordRPC.RichPresence.html
@@ -2904,19 +3227,6 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.RichPresence.Clone
   nameWithType: RichPresence.Clone
-- uid: DiscordRPC.RichPresence.HasButtons
-  name: HasButtons()
-  href: api/DiscordRPC.RichPresence.html#DiscordRPC_RichPresence_HasButtons
-  commentId: M:DiscordRPC.RichPresence.HasButtons
-  fullName: DiscordRPC.RichPresence.HasButtons()
-  nameWithType: RichPresence.HasButtons()
-- uid: DiscordRPC.RichPresence.HasButtons*
-  name: HasButtons
-  href: api/DiscordRPC.RichPresence.html#DiscordRPC_RichPresence_HasButtons_
-  commentId: Overload:DiscordRPC.RichPresence.HasButtons
-  isSpec: "True"
-  fullName: DiscordRPC.RichPresence.HasButtons
-  nameWithType: RichPresence.HasButtons
 - uid: DiscordRPC.RichPresence.op_Implicit(DiscordRPC.RichPresence)~System.Boolean
   name: Implicit(RichPresence to Boolean)
   href: api/DiscordRPC.RichPresence.html#DiscordRPC_RichPresence_op_Implicit_DiscordRPC_RichPresence__System_Boolean
@@ -3014,17 +3324,23 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.RichPresence.WithTimestamps
   nameWithType: RichPresence.WithTimestamps
+- uid: DiscordRPC.RpcMessageEvent
+  name: RpcMessageEvent
+  href: api/DiscordRPC.RpcMessageEvent.html
+  commentId: T:DiscordRPC.RpcMessageEvent
+  fullName: DiscordRPC.RpcMessageEvent
+  nameWithType: RpcMessageEvent
 - uid: DiscordRPC.Secrets
   name: Secrets
   href: api/DiscordRPC.Secrets.html
   commentId: T:DiscordRPC.Secrets
   fullName: DiscordRPC.Secrets
   nameWithType: Secrets
-- uid: DiscordRPC.Secrets.CreateFriendlySecret(Random)
+- uid: DiscordRPC.Secrets.CreateFriendlySecret(System.Random)
   name: CreateFriendlySecret(Random)
-  href: api/DiscordRPC.Secrets.html#DiscordRPC_Secrets_CreateFriendlySecret_Random_
-  commentId: M:DiscordRPC.Secrets.CreateFriendlySecret(Random)
-  fullName: DiscordRPC.Secrets.CreateFriendlySecret(Random)
+  href: api/DiscordRPC.Secrets.html#DiscordRPC_Secrets_CreateFriendlySecret_System_Random_
+  commentId: M:DiscordRPC.Secrets.CreateFriendlySecret(System.Random)
+  fullName: DiscordRPC.Secrets.CreateFriendlySecret(System.Random)
   nameWithType: Secrets.CreateFriendlySecret(Random)
 - uid: DiscordRPC.Secrets.CreateFriendlySecret*
   name: CreateFriendlySecret
@@ -3033,11 +3349,11 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.Secrets.CreateFriendlySecret
   nameWithType: Secrets.CreateFriendlySecret
-- uid: DiscordRPC.Secrets.CreateSecret(Random)
+- uid: DiscordRPC.Secrets.CreateSecret(System.Random)
   name: CreateSecret(Random)
-  href: api/DiscordRPC.Secrets.html#DiscordRPC_Secrets_CreateSecret_Random_
-  commentId: M:DiscordRPC.Secrets.CreateSecret(Random)
-  fullName: DiscordRPC.Secrets.CreateSecret(Random)
+  href: api/DiscordRPC.Secrets.html#DiscordRPC_Secrets_CreateSecret_System_Random_
+  commentId: M:DiscordRPC.Secrets.CreateSecret(System.Random)
+  fullName: DiscordRPC.Secrets.CreateSecret(System.Random)
   nameWithType: Secrets.CreateSecret(Random)
 - uid: DiscordRPC.Secrets.CreateSecret*
   name: CreateSecret
@@ -3111,6 +3427,63 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.Secrets.SpectateSecret
   nameWithType: Secrets.SpectateSecret
+- uid: DiscordRPC.ShortcutKeyCombo
+  name: ShortcutKeyCombo
+  href: api/DiscordRPC.ShortcutKeyCombo.html
+  commentId: T:DiscordRPC.ShortcutKeyCombo
+  fullName: DiscordRPC.ShortcutKeyCombo
+  nameWithType: ShortcutKeyCombo
+- uid: DiscordRPC.ShortcutKeyCombo.Code
+  name: Code
+  href: api/DiscordRPC.ShortcutKeyCombo.html#DiscordRPC_ShortcutKeyCombo_Code
+  commentId: P:DiscordRPC.ShortcutKeyCombo.Code
+  fullName: DiscordRPC.ShortcutKeyCombo.Code
+  nameWithType: ShortcutKeyCombo.Code
+- uid: DiscordRPC.ShortcutKeyCombo.Code*
+  name: Code
+  href: api/DiscordRPC.ShortcutKeyCombo.html#DiscordRPC_ShortcutKeyCombo_Code_
+  commentId: Overload:DiscordRPC.ShortcutKeyCombo.Code
+  isSpec: "True"
+  fullName: DiscordRPC.ShortcutKeyCombo.Code
+  nameWithType: ShortcutKeyCombo.Code
+- uid: DiscordRPC.ShortcutKeyCombo.Name
+  name: Name
+  href: api/DiscordRPC.ShortcutKeyCombo.html#DiscordRPC_ShortcutKeyCombo_Name
+  commentId: P:DiscordRPC.ShortcutKeyCombo.Name
+  fullName: DiscordRPC.ShortcutKeyCombo.Name
+  nameWithType: ShortcutKeyCombo.Name
+- uid: DiscordRPC.ShortcutKeyCombo.Name*
+  name: Name
+  href: api/DiscordRPC.ShortcutKeyCombo.html#DiscordRPC_ShortcutKeyCombo_Name_
+  commentId: Overload:DiscordRPC.ShortcutKeyCombo.Name
+  isSpec: "True"
+  fullName: DiscordRPC.ShortcutKeyCombo.Name
+  nameWithType: ShortcutKeyCombo.Name
+- uid: DiscordRPC.ShortcutKeyCombo.Type
+  name: Type
+  href: api/DiscordRPC.ShortcutKeyCombo.html#DiscordRPC_ShortcutKeyCombo_Type
+  commentId: P:DiscordRPC.ShortcutKeyCombo.Type
+  fullName: DiscordRPC.ShortcutKeyCombo.Type
+  nameWithType: ShortcutKeyCombo.Type
+- uid: DiscordRPC.ShortcutKeyCombo.Type*
+  name: Type
+  href: api/DiscordRPC.ShortcutKeyCombo.html#DiscordRPC_ShortcutKeyCombo_Type_
+  commentId: Overload:DiscordRPC.ShortcutKeyCombo.Type
+  isSpec: "True"
+  fullName: DiscordRPC.ShortcutKeyCombo.Type
+  nameWithType: ShortcutKeyCombo.Type
+- uid: DiscordRPC.SpectateEvent
+  name: SpectateEvent
+  href: api/DiscordRPC.SpectateEvent.html
+  commentId: T:DiscordRPC.SpectateEvent
+  fullName: DiscordRPC.SpectateEvent
+  nameWithType: SpectateEvent
+- uid: DiscordRPC.SubscribeEvent
+  name: SubscribeEvent
+  href: api/DiscordRPC.SubscribeEvent.html
+  commentId: T:DiscordRPC.SubscribeEvent
+  fullName: DiscordRPC.SubscribeEvent
+  nameWithType: SubscribeEvent
 - uid: DiscordRPC.Timestamps
   name: Timestamps
   href: api/DiscordRPC.Timestamps.html
@@ -3123,17 +3496,17 @@ references:
   commentId: M:DiscordRPC.Timestamps.#ctor
   fullName: DiscordRPC.Timestamps.Timestamps()
   nameWithType: Timestamps.Timestamps()
-- uid: DiscordRPC.Timestamps.#ctor(DateTime)
+- uid: DiscordRPC.Timestamps.#ctor(System.DateTime)
   name: Timestamps(DateTime)
-  href: api/DiscordRPC.Timestamps.html#DiscordRPC_Timestamps__ctor_DateTime_
-  commentId: M:DiscordRPC.Timestamps.#ctor(DateTime)
-  fullName: DiscordRPC.Timestamps.Timestamps(DateTime)
+  href: api/DiscordRPC.Timestamps.html#DiscordRPC_Timestamps__ctor_System_DateTime_
+  commentId: M:DiscordRPC.Timestamps.#ctor(System.DateTime)
+  fullName: DiscordRPC.Timestamps.Timestamps(System.DateTime)
   nameWithType: Timestamps.Timestamps(DateTime)
-- uid: DiscordRPC.Timestamps.#ctor(DateTime,DateTime)
+- uid: DiscordRPC.Timestamps.#ctor(System.DateTime,System.DateTime)
   name: Timestamps(DateTime, DateTime)
-  href: api/DiscordRPC.Timestamps.html#DiscordRPC_Timestamps__ctor_DateTime_DateTime_
-  commentId: M:DiscordRPC.Timestamps.#ctor(DateTime,DateTime)
-  fullName: DiscordRPC.Timestamps.Timestamps(DateTime, DateTime)
+  href: api/DiscordRPC.Timestamps.html#DiscordRPC_Timestamps__ctor_System_DateTime_System_DateTime_
+  commentId: M:DiscordRPC.Timestamps.#ctor(System.DateTime,System.DateTime)
+  fullName: DiscordRPC.Timestamps.Timestamps(System.DateTime, System.DateTime)
   nameWithType: Timestamps.Timestamps(DateTime, DateTime)
 - uid: DiscordRPC.Timestamps.#ctor*
   name: Timestamps
@@ -3174,11 +3547,11 @@ references:
   commentId: M:DiscordRPC.Timestamps.FromTimeSpan(System.Double)
   fullName: DiscordRPC.Timestamps.FromTimeSpan(System.Double)
   nameWithType: Timestamps.FromTimeSpan(Double)
-- uid: DiscordRPC.Timestamps.FromTimeSpan(TimeSpan)
+- uid: DiscordRPC.Timestamps.FromTimeSpan(System.TimeSpan)
   name: FromTimeSpan(TimeSpan)
-  href: api/DiscordRPC.Timestamps.html#DiscordRPC_Timestamps_FromTimeSpan_TimeSpan_
-  commentId: M:DiscordRPC.Timestamps.FromTimeSpan(TimeSpan)
-  fullName: DiscordRPC.Timestamps.FromTimeSpan(TimeSpan)
+  href: api/DiscordRPC.Timestamps.html#DiscordRPC_Timestamps_FromTimeSpan_System_TimeSpan_
+  commentId: M:DiscordRPC.Timestamps.FromTimeSpan(System.TimeSpan)
+  fullName: DiscordRPC.Timestamps.FromTimeSpan(System.TimeSpan)
   nameWithType: Timestamps.FromTimeSpan(TimeSpan)
 - uid: DiscordRPC.Timestamps.FromTimeSpan*
   name: FromTimeSpan
@@ -3239,11 +3612,11 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.Timestamps.StartUnixMilliseconds
   nameWithType: Timestamps.StartUnixMilliseconds
-- uid: DiscordRPC.Timestamps.ToUnixMilliseconds(DateTime)
+- uid: DiscordRPC.Timestamps.ToUnixMilliseconds(System.DateTime)
   name: ToUnixMilliseconds(DateTime)
-  href: api/DiscordRPC.Timestamps.html#DiscordRPC_Timestamps_ToUnixMilliseconds_DateTime_
-  commentId: M:DiscordRPC.Timestamps.ToUnixMilliseconds(DateTime)
-  fullName: DiscordRPC.Timestamps.ToUnixMilliseconds(DateTime)
+  href: api/DiscordRPC.Timestamps.html#DiscordRPC_Timestamps_ToUnixMilliseconds_System_DateTime_
+  commentId: M:DiscordRPC.Timestamps.ToUnixMilliseconds(System.DateTime)
+  fullName: DiscordRPC.Timestamps.ToUnixMilliseconds(System.DateTime)
   nameWithType: Timestamps.ToUnixMilliseconds(DateTime)
 - uid: DiscordRPC.Timestamps.ToUnixMilliseconds*
   name: ToUnixMilliseconds
@@ -3252,6 +3625,12 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.Timestamps.ToUnixMilliseconds
   nameWithType: Timestamps.ToUnixMilliseconds
+- uid: DiscordRPC.UnsubscribeEvent
+  name: UnsubscribeEvent
+  href: api/DiscordRPC.UnsubscribeEvent.html
+  commentId: T:DiscordRPC.UnsubscribeEvent
+  fullName: DiscordRPC.UnsubscribeEvent
+  nameWithType: UnsubscribeEvent
 - uid: DiscordRPC.User
   name: User
   href: api/DiscordRPC.User.html
@@ -3307,54 +3686,54 @@ references:
   commentId: T:DiscordRPC.User.AvatarSize
   fullName: DiscordRPC.User.AvatarSize
   nameWithType: User.AvatarSize
-- uid: DiscordRPC.User.AvatarSize.x1024
-  name: x1024
-  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_x1024
-  commentId: F:DiscordRPC.User.AvatarSize.x1024
-  fullName: DiscordRPC.User.AvatarSize.x1024
-  nameWithType: User.AvatarSize.x1024
-- uid: DiscordRPC.User.AvatarSize.x128
-  name: x128
-  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_x128
-  commentId: F:DiscordRPC.User.AvatarSize.x128
-  fullName: DiscordRPC.User.AvatarSize.x128
-  nameWithType: User.AvatarSize.x128
-- uid: DiscordRPC.User.AvatarSize.x16
-  name: x16
-  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_x16
-  commentId: F:DiscordRPC.User.AvatarSize.x16
-  fullName: DiscordRPC.User.AvatarSize.x16
-  nameWithType: User.AvatarSize.x16
-- uid: DiscordRPC.User.AvatarSize.x2048
-  name: x2048
-  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_x2048
-  commentId: F:DiscordRPC.User.AvatarSize.x2048
-  fullName: DiscordRPC.User.AvatarSize.x2048
-  nameWithType: User.AvatarSize.x2048
-- uid: DiscordRPC.User.AvatarSize.x256
-  name: x256
-  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_x256
-  commentId: F:DiscordRPC.User.AvatarSize.x256
-  fullName: DiscordRPC.User.AvatarSize.x256
-  nameWithType: User.AvatarSize.x256
-- uid: DiscordRPC.User.AvatarSize.x32
-  name: x32
-  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_x32
-  commentId: F:DiscordRPC.User.AvatarSize.x32
-  fullName: DiscordRPC.User.AvatarSize.x32
-  nameWithType: User.AvatarSize.x32
-- uid: DiscordRPC.User.AvatarSize.x512
-  name: x512
-  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_x512
-  commentId: F:DiscordRPC.User.AvatarSize.x512
-  fullName: DiscordRPC.User.AvatarSize.x512
-  nameWithType: User.AvatarSize.x512
-- uid: DiscordRPC.User.AvatarSize.x64
-  name: x64
-  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_x64
-  commentId: F:DiscordRPC.User.AvatarSize.x64
-  fullName: DiscordRPC.User.AvatarSize.x64
-  nameWithType: User.AvatarSize.x64
+- uid: DiscordRPC.User.AvatarSize.X1024
+  name: X1024
+  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_X1024
+  commentId: F:DiscordRPC.User.AvatarSize.X1024
+  fullName: DiscordRPC.User.AvatarSize.X1024
+  nameWithType: User.AvatarSize.X1024
+- uid: DiscordRPC.User.AvatarSize.X128
+  name: X128
+  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_X128
+  commentId: F:DiscordRPC.User.AvatarSize.X128
+  fullName: DiscordRPC.User.AvatarSize.X128
+  nameWithType: User.AvatarSize.X128
+- uid: DiscordRPC.User.AvatarSize.X16
+  name: X16
+  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_X16
+  commentId: F:DiscordRPC.User.AvatarSize.X16
+  fullName: DiscordRPC.User.AvatarSize.X16
+  nameWithType: User.AvatarSize.X16
+- uid: DiscordRPC.User.AvatarSize.X2048
+  name: X2048
+  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_X2048
+  commentId: F:DiscordRPC.User.AvatarSize.X2048
+  fullName: DiscordRPC.User.AvatarSize.X2048
+  nameWithType: User.AvatarSize.X2048
+- uid: DiscordRPC.User.AvatarSize.X256
+  name: X256
+  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_X256
+  commentId: F:DiscordRPC.User.AvatarSize.X256
+  fullName: DiscordRPC.User.AvatarSize.X256
+  nameWithType: User.AvatarSize.X256
+- uid: DiscordRPC.User.AvatarSize.X32
+  name: X32
+  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_X32
+  commentId: F:DiscordRPC.User.AvatarSize.X32
+  fullName: DiscordRPC.User.AvatarSize.X32
+  nameWithType: User.AvatarSize.X32
+- uid: DiscordRPC.User.AvatarSize.X512
+  name: X512
+  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_X512
+  commentId: F:DiscordRPC.User.AvatarSize.X512
+  fullName: DiscordRPC.User.AvatarSize.X512
+  nameWithType: User.AvatarSize.X512
+- uid: DiscordRPC.User.AvatarSize.X64
+  name: X64
+  href: api/DiscordRPC.User.AvatarSize.html#DiscordRPC_User_AvatarSize_X64
+  commentId: F:DiscordRPC.User.AvatarSize.X64
+  fullName: DiscordRPC.User.AvatarSize.X64
+  nameWithType: User.AvatarSize.X64
 - uid: DiscordRPC.User.CdnEndpoint
   name: CdnEndpoint
   href: api/DiscordRPC.User.html#DiscordRPC_User_CdnEndpoint
@@ -3473,19 +3852,6 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.User.Flags
   nameWithType: User.Flags
-- uid: DiscordRPC.User.GetAvatarExtension(DiscordRPC.User.AvatarFormat)
-  name: GetAvatarExtension(User.AvatarFormat)
-  href: api/DiscordRPC.User.html#DiscordRPC_User_GetAvatarExtension_DiscordRPC_User_AvatarFormat_
-  commentId: M:DiscordRPC.User.GetAvatarExtension(DiscordRPC.User.AvatarFormat)
-  fullName: DiscordRPC.User.GetAvatarExtension(DiscordRPC.User.AvatarFormat)
-  nameWithType: User.GetAvatarExtension(User.AvatarFormat)
-- uid: DiscordRPC.User.GetAvatarExtension*
-  name: GetAvatarExtension
-  href: api/DiscordRPC.User.html#DiscordRPC_User_GetAvatarExtension_
-  commentId: Overload:DiscordRPC.User.GetAvatarExtension
-  isSpec: "True"
-  fullName: DiscordRPC.User.GetAvatarExtension
-  nameWithType: User.GetAvatarExtension
 - uid: DiscordRPC.User.GetAvatarURL(DiscordRPC.User.AvatarFormat)
   name: GetAvatarURL(User.AvatarFormat)
   href: api/DiscordRPC.User.html#DiscordRPC_User_GetAvatarURL_DiscordRPC_User_AvatarFormat_
@@ -3581,3 +3947,306 @@ references:
   isSpec: "True"
   fullName: DiscordRPC.User.Username
   nameWithType: User.Username
+- uid: DiscordRPC.VoiceSettings
+  name: VoiceSettings
+  href: api/DiscordRPC.VoiceSettings.html
+  commentId: T:DiscordRPC.VoiceSettings
+  fullName: DiscordRPC.VoiceSettings
+  nameWithType: VoiceSettings
+- uid: DiscordRPC.VoiceSettings.AutomaticGainControl
+  name: AutomaticGainControl
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_AutomaticGainControl
+  commentId: P:DiscordRPC.VoiceSettings.AutomaticGainControl
+  fullName: DiscordRPC.VoiceSettings.AutomaticGainControl
+  nameWithType: VoiceSettings.AutomaticGainControl
+- uid: DiscordRPC.VoiceSettings.AutomaticGainControl*
+  name: AutomaticGainControl
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_AutomaticGainControl_
+  commentId: Overload:DiscordRPC.VoiceSettings.AutomaticGainControl
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettings.AutomaticGainControl
+  nameWithType: VoiceSettings.AutomaticGainControl
+- uid: DiscordRPC.VoiceSettings.Deaf
+  name: Deaf
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_Deaf
+  commentId: P:DiscordRPC.VoiceSettings.Deaf
+  fullName: DiscordRPC.VoiceSettings.Deaf
+  nameWithType: VoiceSettings.Deaf
+- uid: DiscordRPC.VoiceSettings.Deaf*
+  name: Deaf
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_Deaf_
+  commentId: Overload:DiscordRPC.VoiceSettings.Deaf
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettings.Deaf
+  nameWithType: VoiceSettings.Deaf
+- uid: DiscordRPC.VoiceSettings.EchoCancellation
+  name: EchoCancellation
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_EchoCancellation
+  commentId: P:DiscordRPC.VoiceSettings.EchoCancellation
+  fullName: DiscordRPC.VoiceSettings.EchoCancellation
+  nameWithType: VoiceSettings.EchoCancellation
+- uid: DiscordRPC.VoiceSettings.EchoCancellation*
+  name: EchoCancellation
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_EchoCancellation_
+  commentId: Overload:DiscordRPC.VoiceSettings.EchoCancellation
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettings.EchoCancellation
+  nameWithType: VoiceSettings.EchoCancellation
+- uid: DiscordRPC.VoiceSettings.Input
+  name: Input
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_Input
+  commentId: P:DiscordRPC.VoiceSettings.Input
+  fullName: DiscordRPC.VoiceSettings.Input
+  nameWithType: VoiceSettings.Input
+- uid: DiscordRPC.VoiceSettings.Input*
+  name: Input
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_Input_
+  commentId: Overload:DiscordRPC.VoiceSettings.Input
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettings.Input
+  nameWithType: VoiceSettings.Input
+- uid: DiscordRPC.VoiceSettings.Mode
+  name: Mode
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_Mode
+  commentId: P:DiscordRPC.VoiceSettings.Mode
+  fullName: DiscordRPC.VoiceSettings.Mode
+  nameWithType: VoiceSettings.Mode
+- uid: DiscordRPC.VoiceSettings.Mode*
+  name: Mode
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_Mode_
+  commentId: Overload:DiscordRPC.VoiceSettings.Mode
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettings.Mode
+  nameWithType: VoiceSettings.Mode
+- uid: DiscordRPC.VoiceSettings.Mute
+  name: Mute
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_Mute
+  commentId: P:DiscordRPC.VoiceSettings.Mute
+  fullName: DiscordRPC.VoiceSettings.Mute
+  nameWithType: VoiceSettings.Mute
+- uid: DiscordRPC.VoiceSettings.Mute*
+  name: Mute
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_Mute_
+  commentId: Overload:DiscordRPC.VoiceSettings.Mute
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettings.Mute
+  nameWithType: VoiceSettings.Mute
+- uid: DiscordRPC.VoiceSettings.NoiseSuppression
+  name: NoiseSuppression
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_NoiseSuppression
+  commentId: P:DiscordRPC.VoiceSettings.NoiseSuppression
+  fullName: DiscordRPC.VoiceSettings.NoiseSuppression
+  nameWithType: VoiceSettings.NoiseSuppression
+- uid: DiscordRPC.VoiceSettings.NoiseSuppression*
+  name: NoiseSuppression
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_NoiseSuppression_
+  commentId: Overload:DiscordRPC.VoiceSettings.NoiseSuppression
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettings.NoiseSuppression
+  nameWithType: VoiceSettings.NoiseSuppression
+- uid: DiscordRPC.VoiceSettings.Output
+  name: Output
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_Output
+  commentId: P:DiscordRPC.VoiceSettings.Output
+  fullName: DiscordRPC.VoiceSettings.Output
+  nameWithType: VoiceSettings.Output
+- uid: DiscordRPC.VoiceSettings.Output*
+  name: Output
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_Output_
+  commentId: Overload:DiscordRPC.VoiceSettings.Output
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettings.Output
+  nameWithType: VoiceSettings.Output
+- uid: DiscordRPC.VoiceSettings.Qos
+  name: Qos
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_Qos
+  commentId: P:DiscordRPC.VoiceSettings.Qos
+  fullName: DiscordRPC.VoiceSettings.Qos
+  nameWithType: VoiceSettings.Qos
+- uid: DiscordRPC.VoiceSettings.Qos*
+  name: Qos
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_Qos_
+  commentId: Overload:DiscordRPC.VoiceSettings.Qos
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettings.Qos
+  nameWithType: VoiceSettings.Qos
+- uid: DiscordRPC.VoiceSettings.SilenceWarning
+  name: SilenceWarning
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_SilenceWarning
+  commentId: P:DiscordRPC.VoiceSettings.SilenceWarning
+  fullName: DiscordRPC.VoiceSettings.SilenceWarning
+  nameWithType: VoiceSettings.SilenceWarning
+- uid: DiscordRPC.VoiceSettings.SilenceWarning*
+  name: SilenceWarning
+  href: api/DiscordRPC.VoiceSettings.html#DiscordRPC_VoiceSettings_SilenceWarning_
+  commentId: Overload:DiscordRPC.VoiceSettings.SilenceWarning
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettings.SilenceWarning
+  nameWithType: VoiceSettings.SilenceWarning
+- uid: DiscordRPC.VoiceSettingsEvent
+  name: VoiceSettingsEvent
+  href: api/DiscordRPC.VoiceSettingsEvent.html
+  commentId: T:DiscordRPC.VoiceSettingsEvent
+  fullName: DiscordRPC.VoiceSettingsEvent
+  nameWithType: VoiceSettingsEvent
+- uid: DiscordRPC.VoiceSettingsInput
+  name: VoiceSettingsInput
+  href: api/DiscordRPC.VoiceSettingsInput.html
+  commentId: T:DiscordRPC.VoiceSettingsInput
+  fullName: DiscordRPC.VoiceSettingsInput
+  nameWithType: VoiceSettingsInput
+- uid: DiscordRPC.VoiceSettingsInput.AvailableDevices
+  name: AvailableDevices
+  href: api/DiscordRPC.VoiceSettingsInput.html#DiscordRPC_VoiceSettingsInput_AvailableDevices
+  commentId: P:DiscordRPC.VoiceSettingsInput.AvailableDevices
+  fullName: DiscordRPC.VoiceSettingsInput.AvailableDevices
+  nameWithType: VoiceSettingsInput.AvailableDevices
+- uid: DiscordRPC.VoiceSettingsInput.AvailableDevices*
+  name: AvailableDevices
+  href: api/DiscordRPC.VoiceSettingsInput.html#DiscordRPC_VoiceSettingsInput_AvailableDevices_
+  commentId: Overload:DiscordRPC.VoiceSettingsInput.AvailableDevices
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettingsInput.AvailableDevices
+  nameWithType: VoiceSettingsInput.AvailableDevices
+- uid: DiscordRPC.VoiceSettingsInput.DeviceId
+  name: DeviceId
+  href: api/DiscordRPC.VoiceSettingsInput.html#DiscordRPC_VoiceSettingsInput_DeviceId
+  commentId: P:DiscordRPC.VoiceSettingsInput.DeviceId
+  fullName: DiscordRPC.VoiceSettingsInput.DeviceId
+  nameWithType: VoiceSettingsInput.DeviceId
+- uid: DiscordRPC.VoiceSettingsInput.DeviceId*
+  name: DeviceId
+  href: api/DiscordRPC.VoiceSettingsInput.html#DiscordRPC_VoiceSettingsInput_DeviceId_
+  commentId: Overload:DiscordRPC.VoiceSettingsInput.DeviceId
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettingsInput.DeviceId
+  nameWithType: VoiceSettingsInput.DeviceId
+- uid: DiscordRPC.VoiceSettingsInput.Volume
+  name: Volume
+  href: api/DiscordRPC.VoiceSettingsInput.html#DiscordRPC_VoiceSettingsInput_Volume
+  commentId: P:DiscordRPC.VoiceSettingsInput.Volume
+  fullName: DiscordRPC.VoiceSettingsInput.Volume
+  nameWithType: VoiceSettingsInput.Volume
+- uid: DiscordRPC.VoiceSettingsInput.Volume*
+  name: Volume
+  href: api/DiscordRPC.VoiceSettingsInput.html#DiscordRPC_VoiceSettingsInput_Volume_
+  commentId: Overload:DiscordRPC.VoiceSettingsInput.Volume
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettingsInput.Volume
+  nameWithType: VoiceSettingsInput.Volume
+- uid: DiscordRPC.VoiceSettingsMode
+  name: VoiceSettingsMode
+  href: api/DiscordRPC.VoiceSettingsMode.html
+  commentId: T:DiscordRPC.VoiceSettingsMode
+  fullName: DiscordRPC.VoiceSettingsMode
+  nameWithType: VoiceSettingsMode
+- uid: DiscordRPC.VoiceSettingsMode.AutoThreshold
+  name: AutoThreshold
+  href: api/DiscordRPC.VoiceSettingsMode.html#DiscordRPC_VoiceSettingsMode_AutoThreshold
+  commentId: P:DiscordRPC.VoiceSettingsMode.AutoThreshold
+  fullName: DiscordRPC.VoiceSettingsMode.AutoThreshold
+  nameWithType: VoiceSettingsMode.AutoThreshold
+- uid: DiscordRPC.VoiceSettingsMode.AutoThreshold*
+  name: AutoThreshold
+  href: api/DiscordRPC.VoiceSettingsMode.html#DiscordRPC_VoiceSettingsMode_AutoThreshold_
+  commentId: Overload:DiscordRPC.VoiceSettingsMode.AutoThreshold
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettingsMode.AutoThreshold
+  nameWithType: VoiceSettingsMode.AutoThreshold
+- uid: DiscordRPC.VoiceSettingsMode.Delay
+  name: Delay
+  href: api/DiscordRPC.VoiceSettingsMode.html#DiscordRPC_VoiceSettingsMode_Delay
+  commentId: P:DiscordRPC.VoiceSettingsMode.Delay
+  fullName: DiscordRPC.VoiceSettingsMode.Delay
+  nameWithType: VoiceSettingsMode.Delay
+- uid: DiscordRPC.VoiceSettingsMode.Delay*
+  name: Delay
+  href: api/DiscordRPC.VoiceSettingsMode.html#DiscordRPC_VoiceSettingsMode_Delay_
+  commentId: Overload:DiscordRPC.VoiceSettingsMode.Delay
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettingsMode.Delay
+  nameWithType: VoiceSettingsMode.Delay
+- uid: DiscordRPC.VoiceSettingsMode.Shortcut
+  name: Shortcut
+  href: api/DiscordRPC.VoiceSettingsMode.html#DiscordRPC_VoiceSettingsMode_Shortcut
+  commentId: P:DiscordRPC.VoiceSettingsMode.Shortcut
+  fullName: DiscordRPC.VoiceSettingsMode.Shortcut
+  nameWithType: VoiceSettingsMode.Shortcut
+- uid: DiscordRPC.VoiceSettingsMode.Shortcut*
+  name: Shortcut
+  href: api/DiscordRPC.VoiceSettingsMode.html#DiscordRPC_VoiceSettingsMode_Shortcut_
+  commentId: Overload:DiscordRPC.VoiceSettingsMode.Shortcut
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettingsMode.Shortcut
+  nameWithType: VoiceSettingsMode.Shortcut
+- uid: DiscordRPC.VoiceSettingsMode.Threshold
+  name: Threshold
+  href: api/DiscordRPC.VoiceSettingsMode.html#DiscordRPC_VoiceSettingsMode_Threshold
+  commentId: P:DiscordRPC.VoiceSettingsMode.Threshold
+  fullName: DiscordRPC.VoiceSettingsMode.Threshold
+  nameWithType: VoiceSettingsMode.Threshold
+- uid: DiscordRPC.VoiceSettingsMode.Threshold*
+  name: Threshold
+  href: api/DiscordRPC.VoiceSettingsMode.html#DiscordRPC_VoiceSettingsMode_Threshold_
+  commentId: Overload:DiscordRPC.VoiceSettingsMode.Threshold
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettingsMode.Threshold
+  nameWithType: VoiceSettingsMode.Threshold
+- uid: DiscordRPC.VoiceSettingsMode.Type
+  name: Type
+  href: api/DiscordRPC.VoiceSettingsMode.html#DiscordRPC_VoiceSettingsMode_Type
+  commentId: P:DiscordRPC.VoiceSettingsMode.Type
+  fullName: DiscordRPC.VoiceSettingsMode.Type
+  nameWithType: VoiceSettingsMode.Type
+- uid: DiscordRPC.VoiceSettingsMode.Type*
+  name: Type
+  href: api/DiscordRPC.VoiceSettingsMode.html#DiscordRPC_VoiceSettingsMode_Type_
+  commentId: Overload:DiscordRPC.VoiceSettingsMode.Type
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettingsMode.Type
+  nameWithType: VoiceSettingsMode.Type
+- uid: DiscordRPC.VoiceSettingsOutput
+  name: VoiceSettingsOutput
+  href: api/DiscordRPC.VoiceSettingsOutput.html
+  commentId: T:DiscordRPC.VoiceSettingsOutput
+  fullName: DiscordRPC.VoiceSettingsOutput
+  nameWithType: VoiceSettingsOutput
+- uid: DiscordRPC.VoiceSettingsOutput.AvailableDevices
+  name: AvailableDevices
+  href: api/DiscordRPC.VoiceSettingsOutput.html#DiscordRPC_VoiceSettingsOutput_AvailableDevices
+  commentId: P:DiscordRPC.VoiceSettingsOutput.AvailableDevices
+  fullName: DiscordRPC.VoiceSettingsOutput.AvailableDevices
+  nameWithType: VoiceSettingsOutput.AvailableDevices
+- uid: DiscordRPC.VoiceSettingsOutput.AvailableDevices*
+  name: AvailableDevices
+  href: api/DiscordRPC.VoiceSettingsOutput.html#DiscordRPC_VoiceSettingsOutput_AvailableDevices_
+  commentId: Overload:DiscordRPC.VoiceSettingsOutput.AvailableDevices
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettingsOutput.AvailableDevices
+  nameWithType: VoiceSettingsOutput.AvailableDevices
+- uid: DiscordRPC.VoiceSettingsOutput.DeviceId
+  name: DeviceId
+  href: api/DiscordRPC.VoiceSettingsOutput.html#DiscordRPC_VoiceSettingsOutput_DeviceId
+  commentId: P:DiscordRPC.VoiceSettingsOutput.DeviceId
+  fullName: DiscordRPC.VoiceSettingsOutput.DeviceId
+  nameWithType: VoiceSettingsOutput.DeviceId
+- uid: DiscordRPC.VoiceSettingsOutput.DeviceId*
+  name: DeviceId
+  href: api/DiscordRPC.VoiceSettingsOutput.html#DiscordRPC_VoiceSettingsOutput_DeviceId_
+  commentId: Overload:DiscordRPC.VoiceSettingsOutput.DeviceId
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettingsOutput.DeviceId
+  nameWithType: VoiceSettingsOutput.DeviceId
+- uid: DiscordRPC.VoiceSettingsOutput.Volume
+  name: Volume
+  href: api/DiscordRPC.VoiceSettingsOutput.html#DiscordRPC_VoiceSettingsOutput_Volume
+  commentId: P:DiscordRPC.VoiceSettingsOutput.Volume
+  fullName: DiscordRPC.VoiceSettingsOutput.Volume
+  nameWithType: VoiceSettingsOutput.Volume
+- uid: DiscordRPC.VoiceSettingsOutput.Volume*
+  name: Volume
+  href: api/DiscordRPC.VoiceSettingsOutput.html#DiscordRPC_VoiceSettingsOutput_Volume_
+  commentId: Overload:DiscordRPC.VoiceSettingsOutput.Volume
+  isSpec: "True"
+  fullName: DiscordRPC.VoiceSettingsOutput.Volume
+  nameWithType: VoiceSettingsOutput.Volume
